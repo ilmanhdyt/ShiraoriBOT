@@ -1,10 +1,10 @@
 <p align="center">
-	<img src="https://i.ibb.co/jr9Nh6Q/Thumb.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="hhttps://ibb.co/x3Rfy1w/Thumb.jpg/Thumb.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">stikerinbot</h1>
+<h1 align="center">ShiraoriBOT</h1>
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ariffb25/stikerinbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hidayatilman/ShiraoriBOT)
 
 [![Grup WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GVwpKf83s42D1CnIfDW19G)
 
@@ -16,8 +16,8 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ariffb25/stikerinbot
-cd stikerinbot
+git clone https://github.com/Hidayatilman/ShiraoriBOT
+cd ShiraoriBOT
 npm install
 npm update
 npm index

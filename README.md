@@ -123,4 +123,4 @@ conn.logger.level = 'debug'
  [![ilman](https://github.com/Hidayatilman.png?size=100)](https://github.com/Hidayatilman)
 ----|----
 [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [ilman](https://github.com/Hidayatilman)
- Penulis / Pencipta | Penulis ulang | modif ulang
+ Penulis / Pencipta | Penulis ulang

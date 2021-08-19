@@ -4,6 +4,9 @@
 <h1 align="center">ShiraoriBOT</h1>
 
  ## Mungkin di termux gk bisa
+ 
+ * Banyak fitur yang gk bisa di pakai
+ * Banyak fitur yang hilang
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hidayatilman/ShiraoriBOT)

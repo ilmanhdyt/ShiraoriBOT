@@ -3,6 +3,8 @@
 </p>
 <h1 align="center">ShiraoriBOT</h1>
 
+Mungkin di termux gk bisa
+
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hidayatilman/ShiraoriBOT)
 

@@ -129,4 +129,4 @@ conn.logger.level = 'debug'
 [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25)
  Penulis / Pencipta | Penulis ulang
 
-* Thanks To (https://github.com/ariffb25)
+* Thanks To [(https://github.com/ariffb25)]

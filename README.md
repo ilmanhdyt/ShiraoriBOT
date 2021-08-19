@@ -130,5 +130,5 @@ conn.logger.level = 'debug'
  Penulis / Pencipta | Penulis ulang
  
 [![ilman](https://github.com/Hidayatilman.png?size=100)]
-[ilman](https://github com/Hidayatilman)
+Memodifikasi ulang 
 saya sendiri

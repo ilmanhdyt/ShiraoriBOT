@@ -6,7 +6,7 @@ handler.tags = ['NSFW']
 handler.command = /^(trap)$/i
 
 handler.limit = true
-handler.group = true
+
 
 module.exports = handler
 

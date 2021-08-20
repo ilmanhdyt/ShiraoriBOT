@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="https://tenor.com/bFm5J.gif" alt="GIF" width="128" height="128"/>
+<img src=p" alt="GIF" width="128" height="128"/>
 </p>
 <h1 align="center">ShiraoriBOT</h1>
 

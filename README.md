@@ -1,5 +1,6 @@
 <p align="center">
-	<img src="hhttps://ibb.co/x3Rfy1w/Thumb.jpg/Thumb.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+
+<img src="https://media.giphy.com/media/4dM1U76aAQ3dbE6bc3/giphy.gif" alt="GIF" width="128" height="128"/>
 </p>
 <h1 align="center">ShiraoriBOT</h1>
 

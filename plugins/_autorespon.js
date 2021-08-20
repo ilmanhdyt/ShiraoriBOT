@@ -14,8 +14,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'stikerin tidak aktif' : banned ? 'kamu dibanned' : 'stikerin disini',
-                '© stikerin',
+                isBanned ? 'shiraori tidak aktif' : banned ? 'kamu dibanned' : 'shiraori disini',
+                '© shiraori',
                 isBanned ? 'UNBAN' : banned ? 'PEMILIK BOT' : 'MENU',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'BAN' : isBanned ? 'UNBAN' : 'DONASI',
@@ -33,7 +33,7 @@ handler.all = async function (m, { isBlocked }) {
 └────
 
 https://github.com/ariffb25/stikerinbot
-`.trim(), '© stikerin', 'PEMILIK BOT', ',owner', { contextInfo: { mentionedJid: [global.owner[0] + '@s.whatsapp.net'] } })
+`.trim(), '© shiraori', 'PEMILIK BOT', ',owner', { contextInfo: { mentionedJid: [global.owner[0] + '@s.whatsapp.net'] } })
     }
 
     // salam

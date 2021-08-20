@@ -1,11 +1,11 @@
 let fetch = require('node-fetch')
-let googleIt = require('google-it')
+let googleIt = require('nhentai-it')
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   let full = /f$/i.test(command)
   let text = args.join` `
   if (!text) throw `Kodenya mana?\n\nContoh penggunaan:\n${usedPrefix + command} 344253`
   let url = 'https://nhentai.net/g/?q=' + encodeURIComponent(text)
-  let search = await googleIt({ query: text })
+  let search = await googleIt({ query: code })
   let msg = search.map(({ title, link, snippet }) => {
     return `*${title}*\n_${link}_\n_${snippet}_`
   }).join`\n\n`

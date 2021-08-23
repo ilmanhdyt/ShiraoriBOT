@@ -1,8 +1,8 @@
 let handler = async (m, { conn }) => {
 
-  conn.sendFile(m.chat, 'https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=yuri&apikey=hardianto', '', 'caption', m)
+  conn.sendFile(m.chat, 'https://bx-hunter.herokuapp.com/api/nsfw/yuri?apikey=Ikyy69', '', 'caption', m)
 }
-handler.help = ['yuri]
+handler.help = ['random yuri]
 handler.tags = ['NSFW']
 handler.command = /^(yuri)$/i
 

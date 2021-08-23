@@ -6,5 +6,6 @@ handler.tags = ['NSFW']
 handler.command = /^(pussy)$/i
 
 handler.limit = true
+handler.premium = true
 
 module.exports = handler

@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="https://tenor.com/bGt6R.gif" alt="GIF" width="128" height="128"/>
+<img src="https://i.ibb.co/F0VgZJj/Thumb.jpg" alt="GIF" width="200" height="200"/>
 
 </p>
 

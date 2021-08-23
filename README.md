@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="https://giphy.com/gifs/shiraori-kumoko-kumodesugananika-soimspidersowhat-Xr2km20NNBNqSN6iwu" alt="GIF" width="200" height="200"/>
+<img src="https://media.giphy.com/media/Xr2km20NNBNqSN6iwu/giphy.gif" alt="GIF" width="200" height="200"/>
 
 </p>
 

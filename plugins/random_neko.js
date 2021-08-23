@@ -7,6 +7,7 @@ handler.tags = ['NSFW']
 handler.command = /^(nekoo)$/i
 
 handler.limit = true
+handler.premium = true
 handler.group = true
 
 module.exports = handler

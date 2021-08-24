@@ -13,7 +13,7 @@ handler.all = async function (m) {
 Hai, ${ucapan()}
 
 ${user.banned ? 'kamu dibanned' : 'Ada yang bisa saya bantu?'}
-`.trim(), '© stikerin', user.banned ? 'PEMILIK BOT' : 'MENU', user.banned ? ',owner' : ',?')
+`.trim(), '© Shiraori', user.banned ? 'PEMILIK BOT' : 'MENU', user.banned ? ',owner' : ',?')
     user.pc = new Date * 1
 }
 

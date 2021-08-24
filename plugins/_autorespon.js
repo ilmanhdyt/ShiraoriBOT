@@ -84,7 +84,7 @@ function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
 
-    // salam
+    // Shiraori
 
     let reg = /(Shiraori)/i
 

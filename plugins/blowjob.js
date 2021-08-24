@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 
-  conn.sendFile(m.chat, 'https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=blowJob&apikey=hardianto', '', 'caption', m)
+  conn.sendFile(m.chat, 'https://api.xteam.xyz/randomimage/blowjob?APIKEY=4a8b9aba75823076', '', 'caption', m)
 }
 handler.help = ['blowjob]
 handler.tags = ['NSFW']

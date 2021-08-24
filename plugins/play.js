@@ -30,7 +30,7 @@ let handler = async (m, { conn, command, text, usedprefix, isPrems, isOwner }) =
 *Ukuran File Video:* ${yt2.filesizeF}
 *Server y2mate:* ${usedServer}
           `.trim(),
-    await (await fetch(thumb)).buffer(), '© stikerin', 'AUDIO', `${usedprefix}yta ${vid.url}`, 'VIDEO', `${usedprefix}yt ${vid.url}`)
+    await (await fetch(thumb)).buffer(), '© shiraori', 'AUDIO', `${usedprefix}yta ${vid.url}`, 'VIDEO', `${usedprefix}yt ${vid.url}`)
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']

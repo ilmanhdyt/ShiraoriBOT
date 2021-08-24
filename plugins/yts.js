@@ -1,6 +1,6 @@
 let yts = require('yt-search')
 let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw `contoh:\n${usedPrefix + command} belajar nodejs`
+  if (!text) throw `contoh:\n${usedPrefix + command} opening tensura`
   let results = await yts(text)
   let teks = results.all.map(v => {
     switch (v.type) {

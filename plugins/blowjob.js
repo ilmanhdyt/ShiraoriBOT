@@ -7,10 +7,11 @@ handler.tags = ['NSFW']
 handler.command = /^(blowjob)$/i
 
 handler.limit = true
-
-
+handler.group = true
 
 module.exports = handler
+
+
 
 
 

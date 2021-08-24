@@ -83,3 +83,16 @@ function clockString(ms) {
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
+
+    // salam
+
+    let reg = /(Shiraori)/i
+
+    let isSalam = reg.exec(m.text)
+
+    if (isSalam && !m.fromMe) {
+
+        m.reply(`Haiik goshujin sama._`)
+
+    }
+ 

@@ -6,10 +6,10 @@ let handler = async m => m.reply(`
 ┌〔 Donasi • Emoney 〕
 ├ OVO, Dana [081351047727]
 └────
- https:saweria.co/manilman
-fungsinya donasi tuh buat 
-memperpanjang masa server (rdp)
-sama api key
+ saweria.co/manilman
+ donasi tuh buat 
+memperpanjang masa *server* *(rdp)*
+sama *api key*
 `.trim())
 handler.help = ['donasi']
 handler.tags = ['info']

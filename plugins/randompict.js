@@ -4,11 +4,11 @@ let handler = async (m, { conn }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   if (!json.url) throw 'Error!'
-  conn.sendFile(m.chat, json.url, '', '😑', m, 0, { thumbnail: Buffer.alloc(0) })
+  conn.sendFile(m.chat, json.url, '', '© shiraori', m, 0, { thumbnail: Buffer.alloc(0) })
 }
-handler.help = ['randompict']
+handler.help = ['pict']
 handler.tags = ['NSFW']
-handler.command = /^(randompict)$/i
+handler.command = /^(pict)$/i
 
 handler.limit = true
 

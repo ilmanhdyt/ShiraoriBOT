@@ -7,9 +7,9 @@ let handler = async (m, { conn }) => {
   conn.sendFile(m.chat, json.url, '', '© shiraori', m, 0, { thumbnail: Buffer.alloc(0) })
 }
 handler.help = ['milf']
-handler.tags = ['premium']
+handler.tags = ['NSFW']
 handler.command = /^(milf)$/i
 
-handler.premium = true
+handler.limit = true
 
 module.exports = handler

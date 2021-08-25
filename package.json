@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ariffb25/stikerinbot.git"
+    "url": "git+https://github.com/Hidayatilman/ShiraoriBOT.git"
   },
   "keywords": [
     "whatsapp-bot"
@@ -17,9 +17,9 @@
   "author": "ilman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ariffb25/stikerinbot/issues"
+    "url": "https://github.com/Hidayatilman/ShiraoriBOT/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/Hidayatilman/ShiraoriBOT",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
     "awesome-phonenumber": "^2.54.0",

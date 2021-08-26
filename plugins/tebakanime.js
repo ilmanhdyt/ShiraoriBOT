@@ -23,7 +23,7 @@ Bonus: ${poin} XP
     ,
     json, poin,
     setTimeout(async () => {
-      if (conn.tebakgambar[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© shiraori', 'TEBAK ANIME', '.tebakanime')
+      if (conn.tebakanime[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© shiraori', 'TEBAK ANIME', '.tebakanime')
       delete conn.tebakanime[id]
     }, timeout)
   ]

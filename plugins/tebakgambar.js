@@ -19,11 +19,11 @@ Ketik ${usedPrefix}hint untuk bantuan
 Bonus: ${poin} XP
     `.trim()
   conn.tebakgambar[id] = [
-    await conn.sendButtonImg(m.chat, caption, await (await fetch(json.img)).buffer(), '© stikerin', 'BANTUAN', '.hint')
+    await conn.sendButtonImg(m.chat, caption, await (await fetch(json.img)).buffer(), '© shiraori', 'BANTUAN', '.hint')
     ,
     json, poin,
     setTimeout(async () => {
-      if (conn.tebakgambar[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© stikerin', 'TEBAK GAMBAR', '.tebakgambar')
+      if (conn.tebakgambar[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© shiraori', 'TEBAK GAMBAR', '.tebakgambar')
       delete conn.tebakgambar[id]
     }, timeout)
   ]

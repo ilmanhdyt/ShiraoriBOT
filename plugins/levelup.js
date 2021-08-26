@@ -15,7 +15,7 @@ Kurang *${max - user.exp}* lagi!
             m.reply(`
 Selamat, anda telah naik level!
 *${before}* -> *${user.level}*
-gunakan *.profile* untuk mengecek
+gunakan *.my* untuk mengecek
 	`.trim())
         }
 }

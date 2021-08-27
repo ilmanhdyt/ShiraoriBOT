@@ -2,11 +2,11 @@ let handler = async (m, { conn, args }) => {
 
   let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net'
 
-  if (!m.mentionedJid[0]) throw `siap dikickall`
+  if (!m.allmem[0]) throw `siap dikickall`
 
-  let users = m.mentionedJid.filter(u => !(u == ownerGroup || u.includes(conn.user.jid)))
+  let users = m.allmem.filter(u => !(u == ownerGroup || u.includes(conn.allmem.jid)))
 
-  for (let user of users) if (user.endsWith('@s.whatsapp.net')) await conn.groupRemove(m.chat, [user])
+  for (let allmem) if (user.endsWith('@s.whatsapp.net')) await conn.groupRemove(m.chat, [allmem])
 
 }
 

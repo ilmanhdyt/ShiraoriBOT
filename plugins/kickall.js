@@ -4,11 +4,11 @@ let handler = async (m, { conn, args }) => {
 
   let users = m.mentionedJid.filter(u => !(u == ownerGroup || u.includes(conn.user.jid)))
 
-  for (let user of users) if (user.endsWith('@s.whatsapp.net')) await conn.groupRemove(m.chat, [user])
+  for (let allmem of allmem) if (user.endsWith('@s.whatsapp.net')) await conn.groupRemove(m.chat, [allmem])
 
 }
 
-handler.help = ['kickall', '-'].map(v => v + ' @user')
+handler.help = ['kickall', '-'].map(v => v + ' allmem')
 
 handler.tags = ['admin']
 

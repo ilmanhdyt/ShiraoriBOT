@@ -5,6 +5,6 @@ let handler = async (m, { conn }) => {
     let json = conn.tebakanime[id][1]
     conn.reply(m.chat, '```' + json.jawaban.replace(/[AIUEOaiueo]/g, '_') + '```\nBalas gambarnya, bukan pesan ini', conn.tebakanime[id][0])
 }
-handler.command = /^wut$/i
+handler.command = /^hint$/i
 
 module.exports = handler

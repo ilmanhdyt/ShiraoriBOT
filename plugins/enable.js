@@ -209,10 +209,19 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.simi = isEnable
       break
+    case 'viewonce':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.viewonce = isEnable
+      break
     default:
       if (!/[01]/.test(command)) throw `
 ┌〔 Daftar Opsi 〕
-│ ${isOwner ? '\n├ anon\n├ antispam\n├ antitroli\n├ backup\n├ clear\n├ grouponly\n├ jadibot\n├ nsfw\n├ public\n├ mycontact' : ''}
+│ ${isOwner ? '\n├ anon\n├ antispam\n├ antitroli\n├ backup\n├ clear\n├ grouponly\n├ jadibot\n├ nsfw\n├ public\n├ mycontact\n├ viewonce' : ''}
 ├ antilink
 ├ autolevelup
 ├ delete
@@ -221,6 +230,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 ├ stiker
 ├ simi
 ├ welcome
+├ viewonce
 │ 
 └────
 Contoh:

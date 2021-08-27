@@ -3,7 +3,7 @@ const threshold = 0.72
 let handler = m => m
 handler.before = async function (m) {
   let id = m.chat
-  if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/Ketik.*hint/i.test(m.quoted.contentText)) return !0
+  if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/Ketik.*wut/i.test(m.quoted.contentText)) return !0
   this.tebakanime = this.tebakanime ? this.tebakanime : {}
   if (!(id in this.tebakanime)) return m.reply('Soal itu telah berakhir')
   if (/^nyerah$/i.test(m.text)) {
@@ -11,7 +11,7 @@ handler.before = async function (m) {
   }
   // if (m.quoted.id == this.tebakanime[id][0].id) { // undefined T_T
   let json = JSON.parse(JSON.stringify(this.tebakanime[id][1]))
-  if (['.hint', 'BANTUAN', ''].includes(m.text)) return !0
+  if (['.wut', 'BANTUAN', ''].includes(m.text)) return !0
   if (m.text.toLowerCase() == json.jawaban.toLowerCase()) {
     global.db.data.users[m.sender].exp += this.tebakanime[id][2]
     await this.sendButton(m.chat, `*Benar!* +${this.tebakanime[id][2]} XP`, '© shiraori', 'TEBAK ANIME', '.tebakanime')

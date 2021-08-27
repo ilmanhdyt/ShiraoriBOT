@@ -15,11 +15,11 @@ let handler = async (m, { conn, usedPrefix }) => {
   let caption = `
   ${json.deskripsi}
 Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}hint untuk bantuan
+Ketik ${usedPrefix}wut untuk bantuan
 Bonus: ${poin} XP
     `.trim()
   conn.tebakanime[id] = [
-    await conn.sendButtonImg(m.chat, caption, await (await fetch(json.img)).buffer(), '© shiraori', 'BANTUAN', '.hint')
+    await conn.sendButtonImg(m.chat, caption, await (await fetch(json.img)).buffer(), '© shiraori', 'BANTUAN', '.wut')
     ,
     json, poin,
     setTimeout(async () => {

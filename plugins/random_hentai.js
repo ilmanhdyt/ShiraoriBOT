@@ -1,9 +1,10 @@
 let handler = async (m, { conn }) => {
+  
   conn.sendFile(m.chat, 'https://pencarikode.xyz/api/hentai?apikey=pais', '', '', m)
 }
-handler.help = ['hentai']
+handler.help = ['hent']
 handler.tags = ['NSFW']
-handler.command = /^(hentai)$/i
+handler.command = /^(hent)$/i
 
 handler.limit = true
 handler.group = true

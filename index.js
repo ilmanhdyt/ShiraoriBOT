@@ -4,13 +4,13 @@ let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts = require('cfonts')
-CFonts.say('Stikerin Bot', {
-  colors: ['#f2aa4c'],
+CFonts.say('ShiraoriBOT', {
+  colors: ['#ff33cc'],
   font: 'block',
   align: 'center',
 })
 CFonts.say(`'${package.name}' Oleh @${package.author.name || package.author}`, {
-  colors: ['#f2aa4c'],
+  colors: ['#ff33cc'],
   font: 'console',
   align: 'center',
 })

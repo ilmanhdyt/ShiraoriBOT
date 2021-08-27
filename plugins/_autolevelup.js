@@ -30,7 +30,7 @@ handler.before = async function (m) {
                                 .setLevel(user.level)
                                 .setCurrentXP(user.exp - min)
                                 .setRequiredXP(xp)
-                                .setProgressBar("#f2aa4c", "COLOR")
+                                .setProgressBar("#ff33cc", "COLOR")
                                 .setUsername(this.getName(who))
                                 .setDiscriminator(discriminator);
                         rank.build()

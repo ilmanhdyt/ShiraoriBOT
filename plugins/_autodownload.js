@@ -27,7 +27,7 @@ handler.all = async function (m, { isPrems, isOwner }) {
         let json = await res.json()
         await m.reply(global.wait)
         m.reply(util.format(json))
-        await this.sendFile(m.chat, json.download, '', '© stikerin', m)
+        await this.sendFile(m.chat, json.download, '', '© shiraori', m)
     }
 
     if (/^.*(fb.watch|facebook.com)/i.test(m.text)) {
@@ -38,7 +38,7 @@ handler.all = async function (m, { isPrems, isOwner }) {
             if (!json.status) throw json
             await m.reply(global.wait)
             m.reply(util.format(json))
-            await this.sendFile(m.chat, isPrems ? json.data[1].url : json.data[0].url, '', '© stikerin', m)
+            await this.sendFile(m.chat, isPrems ? json.data[1].url : json.data[0].url, '', '© shiraori', m)
         }).catch(_ => _)
     }
 
@@ -48,7 +48,7 @@ handler.all = async function (m, { isPrems, isOwner }) {
             let json = JSON.parse(igdl)
             await m.reply(global.wait)
             for (let { downloadUrl, type } of json) {
-                this.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '© stikerin', m, 0, { thumbnail: await (await fetch(downloadUrl)).buffer() })
+                this.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '© shiraori', m, 0, { thumbnail: await (await fetch(downloadUrl)).buffer() })
             }
         }).catch(_ => _)
     }
@@ -60,7 +60,7 @@ handler.all = async function (m, { isPrems, isOwner }) {
             if (!json.status) return m.reply(`Tidak dapat diunduh`)
             await m.reply(global.wait)
             m.reply(util.format(json))
-            await this.sendFile(m.chat, json.data.url, '', '© stikerin', m)
+            await this.sendFile(m.chat, json.data.url, '', '© shiraori', m)
         }).catch(_ => _)
     }
 
@@ -71,7 +71,7 @@ handler.all = async function (m, { isPrems, isOwner }) {
             let pesan = json.data.map((v) => `Link: ${v.url}`).join('\n------------\n')
             await m.reply(global.wait)
             for (let { url } of json.data) {
-                this.sendFile(m.chat, url, 'ig' + (/mp4/i.test(url) ? '.mp4' : '.jpg'), '© stikerin', m)
+                this.sendFile(m.chat, url, 'ig' + (/mp4/i.test(url) ? '.mp4' : '.jpg'), '© shiraori', m)
             }
         }).catch(_ => _)
     }
@@ -102,7 +102,7 @@ handler.all = async function (m, { isPrems, isOwner }) {
 *Ukuran File Video:* ${yt2.filesizeF}
 *Server y2mate:* ${usedServer}
           `.trim(),
-            await (await fetch(thumb)).buffer(), '© stikerin', 'AUDIO', `.yta ${vid.url}`, 'VIDEO', `.yt ${vid.url}`)
+            await (await fetch(thumb)).buffer(), '© shiraori', 'AUDIO', `.yta ${vid.url}`, 'VIDEO', `.yt ${vid.url}`)
     }
 
 }

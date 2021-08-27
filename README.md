@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://media.giphy.com/media/Xr2km20NNBNqSN6iwu/giphy.gif" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="https://media.giphy.com/media/Xr2km20NNBNqSN6iwu/giphy.gif" width="200" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 <h1 align="center">ShiraoriBOT</h1>
 

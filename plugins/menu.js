@@ -19,6 +19,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'all') tags = {
     'main': 'Utama',
     'game': 'Game',
+    'RPG': 'RPG',
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
@@ -45,6 +46,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'game') tags = {
     'game': 'Game'
+  }
+  if (teks == 'RPG') tags = {
+    'RPG': 'RPG'
   }
   if (teks == 'xp') tags = {
     'xp': 'Exp & Limit'
@@ -137,6 +141,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 "title": "Game",
                 "description": "",
                 "rowId": ".? game"
+              }, {
+                "title": "RPG",
+                "description": "",
+                "rowId": ".? RPG"
 
               }, {
                 "title": "XP",
@@ -247,6 +255,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   // ┌〔 DAFTAR MENU 〕
   // ├ ${_p + command} all
   // ├ ${_p + command} game
+  // ├ ${_p + command} RPG
   // ├ ${_p + command} xp
   // ├ ${_p + command} stiker
   // ├ ${_p + command} kerang

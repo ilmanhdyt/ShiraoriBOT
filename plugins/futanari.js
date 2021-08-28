@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random2/futanari?apikey=39f938655e624cb72a79560b', '', '', m)
+  conn.sendFile(m.chat, 'https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=futanari&apikey=hardianto', '', '', m)
 }
 handler.help = ['futanari']
 handler.tags = ['NSFW']

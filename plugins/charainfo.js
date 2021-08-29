@@ -11,7 +11,7 @@ let charaingfo = `*Name:* ${name}
   conn.sendFile(m.chat, image_url, '', charaingfo, m)
 }
 handler.help = ['character <nama>']
-handler.tags = ['ANIME']
+handler.tags = ['anime']
 handler.command = /^(chara|character)$/i
 //kyaa jangan biarkan wabot-aq terbengkalai sampai nurutomo kembali
 module.exports = handler

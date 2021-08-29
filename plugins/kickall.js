@@ -1,19 +1,21 @@
-case 'kickall':
-if (!isOwner) return reply(ind.ownerb())
-members_id = []
-teks = (args.length > 1) ? body.slice(8).trim() : ''
-teks += '\n\n'
-for (let mem of groupMembers) {
-     teks += `*sayonara* ${mem.jid.split('@')[0]}\n`
-     members_id.push(mem.jid)	
-}
-mentions(teks, members_id, true)
-client.groupRemove(from, members_id)
-break
+if (!isGroupMsg) return Shiraori.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
+            const isGroupOwner = sender.id === chat.groupMetadata.owner
+            if (!isGroupOwner) return Shiraori.reply(from, 'Perintah ini hanya bisa di gunakan oleh Owner group', id)
+            if (!isBotGroupAdmins) return Shiraori.reply(from, 'Perintah ini hanya bisa di gunakan ketika bot menjadi admin', id)
+            const allMek = await Shiraori.getGroupMembers(groupId)
+            for (let i = 0; i < allMek.length; i++) {
+                if ((adminNumber, ownerNumber).includes(allMek[i].id)) {
+                    console.log('Oops ini khusus admin group')
+                } else {
+                    await Shiraori.removeParticipant(groupId, allMek[i].id)
+                }
+            }
+            Shiraori.reply(from, 'Success kick all member', id)
+            break
 }
 handler.help = ['kickall']
 handler.tags = ['admin']
-handler.command = /^(kickall|\-)$/i
+handler.command = /^(kickall)$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
@@ -27,3 +29,5 @@ handler.fail = null
 handler.limit = true
 
 module.exports = handler
+
+

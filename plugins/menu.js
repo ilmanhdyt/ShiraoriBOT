@@ -126,10 +126,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (!args[0]) {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
-        "title": "Daftar Menu",
+        "title": "Berikut Daftar Menu Yang Tersedia",
         "description": "Tanggal: *%week %weton, %date*
 Tanggal Islam: *%dateIslamic*
- Waktu: *%time* © Shiraori",
+ Waktu: *%time*",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",
         "sections": [

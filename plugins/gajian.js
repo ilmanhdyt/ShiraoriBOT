@@ -12,7 +12,7 @@ let cd2 = Math.ceil(59 - cds)
   } else throw `Lu udah ambil jatah hari ini.\n\nTunggu ${cd1} Menit ${cd2} Detik!`
 }
 handler.help = ['gaji', 'gajian']
-handler.tags = ['RPG']
+handler.tags = ['rpg']
 handler.command = /^(gaji|gajian)$/i
 handler.owner = false
 handler.mods = false

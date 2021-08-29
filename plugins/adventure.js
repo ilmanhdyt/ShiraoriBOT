@@ -69,10 +69,11 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
     }
 }
 handler.help = ['adventure', 'petualang', 'berpetualang', 'mulung', 'work']
-handler.tags = ['RPG']
+handler.tags = ['rpg']
 handler.command = /^(adventure|(ber)?petualang(ang)?|mulung|work)$/i
 
 handler.fail = null
+handler.group = true
 
 module.exports = handler
 

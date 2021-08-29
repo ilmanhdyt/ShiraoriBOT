@@ -9,7 +9,7 @@ let json= await res.json()
      conn.sendFile(m.chat,json.thumb, 'image.jpg', ardi, m)
 }
 handler.help = ['kusonime <judul>']
-handler.tags = ['ANIME']
+handler.tags = ['anime']
 handler.command = /^kusonime$/i
 handler.group = false
 

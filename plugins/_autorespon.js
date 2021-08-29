@@ -82,3 +82,10 @@ function clockString(ms) {
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
+
+    // Ilman
+    let reg =Ilman)/i
+    let isSalam = reg.exec(m.text)
+    if (isSalam && !m.fromMe) {
+        m.reply(`ah ah ah Ilman-sama kawaii`)
+    }

@@ -4,7 +4,7 @@ let handler = async(m, { conn, text }) => {
     if (!text) return conn.reply(m.chat, 'Silahkan masukan kata kunci', m)
    await m.reply(global.wait)
    axios.get(`https://mhankbarbar.herokuapp.com/api/dewabatch?q=${text}`).then((res) => {
-    let hasil = `${res.data.result.sinopsis}\n\n*BOT_STYLE*`
+    let hasil = `${res.data.result.sinopsis}\n\n*ShiraoriBOT*`
 conn.reply(m.chat, hasil, m)
 	})
     } catch (e) {
@@ -12,7 +12,7 @@ conn.reply(m.chat, hasil, m)
   }
 }
 handler.help = ['dewabatch']
-handler.tags = ['ANIME']
+handler.tags = ['anime']
 handler.command = /^(dewabatch)$/i
 handler.owner = false
 handler.mods = false

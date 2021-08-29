@@ -14,7 +14,7 @@ let animeingfo = `✨️ *Title:* ${title}
   conn.sendFile(m.chat, image_url, '', animeingfo, m)
 }
 handler.help = ['anime <judul>']
-handler.tags = ['ANIME']
+handler.tags = ['anime']
 handler.command = /^(anime|animeinfo)$/i
 //maapin fatur :<
 module.exports = handler

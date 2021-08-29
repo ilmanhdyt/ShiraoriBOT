@@ -129,5 +129,6 @@ conn.logger.level = 'debug'
 * [`Nurutomo`](https://github.com/Nurutomo) 
 * [`ariffb25`](https://github.com/ariffb25) 
 * [`ilman`](https://github.com/Hidayatilman) 
+* [`botstylee`](https://github.com/botstylee)
 
 

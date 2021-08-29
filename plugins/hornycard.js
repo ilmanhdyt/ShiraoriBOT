@@ -22,9 +22,9 @@ try {
 }
 
 
-handler.help = ['horny (caption|reply media)']
+handler.help = ['sange (caption|reply media)']
 handler.tags = ['sticker']
-handler.command = /^(horny)$/i
+handler.command = /^(sange)$/i
 handler.limit = true
 handler.group = false
 handler.register = true

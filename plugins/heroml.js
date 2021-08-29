@@ -1,9 +1,9 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} anime`
+    if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} harith`
     let res = await fetch(global.API('xteam', '/search/heroml', {
         q: text
-    }, 'FuzBot1'))
+    }, 'APIKEY'))
     if (!res.ok) throw await `${res.status} ${res.statusText}`
     let json = await res.json()
     if (!json.status) throw json

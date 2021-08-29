@@ -21,9 +21,9 @@ let handler = async(m, { conn, args, usedPrefix }) => {
 
 }
 
-handler.help = ['anime <query>']
-handler.tags = ['ANIME']
-handler.command = /^(anime)$/i
+handler.help = ['animeku <query>']
+handler.tags = ['anime']
+handler.command = /^(animeku)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

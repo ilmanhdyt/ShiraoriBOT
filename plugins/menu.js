@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'all') tags = {
     'main': 'Utama',
     'game': 'Game',
-    'rpg': 'Rpg',
+    'rpg': 'Rpg' : '(eror)`,
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
@@ -48,7 +48,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'game': 'Game'
   }
   if (teks == 'rpg') tags = {
-    'rpg': 'Rpg'
+    'rpg': 'Rpg' : '(eror)`
   }
   if (teks == 'xp') tags = {
     'xp': 'Exp & Limit'
@@ -127,7 +127,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
         "title": "Daftar Menu",
-        "description": "© shiraori",
+        "description": "Tanggal: *%week %weton, %date*
+Tanggal Islam: *%dateIslamic*
+ Waktu: *%time* © Shiraori",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",
         "sections": [

@@ -16,7 +16,7 @@ handler.all = async function (m, { isBlocked }) {
             await this.send2Button(m.chat,
                 isBanned ? 'Shiraori tidak aktif' : banned ? 'kamu dibanned' : 'Shiraori disini',
                 '© Shiraori',
-                isBanned ? 'UNBAN' : banned ? 'PEMILIK BOT' : 'MENU',
+                isBanned ? 'UNBAN' : banned ? 'PEMILIK Shiraori' : 'MENU',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'BAN' : isBanned ? 'UNBAN' : 'DONASI',
                 m.isGroup ? '.ban' : isBanned ? '.unban' : '.donasi')
@@ -34,7 +34,7 @@ handler.all = async function (m, { isBlocked }) {
 └────
 
 wa.me/6281251047727
-`.trim(), '© Shiraori', 'PEMILIK BOT', ',owner', { contextInfo: { mentionedJid: [global.owner[0] + '@s.whatsapp.net'] } })
+`.trim(), '© Shiraori', 'PEMILIK Shiraori', ',owner', { contextInfo: { mentionedJid: [global.owner[0] + '@s.whatsapp.net'] } })
     }
 
     // salam

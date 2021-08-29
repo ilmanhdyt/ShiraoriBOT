@@ -84,8 +84,15 @@ function pickRandom(list) {
 }
 
     // Ilman
-    let reg =Ilman)/i
+    let reg =/(Ilman)/i
     let isSalam = reg.exec(m.text)
     if (isSalam && !m.fromMe) {
         m.reply(`ah ah ah Ilman-sama kawaii`)
+    }
+
+    // Shiraori
+    let reg =/(Shiraori)/i
+    let isSalam = reg.exec(m.text)
+    if (isSalam && !m.fromMe) {
+        m.reply(`haiik goshujin-sama`)
     }

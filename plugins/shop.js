@@ -314,7 +314,7 @@ Sampah:     ${Ssampah}\n\n
 }
 
 handler.help = ['shop <sell|buy> <args>', 'toko <sell|buy> <args>']
-handler.tags = ['RPG']
+handler.tags = ['rpg']
     
 handler.command = /^(shop|toko|buy|beli|sell|jual)$/i
 module.exports = handler

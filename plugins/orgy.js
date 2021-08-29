@@ -5,6 +5,7 @@ handler.help = ['orgy']
 handler.tags = ['nsfw']
 handler.command = /^(orgy)$/i
 
-handler.premium = true
+handler.limit = true
+handler.group = true
 
 module.exports = handler

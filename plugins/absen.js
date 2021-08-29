@@ -2,7 +2,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}
     if (!(id in conn.absen)) {
-        await conn.sendButton(m.chat, `_*Tidak ada absen berlangsung digrup ini!*_\n\nketik *${usedPrefix}mulaiabsen* untuk memulai absen`, '© stikerin', 'MULAI ABSEN', `${usedPrefix}mulaiabsen`)
+        await conn.sendButton(m.chat, `_*Tidak ada absen berlangsung digrup ini!*_\n\nketik *${usedPrefix}mulaiabsen* untuk memulai absen`, '© Shiraori', 'MULAI ABSEN', `${usedPrefix}mulaiabsen`)
         throw false
     }
 
@@ -21,13 +21,13 @@ let handler = async (m, { conn, usedPrefix }) => {
 Tanggal: ${date}
 ${conn.absen[id][2]}
 
-┌〔 daftar absen 〕
-│ 
-├ Total: ${absen.length}
+╔══✪〔 daftar absen 〕✪══
+║ 
+╠➥ Total: ${absen.length}
 ${list}
-│ 
-└────`.trim()
-    await conn.send2Button(m.chat, caption, '© stikerin', 'ABSEN', `${usedPrefix}absen`, 'CEK', `${usedPrefix}cekabsen`, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
+║ 
+╚═〘 SHIRAORI BOT 〙`.trim()
+    await conn.send2Button(m.chat, caption, '© Shiraori', 'ABSEN', `${usedPrefix}absen`, 'CEK', `${usedPrefix}cekabsen`, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
 }
 handler.help = ['absen']
 handler.tags = ['absen']

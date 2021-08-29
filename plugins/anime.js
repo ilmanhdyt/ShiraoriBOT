@@ -16,7 +16,7 @@ let handler = async(m, { conn, args, usedPrefix }) => {
                 conn.reply(m.chat, 'Ada yang Error cuy... Bisa tanyakan ke\n*Instagram:* @rendycraft047!', m)
             })
     } else {
-        conn.reply(m.chat, `Maaf query tidak tersedia. Silahkan ketik ${usedPrefix}anime untuk melihat list query`, m)
+        conn.reply(m.chat, `Maaf query tidak tersedia. Silahkan ketik ${usedPrefix}animeku untuk melihat list query`, m)
     }
 
 }

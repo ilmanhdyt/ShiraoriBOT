@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'all') tags = {
     'main': 'Utama',
     'game': 'Game',
-    'RPG': 'RPG',
+    'rpg': 'Rpg',
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
@@ -39,16 +39,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'quran': 'Al Qur\'an',
     'audio': 'Pengubah Suara',
     'jadibot': 'Jadi Bot',
-    'NSFW': 'NSFW',
-    'ANIME': 'ANIME',
+    'nsfw': 'Nsfw',
+    'anime': 'Anime',
     'info': 'Info',
     '': 'Tanpa Kategori',
   }
   if (teks == 'game') tags = {
     'game': 'Game'
   }
-  if (teks == 'RPG') tags = {
-    'RPG': 'RPG'
+  if (teks == 'rpg') tags = {
+    'rpg': 'Rpg'
   }
   if (teks == 'xp') tags = {
     'xp': 'Exp & Limit'
@@ -105,11 +105,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'jadibot') tags = {
     'jadibot': 'Jadi Bot'
   }
-  if (teks == 'NSFW') tags = {
-    'NSFW': 'NSFW'
+  if (teks == 'nsfw') tags = {
+    'nsfw': 'Nsfw'
   }
-  if (teks == 'ANIME') tags = {
-    'ANIME': 'ANIME'
+  if (teks == 'anime') tags = {
+    'anime': 'Anime'
   }
   if (teks == 'info') tags = {
     'info': 'Info'
@@ -142,9 +142,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 "description": "",
                 "rowId": ".? game"
               }, {
-                "title": "RPG",
+                "title": "Rpg",
                 "description": "",
-                "rowId": ".? RPG"
+                "rowId": ".? rpg"
 
               }, {
                 "title": "XP",
@@ -220,13 +220,13 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 "description": "",
                 "rowId": ".? jadibot"
               }, {
-                "title": "NSFW",
+                "title": "Nsfw",
                 "description": "",
-                "rowId": ".? NSFW"
+                "rowId": ".? nsfw"
               }, { 
-                "title": "ANIME",
+                "title": "Anime",
                 "description": "",
-                "rowId": ".? ANIME"
+                "rowId": ".? anime"
               }, {
                 "title": "Info",
                 "description": "",
@@ -255,7 +255,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   // ╔══✪〔 DAFTAR MENU 〕
   // ╠➥ ${_p + command} all
   // ╠➥ ${_p + command} game
-  // ╠➥ ${_p + command} RPG
+  // ╠➥ ${_p + command} rpg
   // ╠➥ ${_p + command} xp
   // ╠➥ ${_p + command} stiker
   // ╠➥ ${_p + command} kerang
@@ -274,8 +274,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   // ╠➥ ${_p + command} quran
   // ╠➥ ${_p + command} audio
   // ╠➥ ${_p + command} jadibot
-  // ╠➥ ${_p + command} NSFW
-  // ╠➥ ${_p + command} ANIME
+  // ╠➥ ${_p + command} nsfw
+  // ╠➥ ${_p + command} anime
   // ╠➥ ${_p + command} info
   // ╠➥ ${_p + command} tanpa kategori
   // ╠➥ ${_p + command} owner
@@ -382,7 +382,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2Button(m.chat, text.trim(), 'shiraoribot by ilman', 'PEMILIK BOT', '.owner', 'DONASI', '.donasi', { quoted: m })
+    await conn.send2Button(m.chat, text.trim(), 'shiraori bot by ilman', 'PEMILIK BOT', '.owner', 'DONASI', '.donasi', { quoted: m })
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

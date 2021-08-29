@@ -7,7 +7,7 @@ const defaultMenu = {
 %readmore`.trimStart(),
   header: '╔══✪〔 %category 〕✪══',
   body: '╠➥ %cmd %islimit %isPremium',
-  footer: '╚═\n',
+  footer: '╚═〘 SHIRAORIBOT 〙\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -281,7 +281,7 @@ Tanggal Islam: *%dateIslamic*
   // ╠➥ ${_p + command} info
   // ╠➥ ${_p + command} tanpa kategori
   // ╠➥ ${_p + command} owner
-  // ╚═ 〘SHIRAORIBOT 〙  
+  // ╚═ 〘 SHIRAORIBOT 〙  
   //     `.trim()
 
   try {

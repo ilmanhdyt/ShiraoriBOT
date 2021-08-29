@@ -1,7 +1,7 @@
 let axios = require("axios");
 let handler = async(m, { conn, text }) => {
  try {
-    if (!text) return conn.reply(m.chat, 'Silahkan masukan kata kunci', m)
+    if (!text) return conn.reply(m.chat, 'Silahkan masukan judul', m)
    await m.reply(global.wait)
    axios.get(`https://mhankbarbar.herokuapp.com/api/dewabatch?q=${text}`).then((res) => {
     let hasil = `${res.data.result.sinopsis}\n\n*ShiraoriBOT*`
@@ -11,7 +11,7 @@ conn.reply(m.chat, hasil, m)
   	m.reply('```Error```')
   }
 }
-handler.help = ['dewabatch']
+handler.help = ['dewabatch' : `(eror)',]
 handler.tags = ['anime']
 handler.command = /^(dewabatch)$/i
 handler.owner = false

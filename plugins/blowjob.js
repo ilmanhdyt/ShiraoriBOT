@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
   
 }
 handler.help = ['cum']
-handler.tags = ['NSFW']
+handler.tags = ['nsfw']
 handler.command = /^(cum)$/i
 
 handler.limit = true

@@ -4,7 +4,7 @@ let gis = promisify(_gis)
 let fetch = require('node-fetch')
 
 let handler = async (m, { conn, text, command, usedPrefix }) => {
-  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} pisang`
+  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} Elaina`
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) throw '404 Not Found'
@@ -13,6 +13,9 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
 handler.help = ['gimage <pencarian>', 'image <pencarian>']
 handler.tags = ['internet']
 handler.command = /^(g?image)$/i
+
+handler.limit = true
+handler.register = true
 
 module.exports = handler
 

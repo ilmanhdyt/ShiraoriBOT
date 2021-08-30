@@ -126,7 +126,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (!args[0]) {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
-        "title": "Daftar Menu",
+        "title": " Berikut Daftar Menu Yang Tersedia",
         "description": "© shiraori",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",
@@ -141,6 +141,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 "title": "Game",
                 "description": "",
                 "rowId": ".? game"
+              }, {
+                "title": "Rpg",
+                "description": "",
+                "rowld": ".? rpg"
 
               }, {
                 "title": "XP",
@@ -251,6 +255,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   // ┌〔 DAFTAR MENU 〕
   // ├ ${_p + command} all
   // ├ ${_p + command} game
+  // ├ ${_p + command} rpg
   // ├ ${_p + command} xp
   // ├ ${_p + command} stiker
   // ├ ${_p + command} kerang
@@ -377,7 +382,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2Button(m.chat, text.trim(), 'shiraoribot by ilman', 'PEMILIK BOT', '.owner', 'DONASI', '.donasi', { quoted: m })
+    await conn.send2Button(m.chat, text.trim(), 'shiraoribot by ilman', 'PEMILIK SHIRAORI', '.owner', 'DONASI', '.donasi', { quoted: m })
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

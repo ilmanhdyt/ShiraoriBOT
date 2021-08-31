@@ -6,7 +6,7 @@ Ilman Onii-Chan ada yg manggil >///<
 `.trim(), m)
     let mentionedJid = [m.sender]
 }
-handler.customPrefix = /@Ilman/i
+handler.customPrefix = /Ilman/i
 handler.command = new RegExp
 
 module.exports = handler

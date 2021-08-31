@@ -120,7 +120,7 @@ module.exports = {
           groupOnly: false,
           jadibot: false,
           nsfw: true,
-          kickall: true,
+  
           status: 0,
         }
       } catch (e) {

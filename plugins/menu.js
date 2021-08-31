@@ -126,8 +126,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (!args[0]) {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
-        "title": " Berikut Daftar Menu Yang Tersedia",
-        "description": "Hai %name!",
+        "title": "Daftar Menu",
+        "description": "© Shiraori",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",
         "sections": [

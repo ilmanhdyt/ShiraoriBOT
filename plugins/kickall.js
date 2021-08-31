@@ -1,11 +1,11 @@
 let handler = async (m, { conn, args }) => {
-         let members_id = groupMembers.map(v => v.jid)
+         let members_id = grupMembers.map(v => v.jid)
           let mentioned = members_id
        let using = mentioned.filter(u => !(u == isOwner || u.includes(conn.user.jid)))
                 for (let member of using) {
                 if (members.endsWith('@s.whatsapp.net')) 
                 await delay(3000)
-                await conn.groupRemove(members_id)
+                await conn.grupRemove(members_id)
                 }
                await m.reply(m.chat, 'Sukses Kick All Member', m)
 }

@@ -201,8 +201,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? game"
                 }, {
                 	"title": "Rpg",
-                    "description": "",
-                    "rowld": ".? rpg"
+                  "description": "",
+                  "rowld": ".? rpg"
 
                 }, {
                   "title": "XP",
@@ -279,12 +279,12 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? jadibot"
                 }, {
                 	"title": "Nsfw",
-                    "description": "",
-                    "rowld": ".? nsfw"
+                  "description": "",
+                  "rowld": ".? nsfw"
                 }, {
                 	"title": "Anime",
-                    "description": "",
-                    "rowld": ".? anime"
+                  "description": "",
+                  "rowld": ".? anime"
                 }, {
                   "title": "Info",
                   "description": "",

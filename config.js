@@ -1,5 +1,5 @@
 let fs = require('fs')
-global.owner = JSON.parse(fs.readFileSync('./src/owner.json')) //GANTI YG mods aja
+global.owner = JSON.parse(fs.readFileSync('./src/owner.json')) //jangan diapa apain ntar error
 global.mods = ['6285240265524'] // letakkan nomor kalian disini
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
@@ -21,7 +21,7 @@ global.APIKeys = { // APIKey nya disini
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
-  'https://api.xteam.xyz': 'FuzBot1',
+  'https://api.xteam.xyz': 'APIKEYMU',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
 }

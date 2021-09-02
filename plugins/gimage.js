@@ -16,7 +16,7 @@ handler.command = /^(g?image)$/i
 
 handler.limit = true
 handler.register = true
-handler.premium = true
+handler.exp = 100
 
 module.exports = handler
 

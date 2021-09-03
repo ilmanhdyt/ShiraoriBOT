@@ -13,4 +13,20 @@ if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan d
             client.reply(from, 'Succes kick all member', id)
             break
 }
-handler.help
+handler.help = ['kickall']
+handler.tags = ['group']
+handler.command = /^(kickall)$/i
+
+handler.owner = true
+handler.mods = false
+handler.premium = false
+handler.group = true
+handler.rowner = true
+handler.private = false
+
+handler.admin = true
+handlet.botAdmin = true
+
+handler.fail = null
+
+module.exports = handler

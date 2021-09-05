@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">SHIRAORI BOT</h1>
 
-## ERROR, PROSES PERBAIKAN
+## MASIH ADA FITUR YG MASIH ERROR,KUUSAHAIN SECEPATNYA NGE FIX
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HidayatilmanShiraoriBOT)
 

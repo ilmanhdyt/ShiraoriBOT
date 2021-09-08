@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">SHIRAORI BOT</h1>
 
-## MASIH ADA FITUR YG MASIH ERROR,KUUSAHAIN SECEPATNYA NGE FIX
+## YG ERROR BAIKIN SENDIRI 😂
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HidayatilmanShiraoriBOT)
 

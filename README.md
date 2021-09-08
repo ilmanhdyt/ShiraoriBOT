@@ -132,4 +132,6 @@ conn.logger.level = 'debug'
 * [`ilman`](https://github.com/Hidayatilman) 
 * [`botstylee`](https://github.com/botstylee)
 
+### Donated
 
+[`Saweria`](https://saweria.co/manilman)

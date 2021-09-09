@@ -1,9 +1,9 @@
 let handler = async (m, { conn }) => {
   conn.sendFile(m.chat, 'https://api.xteam.xyz/randomimage/zettairyouiki?APIKEY=FuzBot1', '', '© Shiraori', m)
 }
-handler.help = ['zettairyouiki']
+handler.help = ['zettai']
 handler.tags = ['premium']
-handler.command = /^(zettairyouiki)$/i
+handler.command = /^(zettai)$/i
 
 handler.premium = true
 

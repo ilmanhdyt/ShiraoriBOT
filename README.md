@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">SHIRAORI BOT</h1>
 
-## error fix it yourself
+## error fix it yourself 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HidayatilmanShiraoriBOT)
 

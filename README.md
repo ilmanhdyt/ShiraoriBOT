@@ -28,11 +28,11 @@ npm index
 
 ## untuk pengguna termux
 
-> git clone https://github.com/Hidayatilman/ShiraoriBOT --branch termux
-> cd ShiraoriBOT
-> npm i
-> npm update
-> node .
+* git clone https://github.com/Hidayatilman/ShiraoriBOT --branch termux
+* cd ShiraoriBOT
+* npm i
+* npm update
+* node .
 
 ## UNTUK PENGGUNA HEROKU
 

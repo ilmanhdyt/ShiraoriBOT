@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">SHIRAORI BOT</h1>
 
-## YG ERROR BAIKIN SENDIRI 😂
+## the error fixes the spoon
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HidayatilmanShiraoriBOT)
 

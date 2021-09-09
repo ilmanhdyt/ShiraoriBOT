@@ -32,7 +32,7 @@ npm index
 * pkg install nodejs -y
 * pkg install ffmpeg -y
 * pkg install imagemagick -y
-* git clone https://github.com/Hidayatilman/ShiraoriBOT
+* git clone https://github.com/Hidayatilman/ShiraoriBOT --branch termux
 * cd ShiraoriBOT
 * npm i
 * npm update

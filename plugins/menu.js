@@ -249,7 +249,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "quotedMessage": m.message
         }
       }
-    }, {}), { waitForAck: true })
+    }, {}), { waitForAck: true }) // gunakan ini jika kalian memakai wa busines
     throw 0
   }
   //   throw `

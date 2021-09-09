@@ -26,6 +26,10 @@ npm index
 
 ---------
 
+## untuk pengguna termux
+* pkg update && pkg upgrade
+* pkg install git -y
+
 ## UNTUK PENGGUNA HEROKU
 
 ### Instal Buildpack

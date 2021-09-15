@@ -27,7 +27,7 @@ handler.help = ['math <mode>']
 handler.tags = ['game']
 handler.command = /^math/i
 
-handler.limit = 300
+handler.limit = 0
 
 module.exports = handler
 

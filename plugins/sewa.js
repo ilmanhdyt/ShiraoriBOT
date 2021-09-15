@@ -1,20 +1,12 @@
-const sewabot = () => { 
-	return `
-*OPEN JASA SEWA BOT*
+let handler = async (m, { conn, text }) => {
+    let name = m.fromMe ? conn.user : conn.contacts[m.sender]
 
-Sewa Seminggu / Rp 10,000
-Sewa Sebulan / Rp 20,000
-Member Premium / Rp 5,000
-
-*Payment :*
-_Pulsa Dan Dana_
-
-Minat?Chat
-wa.me/6281351047727
-`
+  conn.reply(m.chat, `
+E
+`.trim(), m)
+    let mentionedJid = [m.sender]
 }
-handler.help = ['sewa']
-handler.tags = ['info']
-handler.command = /^(sewa)$/i
+handler.customPrefix = /.sewa/i
+handler.command = new RegExp
 
 module.exports = handler

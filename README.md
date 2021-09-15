@@ -96,7 +96,7 @@ Jika qr unicode kecil tidak mendukung
 
 Mengaktifkan plugin terbatas (yang dapat menyebabkan nomor Anda **diblokir** jika digunakan terlalu sering)
 
-* Administrasi Grup `add, kick, promote, demote, kickall`
+* Administrasi Grup `add, kick, promote, demote`
 
 ### `--img`
 

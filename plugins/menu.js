@@ -281,6 +281,30 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   // ├ ${_p + command} owner
   // └────  
   //     `.trim()
+  
+  const freply = {key:{ fromMe:false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: {
+
+					"productMessage": {
+						"product": {
+							"productImage": {
+								"url": "https://mmg.whatsapp.net/d/f/Am1sSqpVypFpsQawFUFkm4HgkPRqEx8rt32niyBmL4Wa.enc",
+								"mimetype": "image/jpeg",
+								"fileSha256": "KbJC20DoVEdDw+8WF1EqwtPsdPUTF8/xQbhg+65P3q4=",
+								"fileLength": "43344",
+								"height": 1080,
+								"width": 1080,
+								"mediaKey": "cX+6c20dws6B++0slmMNXcCk7omK+zvheoN6087j9nl=",
+								"fileEncSha256": "BGO1C/OttoScb1UxDrGlwsI9eImocg1zwbLgYKmecXs=",
+								"directPath": "/v/t62.7118-24/20036572_1210576852672540_4032358369544328852_n.enc?oh=d0e477e1bf0a01bfcf328776ab50ccee&oe=6043238E",
+								"mediaKeyTimestamp": "1612168223"
+		},
+							"productId": "3872465552870232",
+							"title": `${ucapanWaktu} ${conn.getName(m.sender)}`,
+							"currencyCode": "USD",
+							"priceAmount1000": "99",
+							"productImageCount": 1
+						},
+						"businessOwnerJid": "0@s.whatsapp.net"}}}
 
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))

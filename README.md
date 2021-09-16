@@ -24,7 +24,7 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-
+git clone https://github.com/ariffb25/stikerinbot --branch termux
 npm install
 npm update
 npm index

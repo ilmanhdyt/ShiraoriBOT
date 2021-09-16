@@ -32,13 +32,14 @@ npm index
 
 ---------
 
-## untuk pengguna termux
-
-* git clone https://github.com/Hidayatilman/ShiraoriBOT
-* cd ShiraoriBOT
-* npm i
-* npm update
-* node .
+## UNTUK PENGGUNA TERMUX
+```bash
+git clone https://github.com/Hidayatilman/ShiraoriBOT --branch termux
+cd ShiraoriBOT
+npm i
+npm update
+node .
+```
 
 ## UNTUK PENGGUNA HEROKU
 

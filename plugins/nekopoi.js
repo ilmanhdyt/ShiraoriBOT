@@ -64,8 +64,15 @@ function getVideo(url) {
                 })
         })
 }
-handler.help = ['nekopoi' (judul)]
+handler.help = ['nekopoi <pencarian>']
+handler.tags = ['nsfw']
+handler.command = /^(nekopoi)$/i
 
+handler.group = true
+handler.limit = true
+handler.exp = true
+handler.private = false
+handler.premium = false
 
 module.exports = handler
     getLatest,

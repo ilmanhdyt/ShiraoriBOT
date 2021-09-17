@@ -12,7 +12,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hidayatilman/ShiraoriBOT)
 
-[![Grup WhatsApp](https://img.shields.io/badge/Stikeringroup-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GVwpKf83s42D1CnIfDW19G)
+[![Grup WhatsApp](https://img.shields.io/badge/GroupWhatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GVwpKf83s42D1CnIfDW19G)
 
 [![My Bot](https://img.shields.io/badge/MyBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](http://wa.me/48459069720?text=.menu)
 

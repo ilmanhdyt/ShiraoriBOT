@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix }) => {
         conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebaklirik[id][0])
         throw false
     }
-    let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebaklirik.json')).json()
+    let src = await (await fetch('https://raw.githubusercontent.com/Hidayatilman/database/master/games/tebaklirik.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
 ${json.soal}
@@ -17,10 +17,10 @@ Ketik ${usedPrefix}teli untuk bantuan
 Bonus: ${poin} XP
 `.trim()
     conn.tebaklirik[id] = [
-        await conn.sendButton(m.chat, caption, '© stikerin', 'Bantuan', `.teli`, m),
+        await conn.sendButton(m.chat, caption, '© SHIRAORI', 'Bantuan', `.teli`, m),
         json, poin,
         setTimeout(async () => {
-            if (conn.tebaklirik[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© stikerin', 'Tebak Lirik', `.tebaklirik`, conn.tebaklirik[id][0])
+            if (conn.tebaklirik[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© SHIRAORI', 'Tebak Lirik', `.tebaklirik`, conn.tebaklirik[id][0])
             delete conn.tebaklirik[id]
         }, timeout)
     ]

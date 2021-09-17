@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakgambar[id][0])
     throw false
   }
-  let src = await (await fetch('')).json()
+  let src = await (await fetch('https://raw.githubusercontent.com/Hidayatilman/database/master/games/family100.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
   let caption = `
   ${json.deskripsi}

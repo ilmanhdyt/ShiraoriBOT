@@ -9,7 +9,7 @@ Biasakan Jangan Toxic ya! :)
 `.trim(), m)
     let mentionedJid = [m.sender]
 }
-handler.customPrefix = /anjing|memek|kontol|goblok|goblog/i
+handler.customPrefix = /anjing|memek|kontol|goblok|goblog|asw|asu|ajg|anjg|anj/i
 handler.command = new RegExp
 
 module.exports = handler

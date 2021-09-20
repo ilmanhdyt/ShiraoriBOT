@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
  
-  conn.sendFile(m.chat, 'https://hardianto-chan.herokuapp.com/api/anime/loli?apikey=hardianto', '', 'lolinya kak', m)
-  await conn.sendButtonImg(m.chat, await conn.getFile(url).data, 'Klik Disini', '© SHIRAORI', 'Next', '.loli', m, { optionnya })
+  conn.sendFile(m.chat, 'https://hardianto-chan.herokuapp.com/api/anime/loli?apikey=hardianto', '', 'lolicon ajg', m)
+  await conn.sendButtonImg(m.chat, await (await fetch(json.img)).buffer(), Klik Disni, '© SHIRAORI', 'Next', '.loli', m)
 }
 handler.help = ['loli']
 handler.tags = ['anime']

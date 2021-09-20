@@ -5,6 +5,7 @@ let handler = async (m, { conn }) => {
   let json = await res.json()
   if (!json.url) throw 'Eror!'
   conn.sendFile(m.chat, json.url, '', '© shiraori', m, 0, { thumbnail: await (await fetch(json.url)).buffer() })
+  await conn.sendButtonImg(m.chat, await (await fetch(json.img)).buffer(), Klik Disni, '© SHIRAORI', 'Next', '.megumin', m)
 }
 handler.help = ['megumin']
 handler.tags = ['anime']

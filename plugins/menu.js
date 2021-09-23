@@ -15,7 +15,7 @@ ${'```%npmdesc```'}
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   
-  await conn.fakeReply(m.chat, '*[❗] Ｌｏｄｉｎｇ．．．*', '0@s.whatsapp.net', `*Baca Rules Dulu Sebelum Make Bot!*\n\n*Ketik .rules*`)
+  await conn.fakeReply(m.chat, '*[❗] Loading*', '0@s.whatsapp.net', `*.sc untuk melihat Source Code*`)
     let RendyGans = 'https://i.ibb.co/wpWpVNd/avatar-contact.png'
   let pp = './src/menu.png'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -131,8 +131,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (!args[0]) {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
-        "title": "Hai Tanggal: *%week %weton, %date*",
-        "description": "Daftar Menu Yang Tersedia",
+        "title": "Hai",
+        "description": "*Daftar Menu Yang Tersedia*",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",
         "sections": [

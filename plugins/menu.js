@@ -3,7 +3,7 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 const defaultMenu = {
   before: `
-  <p align="center">
+  
 %readmore`.trimStart(),
   header: '╔══✪〔 %category 〕✪══',
   body: '╠➥%cmd %islimit %isPremium',

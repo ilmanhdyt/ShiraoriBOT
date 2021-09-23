@@ -14,6 +14,11 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
+  let old = performance.now()
+  await conn.fakeReply(m.chat, '*[❗] Ｌｏｄｉｎｇ．．．*', '0@s.whatsapp.net', `*Baca Rules Dulu Sebelum Make Bot!*\n\n*Ketik .rules*`)
+    let RendyGans = 'https://i.ibb.co/wpWpVNd/avatar-contact.png'
+  let pp = './src/menu.png'
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let tags
   let teks = `${args[0]}`.toLowerCase()
   if (teks == 'all') tags = {

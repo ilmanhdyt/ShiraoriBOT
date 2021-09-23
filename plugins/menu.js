@@ -3,7 +3,7 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 const defaultMenu = {
   before: `
-  <img src="https://media.giphy.com/media/Xr2km20NNBNqSN6iwu/giphy.gif"
+  
 %readmore`.trimStart(),
   header: '╔══✪〔 %category 〕✪══',
   body: '╠➥%cmd %islimit %isPremium',

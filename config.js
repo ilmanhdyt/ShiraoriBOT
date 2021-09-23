@@ -11,7 +11,7 @@ global.APIs = { // API Prefix
   nrtm: 'https://nurutomo.herokuapp.com',
   pencarikode: 'https://pencarikode.xyz',
   xteam: 'https://api.xteam.xyz',
-  l0lhuman: 'https://api.lolhuman.xyz',
+  : 'https://api.lolhuman.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
   zekais: 'http://zekais-api.herokuapp.com',
   zeks: 'https://api.zeks.xyz',

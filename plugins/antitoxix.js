@@ -14,7 +14,7 @@ let handler = async (m, { conn, participants, groupMetadata, text }) => {
 Pengirim : ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}
 Pesan : ${m.text}
 Biasakan Jangan Toxic ya! :)
-${listAdmin}
+Jangan Diulangi Yaa!
 `.trim(), m)
     let mentionedJid = [m.sender]
 }

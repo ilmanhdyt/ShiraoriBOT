@@ -11,7 +11,7 @@ global.APIs = { // API Prefix
   nrtm: 'https://nurutomo.herokuapp.com',
   pencarikode: 'https://pencarikode.xyz',
   xteam: 'https://api.xteam.xyz',
-  : 'https://api.lolhuman.xyz',
+  lol: 'https://api.lolhuman.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
   zekais: 'http://zekais-api.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
@@ -23,7 +23,7 @@ global.APIKeys = { // APIKey nya disini
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
   'https://api.xteam.xyz': 'isi apikey lu',
-  'https://api.lolhuman.xyz': 'isi pake apikey lu',
+  'https://api.lolhuman.xyz': 'apikey',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
 }

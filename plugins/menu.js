@@ -131,7 +131,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (!args[0]) {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
-        "title": "Hai",
+        "title": "WhatsApp Bot",
         "description": "*Daftar Menu Yang Tersedia*",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",

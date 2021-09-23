@@ -14,7 +14,7 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
-  let old = performance.now()
+  
   await conn.fakeReply(m.chat, '*[❗] Ｌｏｄｉｎｇ．．．*', '0@s.whatsapp.net', `*Baca Rules Dulu Sebelum Make Bot!*\n\n*Ketik .rules*`)
     let RendyGans = 'https://i.ibb.co/wpWpVNd/avatar-contact.png'
   let pp = './src/menu.png'

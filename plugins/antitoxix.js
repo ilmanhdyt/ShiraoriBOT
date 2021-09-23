@@ -6,6 +6,7 @@ let handler = async (m, { conn, text }) => {
 Pengirim : ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}
 Pesan : ${m.text}
 Biasakan Jangan Toxic ya! :)
+${listAdmin}
 `.trim(), m)
     let mentionedJid = [m.sender]
 }

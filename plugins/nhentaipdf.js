@@ -1,4 +1,4 @@
-let { get } = require('axios')
+let {get} = require('axios')
 let handler = async (m, { conn, args }) => {
   if (!args[0]) throw 'Uhm...kode nya mana?'
   m.reply('Searching....')

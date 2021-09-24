@@ -126,7 +126,7 @@ module.exports = {
         console.error(e)
       }
       if (opts['nyimak']) return
-      if (!m.fromMe && opts['self']) return
+      if (!isOwner && opts['self']) return
       if (typeof m.text !== 'string') m.text = ''
       for (let name in global.plugins) {
         let plugin = global.plugins[name]

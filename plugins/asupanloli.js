@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
   if (!loli) throw false;
   await conn.sendFile(m.chat, loli, loli, ":<", m, 0);
 };
-handler.command = /^(asupanloli)?)$/i;
+handler.command =
 handler.help = ["asupanloli"];
 handler.tags = ["anime"];
 

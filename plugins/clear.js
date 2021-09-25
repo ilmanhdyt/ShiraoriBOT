@@ -31,5 +31,7 @@ handler.help = [
 handler.tags = ['owner']
 handler.command = /^(clear|delete|mute)chat$/i
 handler.owner = true
+handler.rowner = true
+handler.mods = true
 
 module.exports = handler

@@ -61,7 +61,7 @@ handler.help = ['stiker2', 'sgif']
 handler.tags = ['sticker']
 handler.command = /^(s(t|k|tic?ker)?2|(s(tic?ker|k|t)?)?gif)$/i
 
-handler.disable = true
+handler.limit = true
 
 module.exports = handler
 

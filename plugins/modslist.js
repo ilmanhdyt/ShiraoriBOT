@@ -4,7 +4,7 @@ let handler = async (m, { conn, isOwner }) => {
   conn.reply(m.chat, `┌〔 Daftar Moderator 〕` + `\n` + mods.map(v => isOwner ? '├ @' + v.replace(/@.+/, '') : '│ ' + conn.getName(v)).join`\n` + '\n└────', m, { contextInfo: { mentionedJid: mods } })
 }
 handler.help = ['modslist']
-handler.tags = ['owner']
-handler.command = /^(listmods|modslist)$/i
+handler.tags = ['info']
+handler.command = /^(mods|moderator)$/i
 
 module.exports = handler

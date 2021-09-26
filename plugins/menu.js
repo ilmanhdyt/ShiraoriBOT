@@ -148,14 +148,14 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 "rowId": ".? game"
                 
               }, {
-                "title": "Mods",
-                "description": "",
-                "rowld": ".? mods"
-
-              }, {
                 "title": "XP",
                 "description": "",
-                "rowId": ".? xp"
+                "rowld": ".? xp"
+
+              }, {
+                "title": "Mods",
+                "description": "",
+                "rowId": ".? mods"
 
               }, {
                 "title": "Stiker",

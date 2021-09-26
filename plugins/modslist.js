@@ -5,6 +5,6 @@ let handler = async (m, { conn, isOwner }) => {
 }
 handler.help = ['moderator']
 handler.tags = ['info']
-handler.command = /^(moderator)$/i
+handler.command = /^moderator$/i
 
 module.exports = handler

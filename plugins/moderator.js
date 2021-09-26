@@ -3,6 +3,6 @@ let mods = global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').fi
 }
 handler.help = ['moderator', 'mods']
 handler.tags = ['owner']
-handler.command = /^(moderator|mods)$/i
+handler.command = 
 
 module.exports = handler

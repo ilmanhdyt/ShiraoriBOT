@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'all') tags = {
     'main': 'Utama',
     'game': 'Game',
-    'rpg': 'Rpg',
+    'moderator': 'Moderator',
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
@@ -53,7 +53,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'game': 'Game'
   }
   if (teks == 'rpg') tags = {
-    'rpg': `Rpg : (error)`
+    'moderator': 'Moderator'
   }
   if (teks == 'xp') tags = {
     'xp': 'Exp & Limit'
@@ -132,7 +132,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
         "title": "WhatsApp Bot",
-        "description": "*Daftar Menu Yang Tersedia*",
+        "description": "👇👇👇👇👇",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",
         "sections": [
@@ -148,9 +148,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 "rowId": ".? game"
                 
               }, {
-                "title": "Rpg",
+                "title": "Moderator",
                 "description": "",
-                "rowld": ".? rpg"
+                "rowld": ".? moderator"
 
               }, {
                 "title": "XP",

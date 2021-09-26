@@ -10,9 +10,9 @@
 * before you clone first delete the file [session.data.json](https://github.com/Hidayatilman/ShiraoriBOT/blob/main/session.data.json)
 
 
-## error fix it yourself 
+## ERROR FIX IT YOURSELF
 
-## YANG ERROR BAIKIN SENDIRI
+## UPDATE!!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hidayatilman/ShiraoriBOT)
 

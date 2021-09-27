@@ -15,7 +15,7 @@ ${'```%npmdesc```'}
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   
-  await conn.fakeReply(m.chat, '*[❗] Loading*', '0@s.whatsapp.net', `*.sc untuk melihat Source Code*`)
+  await conn.fakeReply(m.chat, '*[❗] Loading*', '0@s.whatsapp.net', `*.kickall untuk rumbling gc*`)
     let RendyGans = 'https://i.ibb.co/wpWpVNd/avatar-contact.png'
   let pp = './src/menu.png'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -384,7 +384,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, text.trim(), 'SHIRAORI BOT by ilman', 'PEMILIK SHIRAORI', '.owner', 'DONASI', '.donasi', { quoted: m })
+    await conn.send2Button(m.chat, text.trim(), 'SHIRAORI BOT by ilman', 'PEMILIK SHIRAORI', '.owner', 'DONASI', '.donasi', { quoted: m })
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

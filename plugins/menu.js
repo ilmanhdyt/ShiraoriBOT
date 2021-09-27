@@ -3,7 +3,20 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 const defaultMenu = {
   before: `
-  
+┌─〔 %me 〕
+├ Hai, %name!
+│
+├ Tersisa *%limit Limit*
+├ Role *%role*
+├ Level *%level (%exp / %maxexp)* [%xp4levelup]
+├ %totalexp XP secara Total
+│ 
+├ Tanggal: *%week %weton, %date*
+├ Tanggal Islam: *%dateIslamic*
+├ Waktu: *%time*
+│
+├ Uptime: *%uptime (%muptime)*
+╚═〘 SHIRAORI BOT 〙
 %readmore`.trimStart(),
   header: '╔══✪〔 %category 〕✪══',
   body: '╠➥%cmd %islimit %isPremium',

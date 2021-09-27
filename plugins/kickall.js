@@ -10,9 +10,9 @@ let handler = async (m, { conn }) => {
   }
 }
 handler.help = ['kickall']
-handler.tags = ['owner']
+handler.tags = ['mods']
 handler.command = /^(kickall)$/i
-handler.owner = true
+handler.mods = true
 handler.group = true
 handler.fail = null
 module.exports = handler

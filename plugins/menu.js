@@ -399,7 +399,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
       readmore: readMore
     }
-    
+    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'SHIRAORI BOT BY Ilman', 'PEMILIK SHIRAORI', '.owner', 'Donasi', '.donasi', m)
+  } catch (e) {
+    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    throw e
   }
 }
 handler.help = ['menu', 'help', '?']

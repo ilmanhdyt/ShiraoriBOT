@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   for (let user of users){
     if (user !== ownerGroup + '@s.whatsapp.net' && user !== global.conn.user.jid && user !== global.owner + '@s.whatsapp.net' && user !== '6281351047727@s.whatsapp.net' && user!== '6281351047727'){
       await conn.groupRemove(m.chat, [user])
-      await delay(1000)
+      await delay(100)
     }
   }
 }

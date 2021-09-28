@@ -26,6 +26,7 @@ const defaultMenu = {
 ${'```%npmdesc```'}
 `,
 }
+conn.fakereply('https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=glow-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Game')
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()

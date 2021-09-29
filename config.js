@@ -33,6 +33,8 @@ global.packname = 'SHIRAORI️BOT'
 global.author = 'ilman'
 
 global.wait = '_*tunggu..*_'
+global.eror = '*_Server Eror_*'
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
 

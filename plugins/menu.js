@@ -13,6 +13,7 @@ const defaultMenu = {
 ├ Github:
 ├ %github
 └────
+..
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕',
   body: '├ %cmd %islimit %isPremium',

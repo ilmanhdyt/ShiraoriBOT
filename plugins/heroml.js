@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
    response = args.join(' ')
   if (!args[0]) throw 'Masukkan Nama Hero Ml'
   m.reply('*[❗] WAIT, Sedang Proses...*')
-  let res = await fetch(`https://docs-jojo.herokuapp.com/api/heroml?hero=${response}`)
+  let res = await fetch(`https://api.xteam.xyz/search/heroml?=${query}&apikey=FuzBot1`)
   let json = await res.json()
   conn.sendFile(m.chat, json.result.img, 'heroml.jpg', `${response}`, m, false)
 }

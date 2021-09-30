@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['heroml <pencarian>']
 handler.tags = ['game']
-handler.command = /^heroml$/i
+handler.command = /^(heroml)$/i
 
 handler.limit = true
 handler.group = true

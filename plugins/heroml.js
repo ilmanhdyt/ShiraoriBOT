@@ -10,9 +10,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let pint = json.data[Math.floor(Math.random() * json.data.length)];
   conn.sendFile(m.chat, pint, '', '© shiraori', m, 0, { thumbnail: await (await fetch(pint)).buffer() })
 }
-handler.help = ['heroml  <pencarian>']
+handler.help = ['heroml <pencarian>']
 handler.tags = ['game']
-handler.command = /^(heroml)?)$/i
+handler.command = /^heroml$/i
 
 handler.limit = true
 handler.group = true

@@ -5,7 +5,7 @@ let handler = async (m, { conn, args }) => {
   m.reply('*[❗] WAIT, Sedang Proses...*')
   let res = await fetch(`https://api.xteam.xyz/search/heroml?=${response}&apikey=FuzBot1`)
   let json = await res.json()
-  conn.sendFile(m.chat, json.result.img, 'heroml.jpg', `${response}`, m, false)
+  conn.sendFile(m.chat, json.result.image, 'heroml.jpg', `${response}`, m, false)
 }
 handler.help = ['heroml'].map(v => v + ' <nama>')
 handler.tags = ['game']

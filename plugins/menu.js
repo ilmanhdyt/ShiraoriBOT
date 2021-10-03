@@ -99,8 +99,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'fun') tags = {
     'fun': 'Fun'
   }
-  if (teks == 'jadian') tags = {
-    'jadian': 'Jadian'
+  if (teks == '') tags = {
+    '': ''
   }
   if (teks == 'database') tags = {
     'database': 'Database'
@@ -118,11 +118,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'jadibot') tags = {
     'jadibot': 'Jadi Bot'
   }
-  if (teks == 'nsfw') tags = {
-    'nsfw': 'Nsfw'
+  if (teks == '') tags = {
+    '': ''
   }
-  if (teks == 'anime') tags = {
-    'anime': 'Anime'
+  if (teks == '') tags = {
+    '': ''
   }
   if (teks == 'info') tags = {
     'info': 'Info'
@@ -130,8 +130,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'tanpakategori') tags = {
     '': 'Tanpa Kategori'
   }
-  if (teks == 'mods') tags = {
-    'mods': 'Mods',
+  if (teks == '') tags = {
+    '': '',
   }
   if (teks == 'owner') tags = {
     'owner': 'Owner',

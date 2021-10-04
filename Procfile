@@ -1,1 +1,1 @@
-worker: node . --serve
+worker: node . --server

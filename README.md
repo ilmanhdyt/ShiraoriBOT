@@ -39,7 +39,7 @@ npm index
 
 ## UNTUK PENGGUNA TERMUX
 ```bash
-git clone https://github.com/Hidayatilman/ShiraoriBOT --branch termux
+git clone https://github.com/Hidayatilman/ShiraoriBOT
 cd ShiraoriBOT
 npm i
 npm update

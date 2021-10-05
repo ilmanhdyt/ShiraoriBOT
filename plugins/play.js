@@ -36,7 +36,7 @@ handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^play$/i
 
-handler.premium = true
+handler.limit = 2
 handler.exp = 0
 
 module.exports = handler

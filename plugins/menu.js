@@ -445,7 +445,7 @@ if (teks == '404') {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2Button(m.chat, text.trim(), 'Ilman', 'MODERATOR', '.moderator', 'SNK', '.snk', { quoted: m })
+    await conn.send2Button(m.chat, text.trim(), 'Ilman', 'MODERATOR', '.moderator', 'TURU', '.waifu', { quoted: m })
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

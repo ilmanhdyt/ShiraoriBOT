@@ -7,5 +7,7 @@ handler.command = /^(ahegao)$/i
 
 handler.limit = true
 handler.group = true
+handler.nsfw = true
+handler.register = false
 
 module.exports = handler

@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix: _p, text }) => {
 	if (!text) throw `Masukan kodenya\nContoh : ${_p}nhentai 375518`
 	axios.get(`https://kelliotnhentai.herokuapp.com/?id=${text}`).then(res => {
     	if(res.data.status) throw res.data.msg
-    	conn.sendMessage(m.chat, res.data, MessageType.document, { mimetype: Mimetype.pdf, filename: `nhentai.pdf` })
+    	conn.sendFile(m.chat, res.data, MessageType.document, { mimetype: Mimetype.pdf, filename: `nhentai.pdf` })
 	})
 }
 handler.help = ['nhentai']

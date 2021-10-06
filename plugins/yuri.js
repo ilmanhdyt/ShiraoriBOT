@@ -8,7 +8,7 @@ handler.command = /^(yuri)$/i
 
 handler.limit = true
 handler.group = true
-
+handler.nsfw = true
 
 module.exports = handler
 

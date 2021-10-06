@@ -9,5 +9,6 @@ handler.command = /^(cum)$/i
 
 handler.limit = true
 handler.group = true
+handler.nswf = true
 
 module.exports = handler

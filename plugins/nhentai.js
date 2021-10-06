@@ -2,7 +2,7 @@ const { WAConnection: _WAConnection, MessageType, Mimetype } = require('@adiwajs
 let axios = require('axios');
 let handler = async (m, { conn, usedPrefix: _p, text }) => {
 	if (!text) throw `Masukan kodenya\nContoh : ${_p}nhentai 375518`
-	axios.get(`https://kelliotnhentai.herokuapp.com/?id=${text}`).then(res => {
+	axios.get(`
     	if(res.data.status) throw res.data.msg
     	conn.sendFile(m.chat, res.data, MessageType.document, { mimetype: Mimetype.pdf, filename: `nhentai.pdf` })
 	})

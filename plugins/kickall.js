@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
   }
 }
 handler.help = ['kickall']
-handler.tags = ['mods']
+handler.tags = ['AdminBan']
 handler.command = /^(kickall)$/i
 handler.mods = true
 handler.group = true

@@ -7,5 +7,6 @@ handler.command = /^(loli18)$/i
 
 handler.limit = true
 handler.group = true
+handler.nsfw = true
 
 module.exports = handler

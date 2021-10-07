@@ -83,7 +83,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'anonymous': 'Anonymous Chat'
   }
   if (teks == 'mods') tags = {
-    'shiraori': 'Admin Ban'
+    'mods': 'Admin Ban'
   }
   if (teks == 'nulis') tags = {
     'nulis': 'MagerNulis & Logo'
@@ -244,7 +244,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 }, {
                   "title": "Admin Ban",
                   "description": "",
-                  "rowId": ".? shiraori"
+                  "rowId": ".? mods"
                 }, {
                   "title": "Nulis & Logo",
                   "description": "",

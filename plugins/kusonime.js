@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async function (m, { text, isPrems, isOwner }) {
-	let user = global.DATABASE._data.users[m.sender]
+	let user = global.db.data.users[m.sender]
     if (!text) throw '_yg dicari apa_'
     await m.reply(global.wait)
   let res = await fetch('https://ardhixsquerpants.herokuapp.com/api/kuso?q=' + encodeURIComponent(text))

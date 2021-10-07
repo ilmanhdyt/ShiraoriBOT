@@ -19,7 +19,7 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anime', 'anonymous', 'mods', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'nsfw', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anime', 'anonymous', 'AdminBan', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'nsfw', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
@@ -34,7 +34,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'internet': 'Internet',
     'anime': 'Anime',
     'anonymous': 'Anonymous Chat',
-    'mods': 'Admin Ban',
+    'AdminBan': 'Admin Ban',
     'nulis': 'MagerNulis & Logo',
     'downloader': 'Downloader',
     'tools': 'Tools',
@@ -82,8 +82,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'anonymous') tags = {
     'anonymous': 'Anonymous Chat'
   }
-  if (teks == 'mods') tags = {
-    'mods': 'Admin Ban'
+  if (teks == 'AdminBan') tags = {
+    'AdminBan': 'Admin Ban'
   }
   if (teks == 'nulis') tags = {
     'nulis': 'MagerNulis & Logo'
@@ -244,7 +244,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 }, {
                   "title": "Admin Ban",
                   "description": "",
-                  "rowId": ".? mods"
+                  "rowId": ".? AdminBan"
                 }, {
                   "title": "Nulis & Logo",
                   "description": "",

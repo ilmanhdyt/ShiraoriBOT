@@ -43,6 +43,8 @@ git clone https://github.com/Hidayatilman/ShiraoriBOT
 cd ShiraoriBOT
 npm i
 npm update
+pkg install bash
+bash install.sh
 node .
 ```
 

@@ -82,7 +82,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'anonymous') tags = {
     'anonymous': 'Anonymous Chat'
   }
-  if (teks == 'shiraori') tags = {
+  if (teks == 'mods') tags = {
     'shiraori': 'Admin Ban'
   }
   if (teks == 'nulis') tags = {
@@ -117,7 +117,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'info': 'Info'
   }
   if (teks == 'nsfw') tags = {
-    'info': 'Nsfw'
+    'nsfw': 'Nsfw'
   }
   if (teks == 'tanpakategori') tags = {
     '': 'Tanpa Kategori'

@@ -5,19 +5,19 @@ let handler = async (m, { conn, text }) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
     else who = text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.chat
-    if (json.includes(who)) throw `${conn.getName(who)} belum moderator!`
+    if (json.includes(who)) throw `${conn.getName(who)} dia bukan admin shiraori!`
     let index = json.findIndex(v => (v.replace(/[^0-9]/g, '') + '@s.whatsapp.net') === (who.replace(/[^0-9]/g, '') + '@s.whatsapp.net'))
     json.splice(index, 1)
     fs.writeFileSync('./src/moderator.json', JSON.stringify(json))
-    m.reply(`${conn.getName(who)} sekarang bukan moderator!`)
+    m.reply(`${conn.getName(who)} telah dipecat menjadi admin shiraori!`)
 
     delete require.cache[require.resolve('../config')]
     require('../config')
 
 }
-handler.help = ['delmods [@user]']
+handler.help = ['deladmin [@user]']
 handler.tags = ['owner']
-handler.command = /^(delmods)$/i
+handler.command = /^(deladmin)$/i
 
 handler.owner = true
 

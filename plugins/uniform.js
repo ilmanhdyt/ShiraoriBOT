@@ -6,5 +6,6 @@ handler.tags = ['anime']
 handler.command = /^(uniform)$/i
 
 handler.limit = true
+handler.nsfw = true
 
 module.exports = handler

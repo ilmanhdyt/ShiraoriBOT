@@ -1,7 +1,7 @@
 {
-  "name": "stikerinbot",
+  "name": "SHIRAORI",
   "version": "1.1.2",
-  "description": "WhatsApp Bot Ringan",
+  "description": "SHIRAORI PUNYA ILMAN",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ariffb25/stikerinbot.git"
+    "url": "git+https://github.com/Hidayatilman/ShiraoriBOT.git"
   },
   "keywords": [
     "whatsapp-bot"
   ],
-  "author": "Ariffb",
+  "author": "Ilman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ariffb25/stikerinbot/issues"
+    "url": "https://github.com/Hidayatilman/ShiraoriBOT/issues"
   },
-  "homepage": "https://github.com/ariffb25/stikerinbot",
+  "homepage": "https://github.com/Hidayatilman/ShiraoriBOT",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
     "awesome-phonenumber": "^2.54.0",

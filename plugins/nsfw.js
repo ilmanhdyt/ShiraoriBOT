@@ -17,11 +17,11 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
     m.reply(msg)
   }
 }
-handler.help = ['nhentai', 'nhs'].map(v => v + ' <pencarian>')
-handler.tags = ['NSFW']
+handler.help = ['nhs'].map(v => v + ' <pencarian>')
+handler.tags = ['nsfw']
 handler.command = /^nhentai?$/i
 handler.owner = false
-handler.mods = false
+handler.nsfw = true
 handler.premium = false
 handler.group = true
 handler.private = false

@@ -6,7 +6,7 @@ let handler = async function (m, { text, isPrems, isOwner }) {
   let res = await fetch('https://ardhixsquerpants.herokuapp.com/api/kuso?q=' + encodeURIComponent(text))
 let json= await res.json()
   const ardi =  `*judul:* "${json.title}"\n\n*info:* ${json.info}\n\n*sinopsis:* ${json.sinopsis}\n\n*link download:* ${json.link_dl}`
-     conn.sendFile(m.chat,json.thumb, 'image.jpg', ardi, m)
+     await conn.send2ButtonLoc(m.chat, await (await fetch(thumb)).buffer(), `
 }
 handler.help = ['kusonime <judul>']
 handler.tags = ['anime']

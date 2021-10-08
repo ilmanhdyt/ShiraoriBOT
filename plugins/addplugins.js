@@ -26,8 +26,8 @@ module.exports = handler`
   fs.writeFileSync("./plugins/" + filename + ".js", str)
   m.reply("Done!")
 }
-handler.help = ['addplugin command|tag|kode"]
-handler.tags = ['owner','database']
+handler.help = ["addplugin command|tag|kode"]
+handler.tags = ["owner"]
 handler.command = /^(addplugin)/i
 
 handler.owner = true 

@@ -8,11 +8,11 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) throw '404 Not Found'
-  conn.sendFile(m.chat, url, 'gimage', '', m, 0, { thumbnail: await (await fetch(url)).buffer() })
+  conn.sendFile(m.chat, url, 'image', '', m, 0, { thumbnail: await (await fetch(url)).buffer() })
 }
-handler.help = ['gimage <pencarian>', 'image <pencarian>']
+handler.help = ['image <pencarian>']
 handler.tags = ['internet']
-handler.command = /^(g?image)$/i
+handler.command = /^(image)$/i
 
 module.exports = handler
 

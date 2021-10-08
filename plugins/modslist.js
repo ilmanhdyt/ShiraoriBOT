@@ -4,7 +4,7 @@ let handler = async (m, { conn, isOwner }) => {
   conn.reply(m.chat, `┌〔 Admin Shiraori 〕` + `\n` + mods.map(v => isOwner ? '├ @' + v.replace(/@.+/, '') : '│ ' + conn.getName(v)).join`\n` + '\n└────', m, { contextInfo: { mentionedJid: mods } })
 }
 handler.help = ['adminshiraori']
-handler.tags = ['info']
+handler.tags = ['adminban']
 handler.command = /^adminshiraori$/i
 
 module.exports = handler

@@ -1,7 +1,7 @@
 {
-  "name": "SHIRAORI",
-  "version": "1.1.1",
-  "description": "SHIRAORI PUNYA ILMAN",
+  "name": "ShiraoriBOT",
+  "version": "1.2.2",
+  "description": "Shiraori wangyy",
   "main": "index.js",
   "scripts": {
     "start": "node index.js --self",

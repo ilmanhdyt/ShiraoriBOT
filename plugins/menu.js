@@ -295,7 +295,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? tanpakategori"
                 }, {
                   "title": "Owner",
-                  "description": "Fitur Khusus *_Ilman_*",
+                  "description": "Fitur Khusus Ilman",
                   "rowId": ".? owner"
                 }
               ]

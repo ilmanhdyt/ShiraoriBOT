@@ -32,7 +32,7 @@ let handler = async (m, { conn, command, text, usedprefix, isPrems, isOwner }) =
           `.trim(),
     await (await fetch(thumb)).buffer(), '© SHIRAORI', 'AUDIO', `${usedprefix}yta ${vid.url}`, 'VIDEO', `${usedprefix}yt ${vid.url}`)
 }
-handler.help = ["play"].map(v => v + ' <pencarian>')
+handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ["downloader"]
 handler.command = /^(play)$/i
 

@@ -6,15 +6,15 @@
 # notes!!
 
 
-* sebelum kalian clone hapus dulu file [session.data.json](https://github.com/Hidayatilman/ShiraoriBOT/blob/main/session.data.json)
-* before you clone first delete the file [session.data.json](https://github.com/Hidayatilman/ShiraoriBOT/blob/main/session.data.json)
+* sebelum kalian clone hapus dulu file [session.data.json](https://github.com/ilmanhdyt/ShiraoriBOT/blob/main/session.data.json)
+* before you clone first delete the file [session.data.json](https://github.com/ilmanhdyt/ShiraoriBOT/blob/main/session.data.json)
 
 
 ## ERROR FIX IT YOURSELF
 
 ## UPDATE!!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hidayatilman/ShiraoriBOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ilmanhdyt/ShiraoriBOT)
 
 [![Grup WhatsApp](https://img.shields.io/badge/GroupWhatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GVwpKf83s42D1CnIfDW19G)
 
@@ -29,7 +29,7 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/Hidayatilman/ShiraoriBOT
+git clone https://github.com/ilmanhdyt/ShiraoriBOT
 npm install
 npm update
 npm index
@@ -39,7 +39,7 @@ npm index
 
 ## UNTUK PENGGUNA TERMUX
 ```bash
-git clone https://github.com/Hidayatilman/ShiraoriBOT
+git clone https://github.com/ilmanhdyt/ShiraoriBOT
 cd ShiraoriBOT
 npm i
 npm update
@@ -151,7 +151,7 @@ conn.logger.level = 'debug'
 
 * [`Nurutomo`](https://github.com/Nurutomo) 
 * [`ariffb25`](https://github.com/ariffb25) 
-* [`ilman`](https://github.com/Hidayatilman) 
+* [`ilman`](https://github.com/ilmanhdyt) 
 * [`botstylee`](https://github.com/botstylee)
 
 ### Donated

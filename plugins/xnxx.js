@@ -19,7 +19,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     });
 };
 handler.help = ["xnxx"].map((v) => v + " <Link>");
-handler.tags = ["internet"];
+handler.tags = ["nsfw"];
 handler.command = /^(xnxx)$/i;
 
 handler.limit = true;

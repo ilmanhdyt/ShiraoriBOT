@@ -286,7 +286,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "",
                   "rowId": ".? info"
                 }, {
-                  "title": "Nsfw",
+                  "title": "Lewd",
                   "description": "",
                   "rowId": ".? nsfw"
                 }, {

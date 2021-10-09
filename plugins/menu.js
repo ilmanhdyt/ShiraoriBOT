@@ -286,7 +286,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "",
                   "rowId": ".? info"
                 }, {
-                  "title": "Lewd",
+                  "title": "Nsfw",
                   "description": "",
                   "rowId": ".? nsfw"
                 }, {
@@ -295,7 +295,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? tanpakategori"
                 }, {
                   "title": "Owner",
-                  "description": "",
+                  "description": "Fitur Khusus Pemilik Bot",
                   "rowId": ".? owner"
                 }
               ]

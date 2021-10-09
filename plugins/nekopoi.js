@@ -7,7 +7,7 @@ let handler = async (m, { text }) => {
  m.reply(teksnya.trim())
 }
 handler.help = ['nekopoi'].map(v => v + ' <url>')
-handler.tags = ['downloader']
+handler.tags = ['nsfw']
 handler.command = /^nekopoi$/i
 
 handler.nsfw = true

@@ -16,7 +16,7 @@ let handler = async(m, { conn, text, args, usedPrefix }) => {
              exec(`wget ${hentai} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
                 fs.unlinkSync(ranp)
                 let buffer = fs.readFileSync(rano)
-                conn.sendFile(m.chat, buffer, 'hentai.webp', '', m, false, { asSticker: true })
+                conn.sendFile(m.chat, buffer, 'hentai.gif', '', m, false, { asSticker: true })
                 fs.unlinkSync(rano)
    })
 }

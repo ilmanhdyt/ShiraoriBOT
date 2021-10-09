@@ -9,7 +9,7 @@ handler.before = async function (m) {
     if (/^(me)?nyerah$/i.test(m.text)) {
         await this.sendButton(m.chat, `Jawabannya adalah ${JSON.parse(JSON.stringify(this.tebakbendera[id][1].jawaban))}`.trim(), '© Shiraori', 'TEBAK BENDERA', '.tebakbendera').then(() => { delete this.tebakbendera[id] })
     }
-    if (['.calo', 'BANTUAN', ''].includes(m.text)) return !0
+    if (['.tebe', 'BANTUAN', ''].includes(m.text)) return !0
     // if (m.quoted.id == this.tebakbendera[id][0].id) {
     let json = JSON.parse(JSON.stringify(this.tebakbendera[id][1]))
     if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {

@@ -219,7 +219,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? quotes"
                 }, {
                   "title": "Admin",
-                  "description": "",
+                  "description": "Fitur Khusus admin grup",
                   "rowId": ".? admin"
                 }, {
                   "title": "Grup",
@@ -243,7 +243,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? anonymous"
                 }, {
                   "title": "Admin Ban",
-                  "description": "",
+                  "description": "Fitur Khusus Admin Shiraori",
                   "rowId": ".? adminban"
                 }, {
                   "title": "Nulis & Logo",
@@ -295,7 +295,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? tanpakategori"
                 }, {
                   "title": "Owner",
-                  "description": "Fitur Khusus Pemilik Bot",
+                  "description": "Fitur Khusus *_Ilman_*",
                   "rowId": ".? owner"
                 }
               ]

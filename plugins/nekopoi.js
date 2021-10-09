@@ -1,4 +1,5 @@
 let { getVideo } = require('../lib/nekopoi')
+
 let handler = async (m, { text }) => {
  if (!text) throw 'Tidak Ada Url'
  let { title, links } = await getVideo(text)

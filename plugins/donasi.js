@@ -6,7 +6,7 @@ let handler = async m => m.reply(`
 ┌〔 Donasi • Emoney 〕
 ├ OVO, Dana [081351047727]
 └────
- https://saweria.co/manilman
+ https://saweria.co/ilmanhdyt
  donasi tuh buat 
 memperpanjang masa *server* *(rdp)*
 sama *api key*

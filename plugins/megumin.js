@@ -5,7 +5,6 @@ let handler = async (m, { conn }) => {
   let json = await res.json()
   if (!json.url) throw 'Eror!'
   conn.sendFile(m.chat, json.url, '', '© shiraori', m, 0, { thumbnail: await (await fetch(json.url)).buffer() })
-  await conn.sendButton(m.chat, await (await fetch(json.img)).buffer(), Klik Disini, '© SHIRAORI', 'Next', '.megumin', m)
 }
 handler.help = ['megumin']
 handler.tags = ['anime']
@@ -14,3 +13,4 @@ handler.command = /^(megumin)$/i
 handler.limit = true
 //buatan ftwrr(si Fatur)
 module.exports = handler
+

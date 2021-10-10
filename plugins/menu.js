@@ -53,6 +53,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     '': 'Tanpa Kategori',
   }
   if (teks == 'game') tags = {
+    'let link': 'https://telegra.ph/file/9cdc9a126ad6b4e244991.jpg'
     'game': 'Game'
   }
   if (teks == 'xp') tags = {

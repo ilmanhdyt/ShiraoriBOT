@@ -89,7 +89,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'adminban': 'Admin Ban'
   }
   if (teks == 'nulis') tags = {
-    let link = 'https://telegra.ph/file/402516e12a697aba782e1.jpg'
+     (let link == 'https://telegra.ph/file/8c39e8ea1d6ef55ed3df0.jpg'
     'nulis': 'MagerNulis & Logo'
   }
   if (teks == 'downloader') tags = {

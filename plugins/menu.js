@@ -121,6 +121,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'info': 'Info'
   }
   if (teks == 'nsfw') tags = {
+    let link = 'https://telegra.ph/file/8c39e8ea1d6ef55ed3df0.jpg'
     'nsfw': 'Nsfw'
   }
   if (teks == 'tanpakategori') tags = {

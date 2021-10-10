@@ -385,7 +385,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.sendButtonLoc(m.chat, await (await fetch(tele + teks)).buffer(), text.trim(), 'Ilman\nSHIRAORI BOT MADE BY ILMAN', 'PEMILIK SHIRAORI', '.owner', m)
+    await conn.sendButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Ilman\nSHIRAORI BOT MADE BY ILMAN', 'PEMILIK SHIRAORI', '.owner', m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

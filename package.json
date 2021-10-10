@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ilmanhdyt/ShiraoriBOT/issues"
   },
-  "homepage": "https://github.com/ilmanhdyt/ShiraoriBOT",
+  "homepage": "https://github.com/ilmanhdyt",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
     "awesome-phonenumber": "^2.54.0",

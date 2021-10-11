@@ -23,10 +23,10 @@ Ketik ${usedPrefix}suka untuk bantuan
 Bonus: ${poin} XP
 `.trim()
     conn.susunkata[id] = [
-        await conn.send2Button(m.chat, caption, '© stikerin', 'BANTUAN', '.suka', 'NYERAH', 'nyerah'),
+        await conn.send2Button(m.chat, caption, '© SHIRAORI', 'BANTUAN', '.suka', 'NYERAH', 'nyerah'),
         json, poin,
         setTimeout(async () => {
-            if (conn.susunkata[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© stikerin', 'SUSUN KATA', '.susunkata')
+            if (conn.susunkata[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© SHIRAORI', 'SUSUN KATA', '.susunkata')
             delete conn.susunkata[id]
         }, timeout)
     ]

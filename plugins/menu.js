@@ -184,7 +184,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, ${name}`.trim(),
+          "title": `Hai Kak ${name}, Selamat ${ucapan()}`.trim(),
           "description": "Pilih menu dibawah ya..\n👇👇👇👇👇👇👇👇👇",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",

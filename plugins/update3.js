@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, isROwner }) => {
 };
 handler.help = ["update3"];
 handler.tags = ["host"];
-handler.command = /^update$/i;
+handler.command = /^update3$/i;
 handler.owner = true;
 handler.mods = false;
 handler.premium = false;

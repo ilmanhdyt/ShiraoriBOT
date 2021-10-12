@@ -185,7 +185,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": "Pilih menu dibawah ya..\n👇👇👇👇👇",
+          "description": "Pilih menu dibawah ya..\n👇👇👇👇👇👇👇👇👇",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -385,7 +385,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.sendButtonLoc(m.chat, teks == '*SHIRAORI BOT*' ? await (await fetch('https://telegra.ph/file/8fffe2d6564d054f4b038.jpg')).buffer() : await (await fetch(fla + encodeURIComponent(teks))).buffer(), teks.trim(), `${ucapan()}`, 'MENU', '.? all')
+    
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

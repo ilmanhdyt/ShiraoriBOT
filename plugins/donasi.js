@@ -6,9 +6,9 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
 ├ https://saweria.co/ilmanhdyt
 ├ Pulsa Telkomsel : 081251047727
 └────
-
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
 
 module.exports = handler
+

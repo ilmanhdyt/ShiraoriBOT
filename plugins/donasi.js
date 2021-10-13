@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => await conn.sendFile(m.chat, 'https://telegr
 ├ https://saweria.co/ilmanhdyt
 ├ Pulsa Telkomsel : 081251047727
 └────
-`.trim(), '© SHIRAORI', 'Donasi', '.donasi', m)
+
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i

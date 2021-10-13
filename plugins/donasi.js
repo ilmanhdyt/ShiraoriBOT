@@ -1,5 +1,5 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn }) => await conn.sendLoc(m.chat, await (await fetch(fla + 'donasi')).buffer(), `
+let handler = async (m, { conn }) => await conn.sendLoc(m.chat, await (await fetch(tele + 'donasi')).buffer(), `
 ┌〔 Donasi • Emoney 〕
 ├ https://saweria.co/ilmanhdyt
 ├ Telkomsel:081351047727

@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'all') tags = {
     'main': 'Utama',
     'game': 'Game',
-    'rpg': 
+    'rpg': `Rpg ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
@@ -51,7 +51,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'game': 'Game'
   }
   if (teks == 'rpg') tags = {
-    'rpg': 'Rpg'
+    'rpg': `Rpg ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`
   }
   if (teks == 'xp') tags = {
     'xp': 'Exp & Limit'

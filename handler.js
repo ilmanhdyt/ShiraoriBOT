@@ -50,6 +50,7 @@ module.exports = {
           if (!('pasangan' in user)) user.pasangan = ''
         } else global.db.data.users[m.sender] = {
           exp: 0,
+          uang: 0,
           limit: 10,
           lastclaim: 0,
           registered: false,

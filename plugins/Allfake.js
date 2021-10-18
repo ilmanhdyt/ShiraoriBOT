@@ -10,7 +10,7 @@ key: {
 				"product": {
 					"productImage":{
 						"mimetype": "image/jpeg",
-						"jpegThumbnail": fs.readFileSync(`./src/profil.jpg`) //Gambarnye
+						"jpegThumbnail": fs.readFileSync(`./src/avatar_contact.png`) //Gambarnye
 					},
 					"title": "tokonya bang", //Kasih namalu 
 					"description": "SELF BOT", 
@@ -35,7 +35,7 @@ const ftroli = {
                             surface : 1,
                             message: 'Kakak', //Kasih namalu
                             orderTitle: 'kak',
-                            thumbnail: fs.readFileSync('./src/profil.jpg'), //Gambarnye
+                            thumbnail: fs.readFileSync('./src/avatar_contact.png'), //Gambarnye
                             sellerJid: '0@s.whatsapp.net'
           
                           }
@@ -49,7 +49,7 @@ const flokasi = {
        message: {
                     locationMessage: {
                     name: 'Jepang',
-                    jpegThumbnail: fs.readFileSync('./src/profil.jpg')
+                    jpegThumbnail: fs.readFileSync('./src/avatar_contact.png')
                           }
                         }
                       }
@@ -59,7 +59,7 @@ const floc = {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "locationMessage": { "title":"jakarta","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')}}
+	 message: { "locationMessage": { "title":"jakarta","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')}}
 	}
 	
 const fliveLoc = {
@@ -67,14 +67,14 @@ const fliveLoc = {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"ANTIBOT","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')}}
+	 message: { "liveLocationMessage": { "caption":"ANTIBOT","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')}}
 	}
 	const fliveLoc2 = {
 	 key:
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "title": "ANTIBOT","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')}}
+	 message: { "liveLocationMessage": { "title": "ANTIBOT","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')}}
 	}
 //FAKEREPLY KONTAK
  const fcon = {
@@ -82,7 +82,7 @@ const fliveLoc = {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "contactMessage": { "title":"sri","h": `haloo`, 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')}}
+	 message: { "contactMessage": { "title":"sri","h": `haloo`, 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')}}
 	}
 	
 	const fcona = {
@@ -90,7 +90,7 @@ const fliveLoc = {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "contactsArrayMessage": { "title":"antibot","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')}}
+	 message: { "contactsArrayMessage": { "title":"antibot","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')}}
 	}
 	const bugcon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "contactMessage": { "vcard": ""}}}
 //FAKEREPLY DOCUMENT
@@ -101,7 +101,7 @@ const fdocs = {
        message: {
                     documentMessage: {
                     title: 'Halo bang', 
-                    jpegThumbnail: fs.readFileSync('./src/profil.jpg')
+                    jpegThumbnail: fs.readFileSync('./src/avatar_contact.png')
                           }
                         }
                       }
@@ -118,7 +118,7 @@ const fvideo = {
                  "h": `Hmm`,
                  'seconds': '99999', 
                  'caption': 'Halo bang',
-                 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')
+                 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')
                         }
                        }
 	                  }
@@ -135,7 +135,7 @@ const fgclink = {
 			"inviteCode": "mememteeeekkeke",
 			"groupName": "Mengter", 
             "caption": "Halo bang jagoo", 
-            'jpegThumbnail': fs.readFileSync('./src/profil.jpg')
+            'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')
 		}
 	}
 }
@@ -153,7 +153,7 @@ const fgif = {
                  'seconds': '99999', 
                  'gifPlayback': 'true', 
                  'caption': 'Halo bang',
-                 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')
+                 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')
                         }
                        }
 	                  } 
@@ -168,7 +168,7 @@ const ftextt = {
 		"extendedTextMessage": {
                  "text":"hallo bang",
                  "title": `Hmm`,
-                 'jpegThumbnail': fs.readFileSync('./src/profil.jpg')
+                 'jpegThumbnail': fs.readFileSync('./src/avatar_contact.png')
                         }
 	                  } 
                      }

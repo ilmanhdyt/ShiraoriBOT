@@ -54,6 +54,33 @@ module.exports = {
           if (!isNumber(user.rubahlastclaim)) user.rubahlastclaim = 0
           if (!isNumber(user.anjing)) user.anjing = 0
           if (!isNumber(user.anjinglastclaim)) user.anjinglastclaim = 0
+          if (!isNumber(user.anakkucing)) user.anakkucing = 0
+          if (!isNumber(user.anakkuda)) user.anakkuda = 0
+          if (!isNumber(user.anakrubah)) user.anakrubah = 0
+          if (!isNumber(user.anakanjing)) user.anakanjing = 0
+          if (!isNumber(user.makananpet)) user.makananpet = 0
+
+          if (!isNumber(user.antispam)) user.antispam = 0
+          if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
+
+          if (!isNumber(user.kayu)) user.kayu = 0
+          if (!isNumber(user.batu)) user.batu = 0
+          if (!isNumber(user.string)) user.string = 0
+          if (!isNumber(user.sword)) user.sword = 0
+          if (!isNumber(user.sworddurability)) user.sworddurability = 0
+          if (!isNumber(user.pickaxe)) user.pickaxe = 0
+          if (!isNumber(user.pickaxedurability)) user.pickaxedurability = 0
+          if (!isNumber(user.fishingrod)) user.fishingrod = 0
+          if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0
+
+          if (!isNumber(user.lastadventure)) user.lastadventure = 0
+          if (!isNumber(user.lastfishing)) user.lastfishing = 0
+          if (!isNumber(user.lastdungeon)) user.lastdungeon = 0
+          if (!isNumber(user.lastduel)) user.lastduel = 0
+          if (!isNumber(user.lastmining)) user.lastmining = 0
+          if (!isNumber(user.lasthunt)) user.lasthunt = 0
+          if (!isNumber(user.lastweekly)) user.lastweekly = 0
+          if (!isNumber(user.lastmonthly)) user.lastmontly = 0
           if (!('registered' in user)) user.registered = false
           if (!user.registered) {
           if (!('name' in user)) user.name = this.getName(m.sender)

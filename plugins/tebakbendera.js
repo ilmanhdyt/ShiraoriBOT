@@ -34,7 +34,7 @@ Bonus: ${poin}XP
   handler.help = ['tebakbendera']
   handler.tags = ['game']
   handler.command = /^tebakbendera/i
-  handler.register = true
+  handler.register = false
 
   handler.limit = true
   

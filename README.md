@@ -13,6 +13,7 @@
 ## ERROR FIX IT YOURSELF
 
 ## UPDATE!!
+* new fitur Rpg Game
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ilmanhdyt/ShiraoriBOT)
 

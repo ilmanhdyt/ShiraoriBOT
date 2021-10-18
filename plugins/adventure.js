@@ -48,7 +48,7 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
             }
             global.DATABASE._data.users[m.sender].healt -= healt * 1
             global.DATABASE._data.users[m.sender].exp += exp * 1
-            global.DATABASE._data.users[m.sender].money += uang * 1
+            global.db.data.users[m.sender].money += uang * 1
             global.DATABASE._data.users[m.sender].potion += potion * 1
             global.DATABASE._data.users[m.sender].diamond += diamond * 1
             global.DATABASE._data.users[m.sender].common += common * 1 
@@ -68,7 +68,7 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
         }
     }
 }
-handler.help = ['adventure', 'petualang', 'berpetualang', 'mulung', 'work']
+handler.help = ['adventure']
 handler.tags = ['rpg']
 handler.command = /^(adventure|(ber)?petualang(ang)?|mulung|work)$/i
 

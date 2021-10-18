@@ -4,7 +4,7 @@ let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts = require('cfonts')
-CFonts.say('ShiraoriBOT', {
+CFonts.say('SHIRAORI\nBOT', {
   colors: ['#ff33cc'],
   font: 'block',
   align: 'center',

@@ -29,7 +29,7 @@ module.exports = {
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
         if (user) {
           if (!isNumber(user.exp)) user.exp = 0
-          if (!isNumber(user.uang)) user.uang = 0
+          if (!isNumber(user.uang)) user.money = 0
           if (!isNumber(user.limit)) user.limit = 10
           if (!isNumber(user.lastclaim)) user.lastclaim = 0
           if (!('registered' in user)) user.registered = false
@@ -50,7 +50,7 @@ module.exports = {
           if (!('pasangan' in user)) user.pasangan = ''
         } else global.db.data.users[m.sender] = {
           exp: 0,
-          uang: 0,
+          money: 0,
           limit: 10,
           lastclaim: 0,
           registered: false,

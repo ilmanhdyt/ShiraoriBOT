@@ -29,6 +29,7 @@ module.exports = {
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
         if (user) {
           if (!isNumber(user.exp)) user.exp = 0
+          if (!isNumber(user.healt)) user.healt = 0
           if (!isNumber(user.money)) user.money = 0
           if (!isNumber(user.limit)) user.limit = 10
           if (!isNumber(user.lastclaim)) user.lastclaim = 0
@@ -71,6 +72,7 @@ module.exports = {
           if (!('pasangan' in user)) user.pasangan = ''
         } else global.db.data.users[m.sender] = {
           exp: 0,
+          healt: 0,
           money: 0,
           limit: 10,
           lastclaim: 0,

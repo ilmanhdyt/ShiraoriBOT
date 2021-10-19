@@ -23,7 +23,7 @@ async function handler(m, { conn, args, isROwner }) {
 
             const buttonMessage = {
                 contentText: txt,
-                footerText: '©games-wabot',
+                footerText: '© SHIRAORI BOT',
                 buttons: buttons,
                 headerType: 1
             }
@@ -34,7 +34,7 @@ async function handler(m, { conn, args, isROwner }) {
             let { timeout } = confirm[m.sender]
             clearTimeout(timeout)
             delete confirm[m.sender]
-            m.reply('Rejected')
+            m.reply('Mama Kamu pasti bangga')
         }
     }
 }

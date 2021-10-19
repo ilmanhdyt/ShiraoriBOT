@@ -193,7 +193,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`,
-          "description": "*Jangan Spam ya*\n*beri bot jeda 3 detik*\n\n*Github:*\nhttps://github.com/ilmanhdyt",
+          "description": "Jangan Spam ya\nberi bot jeda 3 detik\n\nOwner: Ilman\nGithub:\nhttps://github.com/ilmanhdyt",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [

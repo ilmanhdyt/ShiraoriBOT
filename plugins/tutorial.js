@@ -3,7 +3,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ╭─「 *Tutorial Main SHIRAORI BOT* 」
 │ 
 │〘 Tutorial EPIC RPG 〙
-│• *${usedPrefix}claim*
+│• *${usedPrefix}collect*
 │   Staterpack yang bisa di klaim 
 │   12 jam sekali
 │• *${usedPrefix}mulung*

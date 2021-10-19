@@ -34,7 +34,7 @@ global.author = 'ilman'
 
 global.wait = '_*tunggu..*_'
 global.eror = '*_Server Eror_*'
-global.fla = ''
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sugar-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.tle = 'https://telegra.ph/file/ecb8f7d2c12d075fc4729.jpg',
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level

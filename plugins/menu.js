@@ -19,7 +19,7 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'adminban', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
@@ -33,6 +33,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
     'group': 'Grup',
     'premium': 'Premium',
+    'adminban': 'Adminban',
     'internet': 'Internet',
     'anime': 'Anime',
     'nsfw': 'Nsfw',
@@ -79,6 +80,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'premium') tags = {
     'premium': 'Premium'
+  }
+  if (teks == 'adminban') tags = { 
+    'adminban': 'Adminban'
   }
   if (teks == 'internet') tags = {
     'internet': 'Internet'
@@ -242,6 +246,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": "Premium",
                   "description": "",
                   "rowId": `${_p}? premium`
+                }, {
+                  "title": "AdminShiraori",
+                  "description": "fitur khusus admin Shiraori",
+                  "rowId": `${_p}? adminban`
                 }, {
                   "title": "Internet",
                   "description": "",

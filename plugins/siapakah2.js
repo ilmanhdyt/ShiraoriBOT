@@ -15,7 +15,5 @@ let handler = async (m, { conn, participants, command, text }) => {
 }
 handler.help = ['', 'kah'].map(v => 'siapa' + v + ' <teks>?')
 handler.tags = ['kerang']
-handler.customPrefix = /(\?$)/
 handler.command = /^siapa(kah)?$/i
-
 module.exports = handler

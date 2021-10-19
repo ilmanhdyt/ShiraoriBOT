@@ -19,12 +19,13 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'rpg', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
     'game': 'Game',
-    'rpg': `Rpg ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
+    'rpg': `Rpg ${global.opts['restrict'] ? '' : '(perbaikan)'}`,
+    'jadian': 'Jadian',
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
@@ -52,6 +53,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'rpg') tags = {
     'rpg': `Rpg ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`
+  }
+  if (teks == 'jadian') tags = {
+    'jadian': 'Jadian'
   }
   if (teks == 'xp') tags = {
     'xp': 'Exp & Limit'
@@ -196,7 +200,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": "Rpg",
                   "description": "making process",
                   "rowId": `${_p}? rpg`
-                  
+                }, {
+                  "title": "Jadian",
+                  "description": "",
+                  rowId": `${_p}? jadian`
                 }, {
                   "title": "XP",
                   "description": "",

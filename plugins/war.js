@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
       conn.war2[m.chat] = {"war" : false, "turn" : 0, "time" : 0, "money" : 0}
       conn.war[m.chat] = []
       xp = global.db.data.users[m.sender].xp
-      conn.war[m.chat][0] = {"user": m.sender, "hp": 5000, "lvl": conn.level(global.db.data.users[m.sender].xp)[0], "turn" : false}
+      conn.war[m.chat][0] = {"user": m.sender, "hp": 5000, "lvl": plugin.level(global.db.data.users[m.sender].xp)[0], "turn" : false}
       for (i=1;i<10;i++){
         conn.war[m.chat][i] = {"user": "", "hp" : 0, "lvl" : 0, "turn" : false}
       }

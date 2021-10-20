@@ -46,7 +46,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
       xp = global.db.data.users[m.sender].xp
       conn.war[m.chat][0] = {"user": m.sender, "hp": 5000, "lvl": plugin.level(global.db.data.users[m.sender].xp)[0], "turn" : false}
       for (i=1;i<10;i++){
-        conn.war[m.chat][i] = {"user": "", "hp" : 0, "lvl" : 0, "turn" : false}
+        conn.war[m.chat][i] = {"users": "", "hp" : 0, "lvl" : 0, "turn" : false}
       }
       return m.reply(`*Berhasil masuk ke dalam game sebagai Team A*\n\n*.war join a/b* = join game\n*.war start* = mulai game`)
     }else {   // NOT FIRST PLAYER
@@ -59,7 +59,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
         if (m.sender == conn.war[m.chat][i].user){
           total = 0
           for (i = 0 ; i < 10 ; i++) {
-            if (conn.war[m.chat][i].user == ""){
+            if (conn.war[m.chat][i].users == ""){
               total += 1
             }
           }
@@ -73,12 +73,12 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
           if (conn.war2[m.chat].money == 0) return conn.reply(m.chat,`*Tolong @${conn.war[m.chat][0].user.split('@')[0]} tetapkan modal awal perang (minimal Rp. 1.000.000)*\n\n.war money 1.000.000`,m, {contextInfo : {mentionedJid : [conn.war[m.chat][0].user]}})
           if (global.db.data.users[m.sender].money < conn.war2[m.chat].money) return m.reply(`*Uang kamu minimal Rp. ${conn.war2[m.chat].money.toLocaleString()} untuk bermain game ini.*`)
           for (i = 1 ; i < 5 ; i++) {
-            if (conn.war[m.chat][i].user == ""){
+            if (conn.war[m.chat][i].users == ""){
               xp = global.db.data.users[m.sender].xp
               conn.war[m.chat][i] = {"user" : m.sender, "hp" : 5000, "lvl" : conn.level(global.db.data.users[m.sender].xp)[0], "turn" : false}
               total = 0
               for (i = 0 ; i < 10 ; i++) {
-                if (conn.war[m.chat][i].user == ""){
+                if (conn.war[m.chat][i].users == ""){
                   total += 1
                 }
               }
@@ -94,7 +94,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
               conn.war[m.chat][i] = {"user" : m.sender, "hp" : 5000, "lvl" : conn.level(global.db.data.users[m.sender].xp)[0], "turn" : false}
               total = 0
               for (i = 0 ; i < 10 ; i++) {
-                if (conn.war[m.chat][i].user == ""){
+                if (conn.war[m.chat][i].users == ""){
                   total += 1
                 }
               }
@@ -144,11 +144,11 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
     var teamAB = []
     for (i = 0 ; i < conn.war[m.chat].length ; i++){
       if (i < 5){
-        if (conn.war[m.chat][i].user != "") teamA.push(conn.war[m.chat][i].user)
+        if (conn.war[m.chat][i].users != "") teamA.push(conn.war[m.chat][i].user)
       }else {
-        if (conn.war[m.chat][i].user != "") teamB.push(conn.war[m.chat][i].user)
+        if (conn.war[m.chat][i].users != "") teamB.push(conn.war[m.chat][i].user)
       }
-      teamAB.push(conn.war[m.chat][i].user)
+      teamAB.push(conn.war[m.chat][i].users)
     }
     // return m.reply(teamA[0])
     conn.reply(m.chat, `${conn.war2[m.chat].war ? '*Giliran : ' + '@' + conn.war[m.chat][conn.war2[m.chat].turn].user.split('@')[0] + '*\n*Taruhan : Rp. ' + Number(conn.war2[m.chat].money).toLocaleString() + '*\n\n' : '*Taruhan : Rp. ' + Number(conn.war2[m.chat].money).toLocaleString() + '*\n\n' }*TEAM A :*\n` + teamA.map((v, i )=> `${conn.war[m.chat][i].hp > 0 ? '❤️ ' : '☠️ ' }@${v.split('@')[0]} (Lv.${conn.war[m.chat][i].lvl} HP: ${conn.war[m.chat][i].hp})`).join`\n` + "\n\n*TEAM B :*\n" + teamB.map((v, i) => `${conn.war[m.chat][i+5].hp > 0 ? '❤️ ' : '☠️ ' }@${v.split('@')[0]} (Lv.${conn.war[m.chat][i+5].lvl} HP: ${conn.war[m.chat][i+5].hp})`).join`\n`,m, {contextInfo: {
@@ -165,7 +165,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
       if(i<5){
         if (conn.war[m.chat][i].user != "") teamA += 1
       }else{
-        if (conn.war[m.chat][i].user != "") teamB += 1
+        if (conn.war[m.chat][i].users != "") teamB += 1
       }
     }
 

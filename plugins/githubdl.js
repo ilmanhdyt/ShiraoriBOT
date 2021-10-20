@@ -5,14 +5,14 @@ if (!args[1]) throw 'repo nya mana?'
 
 let url = `https://github.com/${args[0]}/${args[1]}/archive/refs/heads/main.zip`
 //ByRizkyAdi
-m.reply(`compressing data to file zip*`)
+m.reply(`sedang mengungkapkan file ke zip`)
 conn.sendFile( m.chat, url, 'repo.zip', null, m)
 
 }
 handler.help = ['githubdl']
-handler.tags = ['download']
+handler.tags = ['downloader']
 handler.command = /githubdl/i
 
-handler.limit = true
+handler.limit = 5
 
 module.exports = handler

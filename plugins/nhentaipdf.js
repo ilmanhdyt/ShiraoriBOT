@@ -2,7 +2,7 @@ let { get } = require('axios')
 let handler = async (m, { conn, args }) => {
    if (!args[0]) throw 'Ehm...kode nuklir nya mana?' 
   m.reply('Searching....')
-  let lol = `http://api.lolhuman.xyz/api/nhentaipdf/${args[0]}?apikey=BandarBokep`
+  let lol = `http://api.lolhuman.xyz/api/nhentaipdf/${args[0]}?apikey=3af90a5d6317457b1f93e921`
 //  let lol = global.API('lol', `/api/nhentaipdf/${args[0]}`, {}, 'apikey')
   let { result } = (await get(lol)).data
   if (result.includes('HTML')) throw `Code ${args[0]} Not Found!`

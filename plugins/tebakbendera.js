@@ -36,6 +36,6 @@ Bonus: ${poin}XP
   handler.command = /^tebakbendera/i
   handler.register = false
 
-  handler.limit = true
+  handler.mods = true
   
   module.exports = handler

@@ -19,7 +19,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 "${json.bendera} Bendera negara manakah ini?"
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik *${usedPrefix}tbhint* untuk bantuan
+Ketik *${usedPrefix}tebe* untuk bantuan
 Bonus: ${poin}XP
     `.trim()
     conn.tebakbendera[id] = [

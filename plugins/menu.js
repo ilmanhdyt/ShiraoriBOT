@@ -192,7 +192,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, ${name}`,
+          "title": `${ucapan()}, Kak ${name}`,
           "description": "Jangan Spam ya\nberi bot jeda 3 detik\n\nGithub:\nhttps://github.com/ilmanhdyt",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
@@ -402,7 +402,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.sendButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), `${ucapan()} ${name}\nSHIRAORI BOT MADE BY ILMAN`, 'Pemilik Bot', `${_p}owner`, m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), `${ucapan()} ${name}\nSHIRAORI BOT MADE BY ILMAN`, 'Pemilik Bot', `${_p}owner`, 'Admin Shiraori', `${_p}adminshiraori` m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

@@ -7,8 +7,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!res.ok) throw await `${res.status} ${res.statusText}`
   let json = await res.json()
   if (!json.status) throw json
-  let pixiv = json.data[Math.floor(Math.random() * json.data.lenght)];
-  conn.sendFile(m.chat, pixiv, '', '© SHIRAORI', m, 0, { thumbnail: await (await fetch(pixiv)).buffer() })
+  let pin = json.data[Math.floor(Math.random() * json.data.lenght)];
+  conn.sendFile(m.chat, pixiv, '', '© SHIRAORI', m, 0, { thumbnail: await (await fetch(pin)).buffer() })
   }
   handler.help = ['pixiv <pencarian>']
   handler.tags = ['internet']

@@ -18,4 +18,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["node", ".", "--db", "mongodb+srv://ilman:q@VcPHPL32g-c2h@cluster0.peiqa.mongodb.net/Shiro?retryWrites=true&w=majority"]`
+CMD ["node", ".", "--db", "mongodb+srv://ilman:Q852.u.27ef2FyM@cluster2.mhfya.mongodb.net/SHIRAORI?retryWrites=true&w=majority"]`

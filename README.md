@@ -19,8 +19,6 @@
 
 [![Grup WhatsApp](https://img.shields.io/badge/GroupWhatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/D7TmQm7UcfIBELBux19kIA)
 
-[![Bot](https://img.shields.io/badge/MyBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/62895803135347?text=.menu)
-
 
 ## UNTUK PENGGUNA WINDOWS/VPS/RDP
 

@@ -154,6 +154,7 @@ conn.logger.level = 'debug'
 * [`ariffb25`](https://github.com/ariffb25) 
 * [`ilman`](https://github.com/ilmanhdyt) 
 * [`botstylee`](https://github.com/botstylee)
+* [`BochilGaming`](https://github.com/BochilGaming)
 
 ### Donated
 

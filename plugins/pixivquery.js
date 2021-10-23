@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `cari apa?\nContoh:\n${usedPrefix + command} Shiraori`
-  let res = await fetch(global.API('lolhum', '/pixiv', {
+  let res = await fetch(global.API('lolhum', '/api/pixiv', {
     q: text
   }, 'apikey'))
   if (!res.ok) throw await `${res.status} ${res.statusText}`

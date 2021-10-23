@@ -14,5 +14,12 @@ let handler = async (m, { conn, usedPrefix }) => {
   let caption = `
 _*SUIT PvP*_
 
-@${m.sender.split`@
-}
+@${m.sender.split`@`[0]} menantang @${m.mentionedJid[0],split`@`[0]} untuk bermain suit
+
+Silahkan @${m.mentionedJid[0].split`@`[0]}
+`.trim()
+  let footer = `Ketik "terima/ok/gas" untuk memulai suit\nKetik "tolak/gabisa/nanti" untuk menolak`
+  conn.suit[id] = {
+    chat: await conn.send2Button(m.chat, Suit, © SHIRAORI, 'Terima', 'ok', 'Tolak', 'tolak', m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }),'')
+    chat: await conn.send2Button(m.chat, Suit, © SHIRAORI, 'Terima', 'ok', 'Tolak', 'tolak', m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }),
+    id: id,

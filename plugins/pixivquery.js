@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+const axios = require('axios')
 
 let handler = async (m, { conn }) => {
     let res = await fetch(global.API('lolhum', '/api/pixiv2', {}, 'apikey'))

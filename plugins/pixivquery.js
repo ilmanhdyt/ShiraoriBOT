@@ -1,11 +1,17 @@
-let handler = async (m, { conn }) => {
-  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/pixiv?apikey=39f938655e624cb72a79560b&query=${query}', '', '', m)
-}
-handler.help = ['pixiv (pencarian)']
-handler.tags = ['internet']
-handler.command = /^(pixiv)$/i
+let fetch = require('node-fetch')
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!text) throw `cari apa?\nContoh:\n${usedPrefix + command} Shiraori`
+  let res = await fetch(global.API('lolhum', '/pixiv', {
+    q: text
+  }, 'apikey'))
+  if (!res.ok) throw await `${res.status} ${res.statusText}`
+  let json = await res.json()
+  if (!json.status) throw json
+  let pixiv = json.data[Math.floor(Math.random() * json.data.lenght)];
+  conn.sendFile(m.chat, pixiv, '', '© SHIRAORI', m, 0, { thumbnail: await (await fetch(pixiv)).buffer() })
+  }
+  handler.help = ['pixiv <pencarian>']
+  handler.tags = ['internet']
+  handler.command = /^(pixiv)$/i
 
-handler.limit = true
-handler.group = true
-
-module.exports = handler
+  module.exports = handler

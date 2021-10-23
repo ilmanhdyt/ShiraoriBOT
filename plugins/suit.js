@@ -23,3 +23,18 @@ Silahkan @${m.mentionedJid[0].split`@`[0]}
     chat: await conn.send2Button(m.chat, Suit, © SHIRAORI, 'Terima', 'ok', 'Tolak', 'tolak', m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }),'')
     chat: await conn.send2Button(m.chat, Suit, © SHIRAORI, 'Terima', 'ok', 'Tolak', 'tolak', m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }),
     id: id,
+    p2: m.mentionedJid[0],
+    status: 'wait',
+    waktu: setTimeout(() => {
+      if (conn.suit[id]) conn.reply(m.chat, `_Waktu suit habis_`, m)
+      delete conn.suit[id]
+    }, timeout), poin, poin_lose, timeout
+  }
+}
+handler.tags = ['game']
+handler.help = ['suitpvp', 'suit'].map(v => v + ' @tag')
+handler.command = /^suit(pvp)?$/i
+handler.limit = false
+handler.group = true
+
+module.exports = handler

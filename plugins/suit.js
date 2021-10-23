@@ -1,48 +1,18 @@
-let handler = async (m, { text, usedPrefix }) => {
-    let salah = `Pilihan yang tersedia\n\ngunting, kertas, batu\n\n${usedPrefix}suit gunting\n\nkasih spasi!`
-    if (!text) throw salah
-    var astro = Math.random()
+/*
 
-    if (astro < 0.34) {
-        astro = 'batu'
-    } else if (astro > 0.34 && astro < 0.67) {
-        astro = 'gunting'
-    } else {
-        astro = 'kertas'
-    }
+    made by https://github.com/syahrularranger
+*/
+let timeout = 60000
+let poin = 500
+let poin_lose = -200
+let handler = async (m, { conn, usedPrefix }) => {
+  conn.suit = conn.suit ? conn.suit : {}
+  if (Object.values(conn.suit).find(room.id.startWith('suit') && [room.p, room.p2].includes(m.sender))) throw 'Selesaikan suit mu yang sebelumnya!'
+  if (!m.mentionedJid[0]) return m.reply(`_siapa yang ingin kamu tantang?_\nTag orangnya.. Contoh\n${usedPrefix}suit @${owner[1]}`, m.chat, {contextInfo: { mentionedJid: [owner[1] + '@s.whatsapp.net']}})
+  if (Object.values(conn.suit).find(room => room.id.startWith('suit') && [room.p, room.p2].includes(m.mentionedJid[0]))) throw `Orang yang kamu tantang sedang bermain suit bersama orang lain :(`
+  let id = 'suit_' + new Date() *
+  let caption = `
+_*SUIT PvP*_
 
-    //menentukan rules
-    if (text == astro) {
-        m.reply(`Seri!\nkamu: ${text}\nBot: ${astro}`)
-    } else if (text == 'batu') {
-        if (astro == 'gunting') {
-            global.DATABASE._data.users[m.sender].uang += 1000
-            m.reply(`Kamu menang! +Rp1000\nKamu: ${text}\nBot: ${astro}`)
-        } else {
-            m.reply(`Kamu kalah!\nkamu: ${text}\nBot: ${astro}`)
-        }
-    } else if (text == 'gunting') {
-        if (astro == 'kertas') {
-            global.DATABASE._data.users[m.sender].uang += 1000
-            m.reply(`Kamu menang! +Rp1000\nKamu: ${text}\nBot: ${astro}`)
-        } else {
-            m.reply(`Kamu kalah!\nkamu: ${text}\nBot: ${astro}`)
-        }
-    } else if (text == 'kertas') {
-        if (astro == 'batu') {
-            global.DATABASE._data.users[m.sender].uang += 1000
-            m.reply(`Kamu menang! +Rp1000\nKamu: ${text}\nBot: ${astro}`)
-        } else {
-            m.reply(`Kamu kalah!\nkamu: ${text}\nBot: ${astro}`)
-        }
-    } else {
-        throw salah
-    }
+@${m.sender.split`@
 }
-handler.help = ['suit']
-handler.tags = ['RPG']
-handler.command = /^(suit)$/i
-handler.register = true
-handler.limit = false
-
-module.exports = handler

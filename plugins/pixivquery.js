@@ -7,9 +7,9 @@ let handler = async (m, { conn }) => {
     if (!img) throw img
     conn.sendFile(m.chat, img, '', '© SHIRAORI', m, 0, { thumbnail: await (await fetch(img)).buffer()
 }
-handler.help = ['konachan <pencarian>']
+handler.help = ['kona']
 handler.tags = ['internet']
-handler.command = /^(konachan)$/i
+handler.command = /^(kona)$/i
 
 handler.limit = true
 

@@ -8,7 +8,7 @@ let handler = async (m, { conn, participants, groupMetadata, text }) => {
         return admins
     }
 
-    let pp = './src/avatar_contact.png'
+    let pp = './src/admin.jpg'
     try {
         pp = await conn.getProfilePicture(m.chat)
     } catch (e) {

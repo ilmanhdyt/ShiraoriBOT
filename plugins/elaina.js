@@ -1,12 +1,10 @@
-let { getBuffer } = require('../lib/function')
-let fetch = require('node-fetch')
-let handler = async (m, { conn, command, text, usedPrefix }) => {
-
-let hasil = await getBuffer('https://lolhuman.xyz/api/random/elaina?apikey=HIRO')
-
-await conn.sendButtonImg(m.chat, await fetch(Img)).buffer(),`
-`.trim(), 'Elaina Punya Ilman', 'Next', '.elaina')
+let fetch = require ('node-fetch')
+let res = await fetch(global.API('lolhum', '/api/random/elaina', {
+}, 'apikey'))
+await conn.sendButtonImg(m.chat, await (await fetch(res)).buffer(), "Elaina Punya Ilman", '© SHIRAORI BOT', 'NEXT', `.elaina`, m)
 }
 handler.help = ['elaina']
 handler.tags = ['anime']
 handler.command /^(elaina)$/i
+
+module.exports = handler

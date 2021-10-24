@@ -1,15 +1,12 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, args }) => {
-   response = args.join(' ')
-  m.reply('Sedang Diproses...')
-  let res = await fetch(`https://recoders-area.caliph.repl.co/api/husbu?apikey=FreeApi`)
-  let json = await res.json()
-  conn.sendFile(m.chat, json.url, 'husbu.jpg', json.name, m, false)
+let handler = async (m, { conn }) => {
+ 
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/sagiri?apikey=HIRO', '', 'Sagiri', m)
 }
-handler.help = ['husbu'].map(v => v + ' ')
+handler.help = ['elaina']
 handler.tags = ['anime']
+handler.command = /^(elaina)$/i
 
-handler.command = /^(husbu)$/i
 handler.limit = true
+handler.group = true
 
 module.exports = handler

@@ -2,6 +2,7 @@ let util = require('util')
 let fetch = require('node-fetch')
 let simple = require('./lib/simple')
 const uploadImage = require('./lib/uploadImage')
+const knights = require('knights-canvas')
 let { MessageType } = require('@adiwajshing/baileys')
 
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -452,17 +453,33 @@ module.exports = {
           for (let user of participants) {
             // let pp = './src/avatar_contact.png'
             let pp = 'https://i.ibb.co/jr9Nh6Q/Thumb.jpg'
+            let ppgc = 'https://i.ibb.co/jr9Nh6Q/Thumb.jpg'
             try {
               pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
+              ppgc = await uploadImage(await (await fetch(await this.getProfilePicture(jid))).buffer())
             } catch (e) {
             } finally {
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                 (chat.sBye || this.bye || conn.bye || 'Sampai jumpa, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-              let wel = `https://hardianto-chan.herokuapp.com/api/tools/welcomer2?name=${encodeURIComponent(this.getName(user))}&descriminator=${user.split(`@`)[0].substr(-5)}&totalmem=${encodeURIComponent(groupMetadata.participants.length)}&namegb=${encodeURIComponent(this.getName(jid))}&ppuser=${pp}&background=https://i.ibb.co/KhtRxwZ/dark.png&apikey=hardianto`
-              let lea = `https://hardianto-chan.herokuapp.com/api/tools/leave2?name=${encodeURIComponent(this.getName(user))}&descriminator=${user.split(`@`)[0].substr(-5)}&totalmem=${encodeURIComponent(groupMetadata.participants.length)}&namegb= ${encodeURIComponent(this.getName(jid))}&ppuser=${pp}&background=https://i.ibb.co/KhtRxwZ/dark.png&apikey=hardianto`
+              let wel = await new knights.Welcome()
+                .setUsername(this.getName(user))
+                .setGuildName(this.getName(jid))
+                .setGuildIcon(ppgc)
+                .setMemberCount(groupMetadata.participants.length)
+                .setAvatar(pp)
+                .setBackground("https://i.ibb.co/KhtRxwZ/dark.png")
+                .toAttachment()
 
-              this.sendFile(jid, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, {
-                thumbnail: await (await fetch(action === 'add' ? wel : lea)).buffer(),
+              let lea = await new knights.Goodbye()
+                .setUsername(this.getName(user))
+                .setGuildName(this.getName(jid))
+                .setGuildIcon(ppgc)
+                .setMemberCount(groupMetadata.participants.length)
+                .setAvatar(pp)
+                .setBackground("https://i.ibb.co/KhtRxwZ/dark.png")
+                .toAttachment()
+
+              this.sendFile(jid, action === 'add' ? wel.toBuffer() : lea.toBuffer(), 'pp.jpg', text, null, false, {
                 contextInfo: {
                   mentionedJid: [user]
                 }

@@ -10,7 +10,7 @@ let handler = async (m, { conn, participants, groupMetadata, text }) => {
 
     let pp = './src/admin.jpg'
     try {
-        pp = ',/src/admin.jpg'
+        pp = await conn.getProfilePicture(m.chat)
     } catch (e) {
     } finally {
         let { isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, expired, descUpdate, stiker } = global.db.data.chats[m.chat]

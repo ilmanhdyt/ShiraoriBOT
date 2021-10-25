@@ -146,14 +146,7 @@ conn.logger.level = 'debug'
 [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [ilmanhdyt](https://github.com/ilmanhdyt)
  Penulis / Pencipta | Penulis ulang | Recode
  
-## Thanks To
-
-* [`Nurutomo`](https://github.com/Nurutomo) 
-* [`ariffb25`](https://github.com/ariffb25) 
-* [`ilman`](https://github.com/ilmanhdyt) 
-* [`botstylee`](https://github.com/botstylee)
-* [`BochilGaming`](https://github.com/BochilGaming)
 
 ### Donated
 
-[`Saweria`](https://saweria.co/manilman)
+[`Saweria`](https://saweria.co/ilmanhdyt)

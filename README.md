@@ -141,10 +141,10 @@ conn.logger.level = 'debug'
 
 ---------
 
- [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25)
-----|----
-[Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25)
- Penulis / Pencipta | Penulis ulang
+ [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![ilmanhdyt](https://github.com/ilmanhdyt.png?size=100)](https://github.com/ilmanhdyt)
+----|----|----
+[Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [ilmanhdyt](https://github.com/ilmanhdyt)
+ Penulis / Pencipta | Penulis ulang | Recode
  
 ## Thanks To
 

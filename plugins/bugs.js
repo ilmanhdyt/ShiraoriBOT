@@ -21,7 +21,7 @@ await conn.sendMessage(target, 'Hai Kak', 'conversation', {
     status: 1,
     surface: 1,
     message: '🔥'.repeat(10000),
-    orderTitle: 'Hai Taeyang', // Idk what this does
+    orderTitle: 'Mikey Kontol', // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }
   }

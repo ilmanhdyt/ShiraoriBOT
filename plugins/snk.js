@@ -2,23 +2,27 @@ let handler = async (m, { conn, text }) => {
     let name = m.fromMe ? conn.user : conn.contacts[m.sender]
 
   conn.reply(m.chat, `
-*Bot ini menggunakan open source*
-*yang dibangun dengan nodejs*
+*Bot ini merupakan Bot WhatsApp yang dibangun dengan menggunakan nodejs*
 
-*bot ini menggunakan sc buatan Nurutomo*
-*dan di tulis ulang/recode*
+*Yang dibuat oleh Nurutomo*
 
-https://github.com/ilmanhdyt/ShiraoriBOT
 
-*Thank To*
-- Nurutomo
-- ariffb
+*ingin membuat bot?* 
+*bot ini open resource loh*
+*bisa kalian coba dengan menekan link dibawah ini*
+=> *https://github.com/ilmanhdyt/ShiraoriBOT*
+
+*Thanks To*
+=> *Nurutomo > https://github.com/Nurutomo
+=> *Ariffb* > https://github.com/ariffb25
+=> *BochilGaming* > https://github.com/BochilGaming
+=> *ilmanhdyt* > https://github.com/ilmanhdyt
 
 `.trim(), m)
     let mentionedJid = [m.sender]
 }
 handler.help = ['snk']
-handler.tags = ['info']
+handler.tags = ['info', 'main']
 handler.command = /^(snk)$/i
 
 module.exports = handler

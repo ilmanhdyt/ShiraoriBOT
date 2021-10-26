@@ -30,6 +30,7 @@ module.exports = {
         if (user) {
           if (!isNumber(user.exp)) user.exp = 0
           if (!isNumber(user.healt)) user.healt = 0
+          if (!isNumber(user.sw)) user.sw = ''
           if (!isNumber(user.money)) user.money = 0
           if (!isNumber(user.limit)) user.limit = 10
           if (!isNumber(user.lastclaim)) user.lastclaim = 0
@@ -100,6 +101,7 @@ module.exports = {
         } else global.db.data.users[m.sender] = {
           exp: 0,
           healt: 0,
+          sw: '',
           money: 0,
           limit: 10,
           lastclaim: 0,

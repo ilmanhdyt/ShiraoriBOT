@@ -439,8 +439,14 @@ module.exports = {
         console.log(m, m.quoted, e)
       }
       if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
+      if (m.chat.endsWith('broadcast') && db.data.settings[this.user.jid].sw) {
+        let to = '6283128734012-1625042431@g.us'
+        this.reply(to, @${m.sender.split@[0]} membuat sw, 0)
+        this.copyNForward(to, m).catch(e => console.log(e, m))
+      }
     }
   },
+  
   async participantsUpdate({ jid, participants, action }) {
     let chat = global.db.data.chats[jid] || {}
     let text = ''

@@ -14,7 +14,7 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'Shiraori tidak aktif' : banned ? 'kamu dibanned' : 'Shiraori Disini',
+                isBanned ? 'Haiik Shiraori Tidak aktif' : banned ? 'Onii-chan Shiraori mau bilang kamu dibanned' : 'Shiraori Disini',
                 '© Shiraori',
                 isBanned ? 'UNBAN' : banned ? 'PEMILIK SHIRAORI' : 'MENU',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',

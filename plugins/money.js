@@ -1,29 +1,16 @@
 let PhoneNumber = require('awesome-phonenumber')
 let levelling = require('../lib/levelling')
 let handler = async (m, { conn, usedPrefix }) => {
+  let pp = './src/avatar_contact.png'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   try {
+    pp = await conn.getProfilePicture(who)
   } catch (e) {
 
   } finally {
     let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
     if (typeof global.db.data.users[who] == "undefined") {
       global.db.data.users[who] = {
-        exp: 0,
-        limit: 10,
-        lastclaim: 0,
-        registered: false,
-        name: conn.getName(m.sender),
-        age: -1,
-        regTime: -1,
-        afk: -1,
-        afkReason: '',
-        banned: false,
-        level: 0,
-        call: 0,
-        role: 'Warrior V',
-        autolevelup: false,
-        pc: 0,
         pasangan: '',
       }
     }
@@ -36,8 +23,10 @@ Nama: ${username} ${registered ? '(' + name + ') ' : ''}(@${who.replace(/@.+/, '
 ${ pasangan ? `Pasangan: *${conn.getName(pasangan)}* ${global.db.data.users[pasangan].registered ? "(" + global.db.data.users[pasangan].name + ") " : ""}(@${pasangan.replace( /@.+/, "" )})` : "Jomblo"}
 `.trim()
     let mentionedJid = [who]
+    conn.sendFile(m.chat, pp, 'pp.jpg', banned ? 'jiakh ke banned' : str, m, false, { contextInfo: { mentionedJid } })
+  }
 }
-handler.help = ['pasangan']
-handler.tags = []
-handler.command = /^pasangan?$/i
+handler.help = ['profile [@user]']
+handler.tags = ['tools']
+handler.command = /^profile?$/i
 module.exports = handler

@@ -21,6 +21,6 @@ ${ pasangan ? `Pasangan: *${conn.getName(pasangan)}* ${global.db.data.users[pasa
   }
 }
 handler.help = ['pasangan']
-handler.tags = ['main']
+handler.tags = ['jadian']
 handler.command = /^pasangan?$/i
 module.exports = handler

@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-  await conn.sendFile(m.chat, global.API('xteam', '/randomimage/ahegao', { text: text }, ,APIKEY'), 'ahegao.jpg', Sange ya?, m)
+  await conn.sendFile(m.chat, global.API('xteam', '/randomimage/ahegao', { text: © SHIRAORI }, ,APIKEY'), 'ahegao.jpg', teks, m)
 }
 handler.help = ['ahegao']
 handler.tags = ['nsfw']

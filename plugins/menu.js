@@ -19,7 +19,7 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'random', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'adminban', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'github', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'random', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'adminban', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
@@ -40,7 +40,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'nsfw': 'Nsfw',
     'anonymous': 'Anonymous Chat',
     'nulis': 'MagerNulis & Logo',
-    'github': 'Github',
     'downloader': 'Downloader',
     'tools': 'Tools',
     'fun': 'Fun',
@@ -103,9 +102,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'nulis') tags = {
     'nulis': 'MagerNulis & Logo'
-  } 
-  if (teks == 'github') tags = {
-    'github': 'Github'
   }
   if (teks == 'downloader') tags = {
     'downloader': 'Downloader'
@@ -282,10 +278,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": "Nulis & Logo",
                   "description": "",
                   "rowId": `${_p}? nulis`
-                }, {
-                  "title": "Github",
-                  "description" "untuk mendownload repo",
-                  "rowId": `${_p}? github`
                 }, {
                   "title": "Downloader",
                   "description": "",

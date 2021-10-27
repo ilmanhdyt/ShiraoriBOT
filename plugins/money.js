@@ -14,7 +14,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     }
     let { pasangan } = global.db.data.users[who]
 Nama: ${username} ${registered ? '(' + name + ') ' : ''}(@${who.replace(/@.+/, '')})${about != 401 ? '\nInfo: ' + about : ''}
-${ pasangan ? `Pasangan: *${conn.getName(pasangan)}* ${global.db.data.users[pasangan].registered ? "(" + global.db.data.users[pasangan].name + ") " : ""}(@${pasangan.replace( /@.+/, "" )})` : status "Jomblo"}
+${ pasangan ? `Pasangan: *${conn.getName(pasangan)}* ${global.db.data.users[pasangan].registered ? "(" + global.db.data.users[pasangan].name + ") " : ""}(@${pasangan.replace( /@.+/, "" )})` : "Jomblo"}
 `.trim()
     let mentionedJid = [who]
     { contextInfo: { mentionedJid } })

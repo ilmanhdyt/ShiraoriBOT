@@ -36,7 +36,6 @@ Nama: ${username} ${registered ? '(' + name + ') ' : ''}(@${who.replace(/@.+/, '
 ${ pasangan ? `Pasangan: *${conn.getName(pasangan)}* ${global.db.data.users[pasangan].registered ? "(" + global.db.data.users[pasangan].name + ") " : ""}(@${pasangan.replace( /@.+/, "" )})` : "Jomblo"}
 `.trim()
     let mentionedJid = [who]
-  }
 }
 handler.help = ['pasangan']
 handler.tags = []

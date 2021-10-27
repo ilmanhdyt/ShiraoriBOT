@@ -26,7 +26,7 @@ ${ pasangan ? `Pasangan: *${conn.getName(pasangan)}* ${global.db.data.users[pasa
     conn.sendFile(m.chat, pp, 'pp.jpg', banned ? 'jiakh ke banned' : str, m, false, { contextInfo: { mentionedJid } })
   }
 }
-handler.help = ['profile [@user]']
-handler.tags = ['tools']
-handler.command = /^profile?$/i
+handler.help = ['pasangan']
+handler.tags = ['main']
+handler.command = /^pasangan?$/i
 module.exports = handler

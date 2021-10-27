@@ -29,7 +29,7 @@ let handler = async (m, { conn, usedPrefix }) => {
         pasangan: '',
       }
     }
-    let { name, limit, exp, lastclaim, registered, regTime, age, level, role, banned, pasangan } = global.db.data.users[who]
+    let { name, limit, money, exp, lastclaim, registered, regTime, age, level, role, banned, pasangan } = global.db.data.users[who]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let username = conn.getName(who)
     let math = max - xp
@@ -42,6 +42,7 @@ XP: TOTAL ${exp} (${exp - min} / ${xp}) [${math <= 0 ? `Siap untuk *${usedPrefix
 Level: ${level}
 Role: *${role}*
 Limit: ${limit}
+Uang: ${money}
 Terdaftar: ${registered ? 'Ya (' + new Date(regTime).toLocaleString() + ')' : 'Tidak'}${lastclaim > 0 ? '\nTerakhir Klaim: ' + new Date(lastclaim).toLocaleString() : ''}
 `.trim()
     let mentionedJid = [who]

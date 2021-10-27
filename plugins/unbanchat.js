@@ -22,8 +22,8 @@ let handler = async (m, { isOwner, text, isAdmin }) => {
     throw `nomor tidak ada didatabase!`
   }
 }
-handler.help = ['unban', 'on']
+handler.help = ['unban', 'ongc']
 handler.tags = ['owner', 'group']
-handler.command = /^unban|on?$/i
+handler.command = /^unban|ongc?$/i
 
 module.exports = handler

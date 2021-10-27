@@ -14,9 +14,9 @@ Random Loli
   imageMessage: await conn.toMessage({ url }, 'imageMessage'),
     headerType: 'IMAGE'
 }
-const sendMsg = await conn.prepareMessageFromContent(m.chat,{buttonsMessage},{ quoted: m})
+const sendMessage = await conn.prepareMessageFromContent(m.chat,{buttonsMessage},{ quoted: m})
 
-conn.relayWAMessage(sendMsg)
+conn.relayWAMessage(sendMessage)
 }
 handler.command = /^(loli)$/i
 handler.tags = ['random']

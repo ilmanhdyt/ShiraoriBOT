@@ -1,16 +1,12 @@
-const fetch = require('node-fetch')
-const { MessageType } = require('@adiwajshing/baileys')
-const { sticker } = require('../lib/sticker')
-
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-
+let handler = async (m, { conn }) => {
+  await conn.sendFile(m.chat, global.API('lolhum', '/sticker/patrick', { text: © SHIRAORI }, ,APIKEY'), 'patrick.jpg', teks, m)
 }
-handler.help = ['patrick']
-handler.tags = ['sticker']
-handler.command = /^(patrick)$/i
+handler.help = ['patrick', 'patrik']
+handler.tags = ['random']
+handler.command = /^(patrick|patrik)$/i
 
 handler.limit = true
+handler.group = true
+handler.exp = true
 
 module.exports = handler
-
-const delay = time => new Promise(res => setTimeout(res, time))

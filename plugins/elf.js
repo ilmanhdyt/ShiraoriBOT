@@ -1,5 +1,7 @@
+let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
-  await conn.sendFile(m.chat, global.API('lolhum', '/random/elf', { text: text }, ,APIKEY'), 'elf.jpg', caption, m)
+    let url = global.API('lolhum', '/random/elf', {}, 'APIKEY')
+    await conn.sendFile(m.chat, url, '', '© SHIRAORI BOT', m, 0, { thumbnail: await (await fetch(url)).buffer() })  
 }
 handler.help = ['elf']
 handler.tags = ['random']

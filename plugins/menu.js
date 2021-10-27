@@ -231,7 +231,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "",
                   "rowId": `${_p}? stiker`
                 }, {
-                  "title": "Random",
+                  "title": "Random Image",
                   "description": "",
                   "rowId": `${_p}? random`
                 }, {

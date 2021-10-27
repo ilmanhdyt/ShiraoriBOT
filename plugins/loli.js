@@ -11,7 +11,7 @@ const buttonsMessage = {
 Random Loli
 `.trim(),    footerText: '© huii lolicon',
     buttons: buttons,
-  imageMessage: await conn.toMSG({ url }, 'imageMessage'),
+  imageMessage: await conn.toMessage({ url }, 'imageMessage'),
     headerType: 'IMAGE'
 }
 const sendMsg = await conn.prepareMessageFromContent(m.chat,{buttonsMessage},{ quoted: m})

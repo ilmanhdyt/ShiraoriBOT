@@ -25,6 +25,6 @@ let handler = async (m, { conn, isOwner, text, isAdmin }) => {
 }
 handler.help = ['ban', 'off']
 handler.tags = ['owner', 'group']
-handler.command = /^ban(chat)|off?$/i
+handler.command = /^ban|off?$/i
 
 module.exports = handler

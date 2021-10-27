@@ -1,6 +1,5 @@
 let handler = async (m, { conn }) => {
-
-  conn.sendFile(m.chat, 'https://api.lolhuman.xyz/api/random/elf?apikey=HIRO', '', 'caption', m)
+  await conn.sendFile(m.chat, global.API('lolhum', '/random/elf', { text: © SHIRAORI }, ,APIKEY'), 'elf.jpg', teks, m)
 }
 handler.help = ['elf2']
 handler.tags = ['random']

@@ -19,7 +19,7 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'adminban', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'random', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'adminban', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
@@ -28,6 +28,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'jadian': 'Jadian',
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
+    'random': 'Random',
     'kerang': 'Kerang Ajaib',
     'quotes': 'Quotes',
     'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
@@ -65,6 +66,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
+  }
+  if (teks == 'random') tags = {
+     'random': 'Random'
   }
   if (teks == 'kerangajaib') tags = {
     'kerang': 'Kerang Ajaib'
@@ -226,6 +230,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": "Stiker",
                   "description": "",
                   "rowId": `${_p}? stiker`
+                }, {
+                  "title": "Random",
+                  "description": "",
+                  "rowId": `${_p}? random`
                 }, {
                   "title": "Kerang Ajaib",
                   "description": "",

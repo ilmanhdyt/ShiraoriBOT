@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `uhm. cari apa?\n\ncontoh:\n${usedPrefix + command} logo`
-  let res = await fetch(global.API('zekais', '/pinterest', {
+  let res = await fetch(global.API('zeks', '/api/pinimg', {
     q: text
   }, 'apikey'))
   if (!res.ok) throw await `${res.status} ${res.statusText}`

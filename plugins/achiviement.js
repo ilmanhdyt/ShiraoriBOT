@@ -53,13 +53,14 @@ let handler = async (m, { conn, usedPrefix }) => {
 8.Top Legendary *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
 9.Top Sampah *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*
 \n${readMore}\n
+Warn: *${warn}*
+Banned: *No*
 `.trim()
     conn.reply(m.chat, str, m)
 }
-handler.help = ['achievement']
+handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
-handler.command = /^(achievement$/i
-handler.group = true
+handler.command = /^(inv(entory)?|bal)$/i
 module.exports = handler
 
 const more = String.fromCharCode(8206)

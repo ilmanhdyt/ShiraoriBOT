@@ -144,7 +144,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
-    let { exp, limit, level, role, registered } = global.db.data.users[m.sender]
+    let { exp, limit, level, role, money, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let name = registered ? global.db.data.users[m.sender].name : conn.getName(m.sender)
     let d = new Date(new Date + 3600000)

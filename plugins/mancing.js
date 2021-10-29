@@ -69,9 +69,10 @@ let handler = async (m, { conn }) => {
   }, 1000)
 }
 handler.help = ['mancing']
-handler.tags = ['game']
+handler.tags = ['rpg']
 handler.command = /^(mancing)$/i
 handler.limit = true
+handler.group = true
 handler.exp = 0
 module.exports = handler
 

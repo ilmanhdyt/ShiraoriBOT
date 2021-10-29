@@ -68,7 +68,7 @@ let handler = async (m, { conn, text }) => {
 		player.lasthunt = new Date * 1 // waktu hunt 2menit
 
 		if (player.healt < 0) {
-			let msg = `*${pname}* Anda Mati Di Bunuh Oleh ${monsterName}`
+			let msg = `*${name}* Anda Mati Di Bunuh Oleh ${monsterName}`
 			if (player.level > 0) {
 				player.level -= 1
 				msg += `\nLevel Anda Turun 1 Karena Mati Saat Berburu!`
@@ -81,7 +81,7 @@ let handler = async (m, { conn, text }) => {
 		player.money += coins * 1
 		player.exp += exp * 1
 
-		let pesan = `*${pname}* Menemukan Dan Membunuh *${monsterName}*\nMendapatkan ${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)} XP\nBerkurang -${dmg}Hp, Tersisa ${player.healt}/${100}`
+		let pesan = `*${name}* Menemukan Dan Membunuh *${monsterName}*\nMendapatkan ${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)} XP\nBerkurang -${dmg}Hp, Tersisa ${player.healt}/${100}`
 		m.reply(pesan)
 	} else throw `Tunggu *00:${cd1}:${cd2}* Untuk Berburu Lagi`
 }

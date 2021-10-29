@@ -41,6 +41,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let usersuncommon = sorteduncommon.map(v => v[0])
     let usersmythic = sortedmythic.map(v => v[0])
     let userslegendary = sortedlegendary.map(v => v[0])
+    let str = `
 *achievement*
 1.Top level *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
 2.Top Money *${usersmoney.indexOf(m.sender) + 1}* dari *${usersmoney.length}*

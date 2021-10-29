@@ -58,9 +58,9 @@ Banned: *No*
 `.trim()
     conn.reply(m.chat, str, m)
 }
-handler.help = ['inventory', 'inv']
+handler.help = ['achievement', 'top']
 handler.tags = ['rpg']
-handler.command = /^(inv(entory)?|bal)$/i
+handler.command = /^(top|achievement$/i
 module.exports = handler
 
 const more = String.fromCharCode(8206)

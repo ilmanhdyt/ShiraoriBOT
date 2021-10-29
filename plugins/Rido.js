@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
 `.trim(), m)
     let mentionedJid = [m.sender]
 }
-handler.customPrefix = //i
+handler.customPrefix = /ilman/i
 handler.command = new RegExp
 
 module.exports = handler

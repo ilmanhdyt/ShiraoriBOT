@@ -7,6 +7,7 @@ handler.command = /^(trap)$/i
 
 handler.limit = true
 handler.group = true
+handler.nsfw = true
 
 module.exports = handler
 

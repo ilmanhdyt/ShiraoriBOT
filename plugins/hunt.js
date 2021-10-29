@@ -1,3 +1,4 @@
+let levelling = require('../lib/levelling')
 let handler = async (m, { conn, text }) => {
 
 	let monsters = [
@@ -52,6 +53,8 @@ let handler = async (m, { conn, text }) => {
 	let cds = `${DeTik(new Date - player.Thunt)}`
 	let cd1 = Math.ceil(01 - cdm)
 	let cd2 = Math.ceil(60 - cds)
+	
+let { name, limit, money, exp, lastclaim, registered, regTime, age, level, role, banned, pasangan } = global.db.data.users[who]
 
 	let area_monsters = monsters.filter(monster => { return monster.area === player.area })
 	let monster = area_monsters[Math.floor(Math.random() * area_monsters.length)]
@@ -81,7 +84,7 @@ let handler = async (m, { conn, text }) => {
 		player.money += coins * 1
 		player.exp += exp * 1
 
-		let pesan = `Menemukan Dan Membunuh *${monsterName}*\nMendapatkan ${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)} XP\nBerkurang -${dmg}Hp, Tersisa ${player.healt}/${100}`
+		let pesan = `*${name} Menemukan Dan Membunuh *${monsterName}*\nMendapatkan ${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)} XP\nBerkurang -${dmg}Hp, Tersisa ${player.healt}/${100}`
 		m.reply(pesan)
 	} else throw `Tunggu *00:${cd1}:${cd2}* Untuk Berburu Lagi`
 }

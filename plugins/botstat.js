@@ -1,46 +1,55 @@
-let handler = async (m, { conn }) => {
-    let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings
-    const chats = conn.chats.all()
-    const groups = chats.filter(v => v.jid.endsWith('g.us'))
-    let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
-
-    let _uptime = process.uptime() * 1000
-    let uptime = clockString(_uptime)
-
-
-    m.reply(`
-┌─〔 Status 〕
-├ Aktif selama ${uptime}
-├ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-├ *${groups.length}* Grup
-├ *${chats.length - groups.length}* Chat Pribadi
-├ *${Object.keys(global.db.data.users).length}* Pengguna
-├ *${totaljadibot.length}* Jadibot
-├ *${conn.blocklist.length}* Terblock
-├ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-├ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-└─ 〔 *SHIRAORI BOT* 〕 
-┌─〔 Pengaturan 〕
-├ ${anon ? '✅' : '❌'} *Anon Chat*
-├ ${anticall ? '✅' : '❌'} *Anti Call*
-├ ${antispam ? '✅' : '❌'} *Anti Spam*
-├ ${antitroli ? '✅' : '❌'} *Anti Troli*
-├ ${backup ? '✅' : '❌'} *Auto Backup DB*
-├ ${groupOnly ? '✅' : '❌'} *Mode Grup*
-├ ${jadibot ? '✅' : '❌'} *Jadi Bot*
-├ ${nsfw ? '✅' : '❌'} *Mode Nsfw*
-└─〔 *SHIRAORI BOT* 〕
-    `.trim())
+let handler = async (m, { conn, command }) => {
+    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
+    let chat = db.data.chats[m.chat]
+    let user = db.data.users[who]
+    let set = db.data.settings[conn.user.jid]
+    if (/chat$/i.test(command)) {
+        m.reply(`
+┌「 Chat 」${m.isGroup ? `
+├ ${chat.isBanned ? '✅' : '❌'} Banned
+├ ${chat.welcome ? '✅' : '❌'} Welcome
+├ ${chat.detect ? '✅' : '❌'} Detect
+├ ${chat.antiLink ? '✅' : '❌'} Anti Link` : ''}
+├ ${chat.delete ? '❌' : '✅'} Anti Delete
+├ ${chat.download ? '❌' : '✅'} Auto Download
+├ ${chat.getmsg ? '❌' : '✅'} Auto Get Messages
+├ ${chat.stiker ? '❌' : '✅'} Auto Sticker
+├ ${chat.viewonce ? '❌' : '✅'} Auto View Once
+└────
+       `.trim())
+    }
+    if (/user$/i.test(command)) {
+        m.reply(`
+┌「 User 」${user.registered ? `
+├ NIM : ${user.nim}` : ``}
+├ Name: ${user.name}
+├ EXP: ${user.exp}
+├ Limit: ${user.limit}
+├ Premium: ${prems.includes(who.split`@`[0]) ? '✅' : '❌'}
+├ Banned: ${user.banned ? '✅' : '❌'}
+└────
+            `.trim())
+    }
+    if (/bot$/i.test(command)) {
+        m.reply(`
+┌「 Bot 」
+├ Name: ${conn.user.name}
+├ ${set.anticall ? '✅' : '❌'} Anti Call
+├ ${set.antispam ? '✅' : '❌'} Anti Spam
+├ ${set.antitroli ? '✅' : '❌'} Anti Troli
+├ ${set.autoread ? '✅' : '❌'} Auto Read
+├ ${set.forward ? '✅' : '❌'} Forward Erajaya
+├ ${set.group ? '✅' : '❌'} Group Only
+├ ${set.jadibot ? '✅' : '❌'} Jadibot
+├ ${set.private ? '✅' : '❌'} Private Chat Only
+├ ${set.restrict ? '✅' : '❌'} Restrict
+├ ${set.self ? '✅' : '❌'} Self
+└────
+`.trim())
+    }
 }
-handler.help = ['botstatus']
+handler.help = ['infochat', 'infouser', 'infobot']
 handler.tags = ['info']
-handler.command = /^botstat(us)?$/i
+handler.command = /^(info(chat|user|bot))$/i
 
 module.exports = handler
-
-function clockString(ms) {
-    let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-    let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-    let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-    return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}

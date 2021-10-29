@@ -88,9 +88,9 @@ let handler = async (m, { conn, text }) => {
 
 handler.help = ['hunt']
 handler.tags = ['rpg']
-handler.command = /^hunt/i
+handler.command = /^(hunt)$/i
 
-handler.disabled = true
+handler.group = true
 
 handler.fail = null
 

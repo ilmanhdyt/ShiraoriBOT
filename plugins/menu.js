@@ -235,10 +235,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "",
                   "rowId": `${_p}? stiker`
                 }, {
-                  "title": "Random Image",
-                  "description": "",
-                  "rowId": `${_p}? random`
-                }, {
                   "title": "Kerang Ajaib",
                   "description": "",
                   "rowId": `${_p}? kerangajaib`

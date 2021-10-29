@@ -54,7 +54,7 @@ let handler = async (m, { conn, text }) => {
 	let cd1 = Math.ceil(01 - cdm)
 	let cd2 = Math.ceil(60 - cds)
 	
-let { name, limit, money, exp, lastclaim, registered, regTime, age, level, role, banned, pasangan } = global.db.data.users[who]
+let { name, limit, money, exp, lastclaim, registered, regTime, age, level, role, banned, pasangan } = global.db.data.users[m.sender]
 
 	let area_monsters = monsters.filter(monster => { return monster.area === player.area })
 	let monster = area_monsters[Math.floor(Math.random() * area_monsters.length)]

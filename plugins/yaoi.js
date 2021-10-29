@@ -1,13 +1,16 @@
+let fetch = require('node-fetch')
 
-let handler = async (m, { conn }) => {
-  await conn.sendFile(m.chat, global.API('lolhum', '/random/nsfw/yaoi', { text: ajg gay }, ,APIKEY'), 'yaoi.jpg', teks, m)
+let handler = async (m, { conn, text }) => {
+let res = await fetch('https://api.lolhuman.xyz/api/random/nsfw/yaoi?apikey=HIRO')
+if (!res.ok) throw await `${res.status} ${res.statusText}`;
+let json = await res.json();
+let url = json[Math.floor(Math.random() * json.length)]
+await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'Lu pasti gay kntl', '© SHIRAORI BOT', 'Next', '.yaoi', m)
 }
-handler.help = ['yaoi']
-handler.tags = ['nsfw']
 handler.command = /^(yaoi)$/i
+handler.tags = ['nsfw']
+handler.help = ['yaoi']
 
-handler.limit = true
-handler.group = true
 handler.nsfw = true
 
 module.exports = handler

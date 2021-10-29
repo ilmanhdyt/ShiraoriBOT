@@ -410,7 +410,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), `${ucapan()} ${name}\nSHIRAORI BOT MADE BY ILMAN`, 'Pemilik Bot', `${_p}owner`, 'Admin Grup', `${_p}admingc`, 'SNK', `${_p}snk`, m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), `${ucapan()} ${name}\nSHIRAORI BOT MADE BY ILMAN`, 'Pemilik Bot', `${_p}owner`, 'SNK', `${_p}snk`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e

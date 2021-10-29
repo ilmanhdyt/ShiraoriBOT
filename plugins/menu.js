@@ -19,16 +19,16 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'random', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'adminban', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'rpg', 'jadian', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'adminban', 'internet', 'anime', 'nsfw', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
+    'ilman': 'ilman',
     'game': 'Game',
     'rpg': `Rpg ${global.opts['restrict'] ? '' : '(perbaikan)'}`,
     'jadian': 'Jadian',
     'xp': 'Exp & Limit',
     'sticker': 'Stiker',
-    'random': 'Random',
     'kerang': 'Kerang Ajaib',
     'quotes': 'Quotes',
     'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
@@ -52,6 +52,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'info': 'Info',
     '': 'Tanpa Kategori',
   }
+  if (teks == 'ilman') tags = {
+    'ilman': 'ilman'
+  }
   if (teks == 'game') tags = {
     'game': 'Game'
   }
@@ -66,9 +69,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
-  }
-  if (teks == 'random') tags = {
-     'random': 'Random'
   }
   if (teks == 'kerangajaib') tags = {
     'kerang': 'Kerang Ajaib'
@@ -207,6 +207,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": `Semua Perintah`,
                   "description": "",
                   "rowId": `${_p}? all`
+                }, {
+                  "title": "Pemilik Bot",
+                  "description": "owner bot",
+                  "rowId": `${_p}owner`
                 }, {
                   "title": "Game",
                   "description": "",

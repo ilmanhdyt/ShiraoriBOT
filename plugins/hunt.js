@@ -40,6 +40,10 @@ let handler = async (m, { conn, text }) => {
 		{ area: 13, name: "Definitely not so young Dragon" },
 		{ area: 13, name: "Teen Dragon" },
 		{ area: 13, name: "Scaled Teen Dragon" },
+		{ area: 14, name: "ogre" },
+		{ area: 15, name: "kijin" },
+		{ area: 16, name: "majin" },
+		{ area: 17, name: "demon lord" },
 	]
 	let player = global.db.data.users[m.sender]
 	let pname = conn.getName(m.sender)
@@ -84,7 +88,7 @@ let handler = async (m, { conn, text }) => {
 
 handler.help = ['hunt']
 handler.tags = ['rpg']
-handler.command = /^(hunt)$/i
+handler.command = /^hunt/i
 
 handler.disabled = true
 

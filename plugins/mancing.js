@@ -56,7 +56,7 @@ let handler = async (m, { conn }) => {
       var namaIkan = "Kepiting"
     }
     
-    global.DATABASE._data.users[m.sender].money += hargaIkan * jumlahIkan
+    global.db.data.users[m.sender].money += hargaIkan * jumlahIkan
     conn.updatePresence(m.chat, Presence.composing)
 
     tampilanIkan = ""

@@ -11,7 +11,7 @@ let handler = async(m, { conn, text }) => {
     let url = 'https://chat.whatsapp.com/' + link;
     console.log(chalk.bold.red('Membuat Grup: ' + group.gid + '\nNama Grup: ' + text + '\n\nBOT'))
     //conn.sendMessage(group.gid, "Success to group create!", MessageType.extendedText)
-     m.reply('_Berhasil Membuat Grup *' + text + '*_\n\n*Nama:* ' + text + '\n*ID:* ' + group.gid + '\n*Link:* ' + url + '\n\n*©AdiOfficial*')
+     m.reply('_Berhasil Membuat Grup *' + text + '*_\n\n*Nama:* ' + text + '\n*ID:* ' + group.gid + '\n*Link:* ' + url + '\n\n*© SHIRAORI BOT*')
        } catch (e) {
     m.reply('```Error```')
     console.log (e)
@@ -25,7 +25,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.register = true
+handler.register = false
 
 handler.admin = false
 handler.botAdmin = false

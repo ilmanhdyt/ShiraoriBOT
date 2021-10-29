@@ -96,7 +96,7 @@ Banned: *No*
 }
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
-handler.command = /^(inv(entory)?|bal|level(ing)?|money|e?xp)$/i
+handler.command = /^(inv(entory)?|bal)$/i
 module.exports = handler
 
 const more = String.fromCharCode(8206)

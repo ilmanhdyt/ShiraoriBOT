@@ -144,7 +144,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
-    let { exp, limit, level, role, money, registered } = global.db.data.users[m.sender]
+    let { exp, limit, level, role, money, age, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let name = registered ? global.db.data.users[m.sender].name : conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
@@ -196,7 +196,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, Kak ${name}\n\nNama: *${name}*\nLevel: *${level}*\nXp: *${exp}*\nRole: *${role}*\nUang: *${money}*`,
+          "title": `${ucapan()}, Kak ${name}\n\nNama: *${name}*\nLevel: *${level}*\nXp: *${exp}*\nRole: *${role}*\nUang: *${money}*\nUmur: *${age}`,
           "description": "\n\nNote: Jangan Spam ya\nberi bot jeda 3 detik\n\nKetik *.snk*\nuntuk mengetahui info bot",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",

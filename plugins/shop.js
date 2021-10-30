@@ -316,7 +316,7 @@ Sampah:     ${Ssampah}\n\n
 handler.help = ['shop sell', 'shop buy']
 handler.tags = ['rpg']
     
-handler.command = /^(shop(buy)|toko|beli|sell|jual)$/i
+handler.command = /^(shop|buy|toko|beli|sell|jual)$/i
 handler.group = true
 handler.limit = 2
 handler.register = true

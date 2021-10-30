@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
 	await conn.updatePresence(m.chat, Presence.composing) 
 	let list = Object.entries(global.db.data.users)
 	let money = !args || !args[0] ? 100 : isNumber(args[0]) ? parseInt(args[0]) : 100
-	lim = Math.max(1, lim)
+	money = Math.max(1, money)
 	list.map(([user, data], i) => (Number(data.money = money)))
 		conn.reply(m.chat, `*berhasil direset ${money} / user*`, m)
 }

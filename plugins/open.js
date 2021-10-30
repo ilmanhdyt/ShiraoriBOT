@@ -634,7 +634,8 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lm3 > 0 ? `\nMoney: ${lm3
 handler.help = ['open <crate>']
 handler.tags = ['rpg']
 handler.command = /^(open|buka|gacha)$/i
-
+handler.group = true
+handler.register = true
 handler.fail = null
 
 module.exports = handler

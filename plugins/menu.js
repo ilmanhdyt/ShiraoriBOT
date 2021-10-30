@@ -421,8 +421,8 @@ handler.tags = ['main']
 handler.command = /^(menu|ilman|help|\?)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
-handler.group = false
+handler.premium = true
+handler.group = true
 handler.private = false
 
 handler.admin = false

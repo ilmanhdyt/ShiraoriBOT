@@ -18,4 +18,5 @@ global.shiraori = [
 'knp ilman?',
 'jangan ganggu shiraori lagi sibuk',
 'bentar ewe dulu ama ilman',
+'Shiraori lagi makan',
 ]

@@ -318,6 +318,6 @@ handler.tags = ['rpg']
     
 handler.command = /^(shop|toko|buy|beli|sell|jual)$/i
 handler.group = true
-handler.limit = 100
+handler.limit = 2
 handler.register = true
 module.exports = handler

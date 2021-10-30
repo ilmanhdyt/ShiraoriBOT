@@ -190,7 +190,7 @@ Sampah:     ${Ssampah}\n\n
                             global.db.data.users[m.sender].diamond += count * 1
                             global.db.data.users[m.sender].money -= Bdiamond * count
                             conn.reply(m.chat, `Succes membeli ${count} Diamond dengan harga ${Bdiamond * count} money`, m)
-                        } else conn.reply(m.chat, `Money anda tidak cukup`, m)
+                        } else conn.reply(m.chat, `Uang anda tidak cukup`, m)
                     
                     break
                 case 'common':
@@ -317,4 +317,6 @@ handler.help = ['shop <sell|buy> <args>']
 handler.tags = ['rpg']
     
 handler.command = /^(shop|toko|buy|beli|sell|jual)$/i
+handler.group = true
+handler.premium = true
 module.exports = handler

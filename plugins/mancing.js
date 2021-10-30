@@ -3,6 +3,9 @@ let handler = async (m, { conn }) => {
   conn.mancing = conn.mancing ? conn.mancing : {}
 
   const delay = time => new Promise(res=>setTimeout(res,time));
+  
+let time = users.lastmancing + 10000
+    if (new Date - users.lastslot < 10000) throw `tunggu selama ${msToTime(time - new Date())}`
 
   if (typeof conn.mancing[m.sender] != "undefined" && conn.mancing[m.sender] == true) return m.reply(`*Tidak bisa memancing lagi karena anda sedang menunggu tangkapan ikan*`)
 
@@ -82,3 +85,17 @@ function getRandom(min,max){
   max = Math.floor(max)
   return Math.floor(Math.random()*(max-min+1)) + min
 }
+
+function msToTime(duration) {
+    var milliseconds = parseInt((duration % 1000) / 100),
+        seconds = Math.floor((duration / 1000) % 60),
+        minutes = Math.floor((duration / (1000 * 60)) % 60),
+        hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+    hours = (hours < 10) ? "0" + hours : hours
+    minutes = (minutes < 10) ? "0" + minutes : minutes
+    seconds = (seconds < 10) ? "0" + seconds : seconds
+
+    return minutes + " menit " + seconds + " detik"
+}
+

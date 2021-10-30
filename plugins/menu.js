@@ -196,7 +196,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()} kak ${name}\n\n╭━━━━━━━━━━━━━━━━┈\n│       *SHIRAORI BOT\n└┬────────────┈ ⳹\n┌┤\n││◦➛ *Nama :* *${name}*\n││◦➛ *Uang :* *${money}*\n││◦➛ *Exp :* *${exp}*\n││◦➛ *Limit :* *${limit}*\n││◦➛ *Level :* *${level}*\n││◦➛ *Rank :* *${role}*\n││◦➛ *Umur :* *${age}*\n│└────────────┈ ⳹\n└────────────┈ ⳹`,
+          "title": `${ucapan()} kak ${name}\n\n╭━━━━━━━━━━━━━━━━┈\n│       *SHIRAORI BOT*\n└┬────────────┈ ⳹\n┌┤\n││◦➛ *Nama :* *${name}*\n││◦➛ *Uang :* *${money}*\n││◦➛ *Exp :* *${exp}*\n││◦➛ *Limit :* *${limit}*\n││◦➛ *Level :* *${level}*\n││◦➛ *Rank :* *${role}*\n││◦➛ *Umur :* *${age}*\n││◦➛ *Owner:* ilman (@6281351047727)\\n│└────────────┈ ⳹\n└────────────┈ ⳹`,
           "description": "\n\nNote: Jangan Spam ya\nberi bot jeda 3 detik\n\n\n\n\n© SHIRAORI BOT",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",

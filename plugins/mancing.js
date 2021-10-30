@@ -4,9 +4,6 @@ let handler = async (m, { conn }) => {
 
   const delay = time => new Promise(res=>setTimeout(res,time));
   
-let time = user.lastmancing + 10000
-    if (new Date - users.lastslot < 10000) throw `tunggu selama ${msToTime(time - new Date())}`
-
   if (typeof conn.mancing[m.sender] != "undefined" && conn.mancing[m.sender] == true) return m.reply(`*Tidak bisa memancing lagi karena anda sedang menunggu tangkapan ikan*`)
 
   conn.mancing[m.sender] = true

@@ -14,8 +14,8 @@ function pickRandom(list) {
 }
 
 global.shiraori = [
-'halo ilman',
-'knp ilman?',
+'halo kak',
+'knp kak',
 'jangan ganggu shiraori lagi sibuk',
 'bentar ewe dulu ama ilman',
 'Shiraori lagi makan',

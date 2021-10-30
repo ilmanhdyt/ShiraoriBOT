@@ -2,7 +2,7 @@ let levelling = require('../lib/levelling')
 let handler = async (m, { conn, usedPrefix }) => {
     let healt = global.db.data.users[m.sender].healt
     let armor = global.db.data.users[m.sender].armor 
-    let warn = global.db.data.users[m.sender].warn
+    let warn = global.db.data.users[m.sender].warning
     let pet = global.db.data.users[m.sender].pet
     let kucing = global.db.data.users[m.sender].kucing
     let _kucing = global.db.data.users[m.sender].anakkucing

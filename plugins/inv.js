@@ -97,6 +97,8 @@ Banned: *No*
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
 handler.command = /^(inv(entory)?|bal)$/i
+handler.group = true
+handler.register = true
 module.exports = handler
 
 const more = String.fromCharCode(8206)

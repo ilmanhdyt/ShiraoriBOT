@@ -4,13 +4,13 @@ let handler = async (m, { conn, args, groupMetadata }) => {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
         let mention = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : false
-        let warn = global.db.data.users[mention].warn
+        let warn = global.db.data.users[mention].warning
         if (warn < 2) {
-            global.db.data.users[mention].warn += 1
+            global.db.data.users[mention].warning += 1
             conn.reply(m.chat, `⚠️ *WARNING +1*`, m)
             m.reply('Kamu mendapatkan warn dari admin, total warn kamu sekarang *' + (warn + 1) + '* warn, Jika kamu mendapat warn *3 kali*, kamu akan dikeluarkan dari grup', mention)
         } else if (warn == 2) {
-            global.db.data.users[mention].warn = 0
+            global.db.data.users[mention].warning = 0
             m.reply('Selamat tinggal')
             await time(5000)
             await conn.groupRemove(m.chat, [mention])

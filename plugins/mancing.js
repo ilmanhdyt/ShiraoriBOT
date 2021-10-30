@@ -4,13 +4,13 @@ let handler = async (m, { conn }) => {
 
   const delay = time => new Promise(res=>setTimeout(res,time));
 
-  if (typeof conn.mancing[m.sender] != "undefined" && conn.mancing[m.sender] == true) return m.reply(`*Tidak bisa memancing lagi karena anda sedang menunggu tangkapan ikan bro.*`)
+  if (typeof conn.mancing[m.sender] != "undefined" && conn.mancing[m.sender] == true) return m.reply(`*Tidak bisa memancing lagi karena anda sedang menunggu tangkapan ikan*`)
 
   conn.mancing[m.sender] = true
 
   let wait = getRandom(1,5)
   let minute = wait * 1000 * 60
-  m.reply("*Sedang memancing selama " + wait + " menit*\n\n*Silahkan mengkopi dan mengsabar dulu*")
+  m.reply("*Sedang memancing selama " + wait + " menit*\n\n*Silahkan menunggu*")
   await delay(minute)
 
   let ikan = ['🐠','🐟','🐡','🐬','🐳','🐋','🦈','🦀','🐊']

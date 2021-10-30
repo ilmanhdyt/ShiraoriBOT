@@ -20,7 +20,7 @@ let handler = async (m, { conn, args, groupMetadata }) => {
     } else conn.reply(m.chat, 'Tag target', m)
 }
 handler.help = ['Warn @user']
-handler.tags = ['group']
+handler.tags = ['group', 'admin']
 handler.command = /^warn$/i
 handler.owner = false
 handler.mods = false

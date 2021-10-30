@@ -196,7 +196,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, Kak ${name}\n\nNama: *${name}*\nLevel: *${level}*\nXp: *${exp}*\nLimit: *${limit}*\nRole: *${role}*\nUang: *${money}*\nUmur: *${age}*\n\nOwner: @${m.sender.split`@`[0]}`,
+          "title": `${ucapan()}, Kak ${name}\n\nNama: *${name}*\nLevel: *${level}*\nXp: *${exp}*\nLimit: *${limit}*\nRole: *${role}*\nUang: *${money}*\nUmur: *${age}*\n\nOwner: @6281351047727`,
           "description": "\n\nNote: Jangan Spam ya\nberi bot jeda 3 detik\n\n\n\n\n© SHIRAORI BOT",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",

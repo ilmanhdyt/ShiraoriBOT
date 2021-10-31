@@ -3,12 +3,10 @@ let handler = async (m, { conn, args, participants }) => {
     return { ...value, jid: key }
   })
   let sortedExp = users.map(toNumber('exp')).sort(sort('exp'))
-  let sortedMoney = users.map(toNumber('money')).sort(sort('money'))
   let sortedLim = users.map(toNumber('limit')).sort(sort('limit'))
   let sortedLevel = users.map(toNumber('level')).sort(sort('level'))
   let usersExp = sortedExp.map(enumGetKey)
   let usersLim = sortedLim.map(enumGetKey)
-  let usersMoney = sortedMoney.map(enumGetKey)
   let usersLevel = sortedLevel.map(enumGetKey)
   console.log(participants)
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
@@ -17,11 +15,6 @@ let handler = async (m, { conn, args, participants }) => {
 ├ Kamu: *${usersExp.indexOf(m.sender) + 1}* dari *${usersExp.length}*
 │
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `├ ${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} Exp*`).join`\n`}
-└────
-┌〔 *money Leaderboard Top ${len}* 〕
-├ Kamu: *${usersMoney.indexOf(m.sender) + 1}* dari *${usersMoney.length}*
-│
-${sortedMoney.slice(0, len).map(({ jid, money }, i) => `├ ${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} Money*`).join`\n`}
 └────
 ┌〔 *Limit Leaderboard Top ${len}* 〕
 ├ Kamu: *${usersLim.indexOf(m.sender) + 1}* dari *${usersLim.length}*

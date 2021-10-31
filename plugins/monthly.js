@@ -1,7 +1,7 @@
 let { MessageType } = require('@adiwajshing/baileys')
 
 let handler = async (m, { conn }) => {
-    let user = global.DATABASE._data.users[m.sender]
+    let user = global.db.data.users[m.sender]
     let _timers = (2592000000 - (new Date - user.lastmonthly))
     let timers = clockString(_timers) 
     if (new Date - user.lastmonthly > 2592000000) {
@@ -20,6 +20,8 @@ handler.tags = ['rpg']
 handler.command = /^(monthly)$/i
 
 handler.fail = null
+handler.group = true
+handler.register = true
 
 module.exports = handler
 
@@ -42,14 +44,14 @@ function button(teks, user) {
     let weekly = new Date - user.lastweekly > 604800000
     console.log({claim, monthly, weekly})
     
-    if (monthly) buttons.push({buttonId: `id${buttons.length + 1}`, buttonText: {displayText: '/monthly'}, type: 1})
-    if (weekly) buttons.push({buttonId: `id${buttons.length + 1}`, buttonText: {displayText: '/weekly'}, type: 1})
-    if (claim) buttons.push({buttonId: `id${buttons.length + 1}`, buttonText: {displayText: '/claim'}, type: 1})
+    if (monthly) buttons.push({buttonId: `id${buttons.length + 1}`, buttonText: {displayText: '.monthly'}, type: 1})
+    if (weekly) buttons.push({buttonId: `id${buttons.length + 1}`, buttonText: {displayText: '.weekly'}, type: 1})
+    if (claim) buttons.push({buttonId: `id${buttons.length + 1}`, buttonText: {displayText: '.claim'}, type: 1})
     if (buttons.length == 0) throw teks
     
     const buttonMessage = {
         contentText: teks,
-        footerText: '©games-wabot',
+        footerText: '© SHIRAORI BOT',
         buttons: buttons,
         headerType: 1
     }

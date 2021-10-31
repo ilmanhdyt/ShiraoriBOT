@@ -1,101 +1,51 @@
-let handler = async (m, { conn, text, participants }) => {
+let handler = async (m, { conn, args }) => {
   conn.job = conn.job ? conn.job : {}
-  
-  function getRandom(min,max){
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random()*(max-min+1)) + min
-  }
 
-  user = text.split('@')[1] + "@s.whatsapp.net"
+  var ket = "\n\nKetik *.sewa @user* untuk menggunakan jasa"
 
-  if (typeof global.db.data.users[user] == 'undefined') return m.reply(`*Orang yang anda tag tidak terdaftar di bot.*`)
+  if (!args[0] || !args[1]){
+    return conn.reply(m.chat,`*.job maling 100000*
 
-  if (!text){
-    return conn.reply(m.chat,'*Tag nama orang yang ingin anda sewa jasanya.*',m)
-  }else if(typeof conn.job[user] == "undefined"){
-    return conn.reply(m.chat,'*Orang yang anda tag tidak menawarkan jasa apapun.*',m)
+Pekerjaan :
+  - pijat
+  - lonte
+  - sepong
+  - maling`,m)
   }else {
-    if (m.sender == user){
-      return conn.reply(m.chat,'*Tidak bisa menyewa diri sendiri*',m)
-    }else if (global.db.data.users[m.sender].money < conn.job[user].price){
-      return conn.reply(m.chat,`Uang anda miliki tidak cukup untuk membeli jasa dari @${user.split('@')[0]}\n\nSaldo anda : Rp. ${global.db.data.users[m.sender].money.toLocaleString()},-\nHarga jasa : Rp. ${conn.job[user].price.toLocaleString()},-`,m,{contextInfo: {
-        mentionedJid: [user]
+    if (parseInt(args[1]) < 100000 || parseInt(args[1]) > 100000000){
+      return conn.reply(m.chat,'Harga jasa minimal Rp. 100.000,- dan maksimal Rp. 100.000.000,-',m)
+    }
+    args[0] = args[0].toLowerCase()
+    if (args[0] === "lonte"){
+      conn.job[m.sender] = {'job' : args[0], 'price' : parseInt(args[1])}
+      conn.reply(m.chat,`*❏ JASA LONTE*\n\n@${m.sender.split('@')[0]} menawarkan diri sebagai lonte dengan biaya ${args[1].toLocaleString()},-${ket}`,m, {contextInfo: {
+        mentionedJid: [m.sender]
+      }})
+    }else if (args[0] === "pijat"){
+      conn.job[m.sender] = {'job' : args[0], 'price' : parseInt(args[1])}
+      conn.reply(m.chat,`*❏ JASA PIJAT*\n\n@${m.sender.split('@')[0]} menawarkan diri sebagai tukang pijat dengan biaya ${args[1].toLocaleString()},-${ket}`,m, {contextInfo: {
+        mentionedJid: [m.sender]
+      }})
+    }else if (args[0] === "sepong"){
+      conn.job[m.sender] = {'job' : args[0], 'price' : parseInt(args[1])}
+      conn.reply(m.chat,`*❏ JASA SEPONG*\n\n@${m.sender.split('@')[0]} menawarkan diri sebagai tukang sepong dengan biaya ${args[1].toLocaleString()},-${ket}`,m, {contextInfo: {
+        mentionedJid: [m.sender]
+      }})
+    }else if (args[0] === "maling"){
+       return m.reply(`*Fitur job maling dinonaktifkan sementara.*`)
+      conn.job[m.sender] = {'job' : args[0], 'price' : parseInt(args[1])}
+      conn.reply(m.chat,`*❏ JASA MALING*\n\n@${m.sender.split('@')[0]} menawarkan diri sebagai tukang maling dengan biaya ${args[1].toLocaleString()},-${ket}`,m, {contextInfo: {
+        mentionedJid: [m.sender]
       }})
     }else {
-      if (conn.job[user].job === "x"){
-        return conn.reply(m.chat,'*Orang yang anda tag tidak menawarkan jasa apapun.*',m)  
-      }else if (conn.job[user].job === "lonte"){
-        global.db.data.users[m.sender].money -= conn.job[user].price
-        conn.job[user].money += conn.job[user].price
-        conn.reply(m.chat,`*❏ JASA LONTE*\n\n@${m.sender.split('@')[0]} : "Aku masukin ya sayang ahhh"\n@${user.split('@')[0]} : "Aduuh pelan pelan dong, enaaak"\n@${m.sender.split('@')[0]} : "Aaaah aaaahhh, croooot"\n\nBiaya sewa : Rp. ${conn.job[user].price.toLocaleString()}`,m,{contextInfo: {
-          mentionedJid: [m.sender,user]
-        }})
-        delete conn.job[user]
-      }else if (conn.job[user].job === "pijat"){
-        global.db.data.users[m.sender].money -= conn.job[user].price
-        conn.job[user].money += conn.job[user].price
-        conn.reply(m.chat,`*❏ JASA PIJAT*\n\n@${m.sender.split('@')[0]} : "Bagian sininya pijat yang enak ya bangsat"\n@${user.split('@')[0]} : "Iya suhu, sabar, ini lagi di pijat, huft"\n@${m.sender.split('@')[0]} : "Aaaah aaaahhh jangan ke alat vital dooong"\n\nBiaya sewa : Rp. ${conn.job[user].price.toLocaleString()}`,m,{contextInfo: {
-          mentionedJid: [m.sender,user]
-        }})
-        delete conn.job[user]
-      }else if (conn.job[user].job === "sepong"){
-        global.db.data.users[m.sender].money -= conn.job[user].price
-        conn.job[user].money += conn.job[user].price
-        conn.reply(m.chat,`*❏ JASA SEPONG*\n\n@${m.sender.split('@')[0]} : "Ayok aku buka dulu celananya"\n@${user.split('@')[0]} : "Waduh gede kali om, mmppsss"\n@${m.sender.split('@')[0]} : "Croooot, telen ayo telen"\n\nBiaya sewa : Rp. ${conn.job[user].price.toLocaleString()}`,m,{contextInfo: {
-          mentionedJid: [m.sender,user]
-        }})
-        delete conn.job[user]
-      }else if (conn.job[user].job === "maling"){
-        let users = participants.map(u => u.jid)
-        var tag
-		    tag = users[Math.floor(users.length * Math.random())]
-        let x = 0
-        while(typeof global.db.data.users[tag] == "undefined" || global.db.data.users[tag].limit == 0 || global.db.data.users[tag].premium) {
-          tag = users[Math.floor(users.length * Math.random())]
-          x += 1
-          if (x == 100) return m.reply("*Gagal mendapatkan limit karena si maling terlalu tolol.*")
-        }
-
-        let pertarungan = []
-        for (i=0;i<conn.level(conn.job[user].xp)[0];i++) pertarungan.push(user)
-        for (i=0;i<conn.level(global.db.data.users[tag].xp)[0];i++) pertarungan.push(tag)
-        let pointMaling = 0
-        let pointKorban = 0
-        for (i=0;i<10;i++){
-          if (pertarungan[getRandom(0,pertarungan.length-1)] == user) pointMaling += 1
-          else pointKorban += 1
-        }
-
-        // kalah level
-        if (pointKorban >= pointMaling) {
-          delete conn.job[user]
-          return conn.reply(m.chat,`*@${user.split('@')[0]} gagal mencuri limit @${tag.split('@')[0]} karena dihajar saat berusaha mencuri.*\n\n*Note : keberhasilan mencuri tergantung dari level pencuri dan korban*`, m, {contextInfo : {mentionedJid : [tag,user]}})
-        }
-        
-        limitMax = getRandom(1,Math.floor(conn.job[user].price/100000)*2)
-        if (global.db.data.users[tag].limit < limitMax){
-          limitMax = global.db.data.users[tag].limit
-        }
-
-        global.db.data.users[tag].limit -= limitMax
-        global.db.data.users[m.sender].limit += limitMax
-        global.db.data.users[m.sender].money -= conn.job[user].price
-        conn.job[user].money += conn.job[user].price
-        conn.reply(m.chat,`*❏ JASA MALING*\n\n@${user.split('@')[0]} : "Woy bangsat sini gw maling limit lu !"\n@${tag.split('@')[0]} : "Ampuuuun ndan, hiks hiks"\n\n_5 Menit kemudian_\n\n@${user.split('@')[0]} : "Ni bos hasil maling limitnya si @${tag.split('@')[0]} cuma dapet ${limitMax} limit"\n@${m.sender.split('@')[0]} : "Oke siap njing"\n\nBiaya sewa : Rp. ${conn.job[user].price.toLocaleString()}`,m,{contextInfo: {
-          mentionedJid: [m.sender,user,tag]
-        }})
-        delete conn.job[user]
-      }
+      conn.reply(m.chat,'Jenis pekerjaan yang tersedia adalah maling, lonte, sepong, pijat',m)
     }
   }
 
 }
-handler.help = ['sewa *@tag*']
+handler.help = ['job','jasa'].map(v => v + ' *service price*')
 handler.tags = ['fun','game']
-handler.command = /^sewa$/i
-handler.admin = false
+handler.command = /^job|jasa$/i
 handler.group = true
-handler.botAdmin = false
 handler.limit = true
 module.exports = handler

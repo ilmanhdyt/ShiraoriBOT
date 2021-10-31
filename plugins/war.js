@@ -187,8 +187,9 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
   }
 
 }
-handler.help = ['war']
+handler.help = ['']
 handler.tags = ['game']
-handler.command = /^(war)$/i
+handler.command = /^()$/i
 handler.group = true
+handler.disable = true
 module.exports = handler

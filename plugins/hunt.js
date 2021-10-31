@@ -41,7 +41,7 @@ let handler = async (m, { conn, text }) => {
 		{ area: 13, name: "Teen Dragon" },
 		{ area: 13, name: "Scaled Teen Dragon" },
 	]
-	let player = global.DATABASE.data.users[m.sender]
+	let player = global.db.data.users[m.sender]
 	let pname = conn.getName(m.sender)
 
 	let cdm = `${MeNit(new Date - player.Thunt)}`

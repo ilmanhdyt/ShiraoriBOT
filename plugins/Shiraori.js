@@ -19,6 +19,9 @@ global.shiraori = [
 'jangan ganggu shiraori lagi sibuk',
 'bentar ewe dulu ama ilman',
 'Shiraori lagi makan',
+'Shiraori disini',
+'Donasi dulu',
+'bagi duit dulu',
 'Silahkan ketik .menu ya kak',
 'Shiraori istirahat dulu',
 ]

@@ -10,7 +10,7 @@ let handler = async(m, { conn, text }) => {
     conn.reply(m.chat, hasil, m)
 	})
 }
-handler.help = ['danacinta'].map(v => v + ' <no hp>')
+handler.help = ['danacinta'].map(v => v + ' no hp')
 handler.tags = ['premium']
 handler.command = /^(danacinta)$/i
 handler.owner = false

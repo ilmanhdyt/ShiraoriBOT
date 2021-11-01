@@ -13,11 +13,10 @@ if (jumlah && isNaN(jumlah)) throw 'Jumlah harus berupa angka!'
   if (i !== 0) conn.reply(fixedNumber, pesan.trim(), m)
   }
 }
-handler.help = ['spamwa <nomor>|<pesan>|<jumlah>']
+handler.help = ['spamwa nomor|pesan|jumlah']
 handler.tags = ['premium']
 handler.command = /^spam(wa)?$/i
 
-handler.group = true
 handler.premium = true
 
 module.exports = handler

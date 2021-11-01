@@ -12,7 +12,7 @@ let handler  = async (m, { conn, DevMode }) => {
         await fs.copyFile(`./database.json`, `./database ${date}.json`, (err) => {
             if (err) {
                 console.log(err)
-                if (DevMode) {
+                if (!m.isOwner) {
                     for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) {
                         conn.sendMessage(jid, 'Backup.js error\nNo: *' + m.sender.split`@`[0] + '*\nCommand: *' + m.text + '*\n\n*' + e + '*', MessageType.text)
                     }

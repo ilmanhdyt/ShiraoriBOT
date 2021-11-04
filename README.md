@@ -3,11 +3,6 @@
 </p>
 <h1 align="center">SHIRAORI BOT</h1>
 
-# notes!!
-
-
-* sebelum kalian clone hapus dulu file [session.data.json](https://github.com/ilmanhdyt/ShiraoriBOT/blob/main/session.data.json)
-* before you clone first delete the file [session.data.json](https://github.com/ilmanhdyt/ShiraoriBOT/blob/main/session.data.json)
 
 
 ## ERROR FIX IT YOURSELF

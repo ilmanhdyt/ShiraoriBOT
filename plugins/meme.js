@@ -1,12 +1,10 @@
-
-
+let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
-  conn.sendFile(m.chat, 'https://api.xteam.xyz/randomimage/meme?APIKEY=FuzBot1', '', 'Garing😑', m)
+    let url = global.API('xteam', '/randomimage/meme', {}, 'APIKEY')
+    await conn.sendFile(m.chat, url, '', '', m, 0, { thumbnail: await (await fetch(url)).buffer() })
 }
 handler.help = ['meme']
 handler.tags = ['fun']
 handler.command = /^(meme)$/i
-
-handler.limit = true
 
 module.exports = handler

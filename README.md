@@ -7,7 +7,7 @@
 
 ## NOTE
 * Gunakan repo ini jika kalian memakai Termux
-* jika kalian memakai Rdp Gunakan repo [`ShiroBOT`](https://github.com/ilmanhdyt/ShiraoriBOT)
+* jika kalian memakai Rdp Gunakan repo [`ShiroBOT`](https://github.com/ilmanhdyt/ShiroBOT)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ilmanhdyt/ShiraoriBOT)
 

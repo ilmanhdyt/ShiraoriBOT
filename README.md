@@ -5,10 +5,9 @@
 
 
 
-## ERROR FIX IT YOURSELF
-
-## UPDATE!!
-* new fitur Rpg Game
+## NOTE
+* Gunakan repo ini jika kalian memakai Termux
+* jika kalian memakai Rdp Gunakan repo [`ShiroBOT`](https://github.com/ilmanhdyt/ShiraoriBOT)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ilmanhdyt/ShiraoriBOT)
 
@@ -23,7 +22,8 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ilmanhdyt/ShiraoriBOT
+git clone https://github.com/ilmanhdyt/ShiroBOT
+cd ShiroBOT
 npm install
 npm update
 npm index

@@ -216,7 +216,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     case 'simi':
       if (m.isGroup) {
-        global.dfail('private', m, conn)
+        global.dfail('group', m, conn)
         throw false
 
       } else if (!(isAdmin || isOwner)) {

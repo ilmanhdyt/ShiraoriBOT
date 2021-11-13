@@ -4,7 +4,7 @@ let handler = async (m, { conn, text }) => {
   conn.reply(m.chat,`${pickRandom(global.shiraori)}`, m)
     let mentionedJid = [m.sender]
 }
-handler.customPrefix = //i
+handler.customPrefix = /Shiraori/i
 handler.command = new RegExp
 module.exports = handler
 

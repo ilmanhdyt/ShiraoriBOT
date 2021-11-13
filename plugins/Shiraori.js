@@ -4,10 +4,8 @@ let handler = async (m, { conn, text }) => {
   conn.reply(m.chat,`${pickRandom(global.shiraori)}`, m)
     let mentionedJid = [m.sender]
 }
-handler.command = /Shiraori|shiraori/i
-handler.tags = ['main']
-handler.help = ['Shiraori']
-
+handler.customPrefix = /Shiraori/i
+handler.command = new RegExp
 module.exports = handler
 
 function pickRandom(list) {
@@ -17,6 +15,7 @@ function pickRandom(list) {
 global.shiraori = [
 'halo kak',
 'knp kak',
+'kak jalan yuk>_<',
 'jangan ganggu shiraori lagi sibuk',
 'bentar ewe dulu ama ilman',
 'Shiraori lagi makan',

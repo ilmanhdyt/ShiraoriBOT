@@ -4,13 +4,13 @@ let handler = async (m, { conn }) => {
 
 m.reply(`
 ┌─〔 Status 〕
-├ Aktif selama ${uptime}
+├ Bot Aktif selama ${uptime}
 └────
     `.trim())
 }
-handler.help = ['uptime']
+handler.help = ['uptime', 'runtime']
 handler.tags = ['info']
-handler.command = /^(uptime)$/i
+handler.command = /^(uptime|runtime)$/i
 
 module.exports = handler
 

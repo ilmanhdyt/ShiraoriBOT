@@ -136,7 +136,7 @@ conn.logger.level = 'debug'
 
 ---------
 
- [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![ilmanhdyt](https://github.com/ilmanhdyt.png?size=100)](https://github.com/ilmanhdyt)
+ [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=150)](https://github.com/ariffb25) | [![ilmanhdyt](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt)
 ----|----|----
 [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [ilmanhdyt](https://github.com/ilmanhdyt)
  Penulis / Pencipta | Penulis ulang | Kang recode

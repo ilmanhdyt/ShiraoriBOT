@@ -11,7 +11,7 @@
 
 [![Grup WhatsApp](https://img.shields.io/badge/GroupWhatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/D7TmQm7UcfIBELBux19kIA)
 
-[![Contact Me](https://img.shields.io/badge/ContactMe-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](wa.me/6281351047727)
+[![Contact Me](https://img.shields.io/badge/ContactMe-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6281351047727)
 
 
 ## UNTUK PENGGUNA WINDOWS/VPS/RDP

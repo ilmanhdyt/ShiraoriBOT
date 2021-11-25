@@ -32,6 +32,27 @@ module.exports = {
           if (!isNumber(user.limit)) user.limit = 10
           if (!isNumber(user.money)) user.money = 0
           if (!isNumber(user.lastclaim)) user.lastclaim = 0
+                    if (!isNumber(user.diamond)) user.diamond = 0
+          if (!isNumber(user.iron)) user.iron = 0
+
+         if (!isNumber(user.common)) user.common = 0
+         if (!isNumber(user.uncommon)) user.uncommon = 0      
+         if (!isNumber(user.mythic)) user.mythic = 0
+         if (!isNumber(user.legendary)) user.legendary = 0
+         if (!isNumber(user.pet)) user.pet = 0
+         
+         if (!isNumber(user.potion)) user.potion = 0
+         if (!isNumber(user.sampah)) user.sampah = 0
+         if (!isNumber(user.armor)) user.armor = 0
+          
+         if (!isNumber(user.kucing)) user.kucing = 0
+         if (!isNumber(user.kucinglastclaim)) user.kucinglastclaim = 0
+         if (!isNumber(user.kuda)) user.kuda = 0
+         if (!isNumber(user.kudalastclaim)) user.kudalastclaim = 0
+         if (!isNumber(user.rubah)) user.rubah = 0
+         if (!isNumber(user.rubahlastclaim)) user.rubahlastclaim = 0
+         if (!isNumber(user.anjing)) user.anjing = 0
+         if (!isNumber(user.anjinglastclaim)) user.anjinglastclaim = 0
           if (!('registered' in user)) user.registered = false
           if (!user.registered) {
             if (!('name' in user)) user.name = this.getName(m.sender)

@@ -416,13 +416,13 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     throw e
   }
 }
-handler.help = ['menu', 'help', '?', 'ilman']
+handler.help = ['menu']
 handler.tags = ['main']
 handler.command = /^(menu|ilman|help|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = false
+handler.register = true
 handler.private = false
 
 handler.admin = false

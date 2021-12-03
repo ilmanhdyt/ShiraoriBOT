@@ -22,8 +22,8 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ilmanhdyt/ShiroBOT
-cd ShiroBOT
+git clone https://github.com/ilmanhdyt/ShiraoriBOT
+cd ShiraoriBOT
 npm install
 npm update
 npm index

@@ -51,7 +51,7 @@ node .
 
 
 ## Edit file
-- Change Nomor Owner [disini](https://github.com/ilmanhdyt/blob/main/config.js)
+- Ganti Nomor Owner [disini](https://github.com/ilmanhdyt/ShiraoriBOT/blob/main/config.js)
 - Change botName on [this section](https://github.com/rashidsiregar28/chikabot/blob/7a7ebe69cf44686d8a577f616b38b5d299ffefcc/config.json#L3)
 - You can edit list and display menu or donate on [this section](https://github.com/rashidsiregar28/chikabot/blob/main/help/ind.js)
 - You can add fiture on [this section](https://github.com/rashidsiregar28/chikabot/tree/main/message)

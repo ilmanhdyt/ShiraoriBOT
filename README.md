@@ -54,7 +54,7 @@ node .
 - Ganti Nomor Owner [disini](https://github.com/ilmanhdyt/ShiraoriBOT/blob/main/config.js)
 - Ganti Tampilan Menu [disini](https://github.com/ilmanhdyt/blob/main/plugins/menu.js)
 
-- Kalian bisa menambah fitur dengan cara pull request [klik disini](https://github.com/rashidsiregar28/chikabot/tree/main/message)
+- Kalian bisa menambah fitur dengan cara pull request
 
 
 ---------

@@ -1,7 +1,7 @@
 {
   "name": "ShiraoriBOT",
   "version": "2.0.1",
-  "description": "SHIRAORI",
+  "description": "Simple bot WhatsApp with adiwajshing baileys",
   "main": "index.js",
   "scripts": {
     "start": "node index.js --autoread",

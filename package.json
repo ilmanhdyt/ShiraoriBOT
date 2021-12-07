@@ -4,7 +4,7 @@
   "description": "SHIRAORI",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js --self",
+    "start": "node index.js --autoread",
     "test": "node test.js"
   },
   "repository": {

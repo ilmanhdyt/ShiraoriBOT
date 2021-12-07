@@ -86,23 +86,6 @@ Code: `https://repl.it/@Nurutomo/json-server`
 
 Server harus memiliki spesifikasi seperti ini
 
-#### GET
-
-```http
-GET /
-Accept: application/json
-```
-
-#### POST
-
-```http
-POST /
-Content-Type: application/json
-
-{
- data: {}
-}
-```
 
 ### `--big-qr`
 

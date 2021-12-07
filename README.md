@@ -114,33 +114,11 @@ Mengaktifkan plugin terbatas (yang dapat menyebabkan nomor Anda **diblokir** jik
 
 * Administrasi Grup `add, kick, promote, demote`, `kickall`
 
-### `--img`
-
-Aktifkan pemeriksa gambar melalui terminal
 
 ### `--autoread`
 
 Jika diaktifkan, semua pesan masuk akan ditandai sebagai telah dibaca
 
-### `--nyimak`
-
-Tidak ada bot, cukup cetak pesan yang diterima dan tambahkan pengguna ke database
-
-### `--test`
-
-**Development** Testing Mode
-
-### `--trace`
-
-```js
-conn.logger.level = 'trace'
-```
-
-### `--debug`
-
-```js
-conn.logger.level = 'debug'
-```
 
 ---------
 

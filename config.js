@@ -20,14 +20,14 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
   'https://bx-hunter.herokuapp.com': 'Ikyy69',
-  'https://melcanz.com': 'amel',
+  'https://melcanz.com': 'lugay',
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
-  'https://api.xteam.xyz': 'c81b3345e477a0c7',
-  'https://api.lolhuman.xyz': '3af90a5d6317457b1f93e921',
+  'https://api.xteam.xyz': 'memeki',
+  'https://api.lolhuman.xyz': 'windaj',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://zekai-api.herokuapp.com': 'tzjHtUpG',
+  'https://zekai-api.herokuapp.com': 'komtolofon',
   'https://api.zeks.xyz': 'apivinz',
 }
 

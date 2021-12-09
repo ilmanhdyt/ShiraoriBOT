@@ -3,12 +3,12 @@ let handler = async (m, { conn }) => {
     let uptime = clockString(_uptime)
 
 m.reply(`
-┌─〔 Status 〕
-├ Bot Aktif selama ${uptime}
+┌─〔 R U N T I M E 〕
+├ Bot Aktif Selama ${uptime}
 └────
     `.trim())
 }
-handler.help = ['uptime', 'runtime']
+handler.help = ['runtime']
 handler.tags = ['info']
 handler.command = /^(uptime|runtime)$/i
 

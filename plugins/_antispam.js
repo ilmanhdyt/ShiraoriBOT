@@ -2,7 +2,6 @@ let handler = m => m
 
 handler.all = async function (m) {
     if (!db.data.settings[this.user.jid].antispam) return // antispam aktif?
-    if (m.sender == conn.user.jid) return !1
     if (m.isBaileys && m.fromMe) return
     if (!m.message) return
     if (!m.isCommand) return
@@ -14,7 +13,7 @@ handler.all = async function (m) {
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 10) {
             if (this.spam[m.sender].count > 10) {
                 db.data.users[m.sender].banned = true
-                await this.sendButton(m.chat, 'kamu dibanned karena spam!, Chat Owner untuk unbanned', '© SHIRAORI', 'Pemilik Bot', ',owner', m)
+                await this.sendButton(m.chat, `kamu dibanned karena spam!${m.isGroup ? `\n\nadmin grup bisa menggunakan perintah *.unban @${m.sender.split`@`[0]}*` : ''}`, '© SHIRAORI BOT', 'Pemilik Bot', ',owner', m, { contextInfo: { mentionedJid: [m.sender] } })
             }
             this.spam[m.sender].count = 0
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()

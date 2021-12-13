@@ -3,6 +3,13 @@
 </p>
 <h1 align="center">SHIRAORI BOT</h1>
 
+```bash
+## My Project
+> WhatsApp Bot normal [`ShiraoriBOT`](https://github.com/ilmanhdyt/ShiraoriBOT)
+
+> WhatsApp Bot Multi Device [`ShiraoriBOT-Md`](https://github.com/ilmanhdyt/ShiraoriBOT-Md)
+```
+
 
 
 

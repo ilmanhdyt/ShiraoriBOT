@@ -13,7 +13,7 @@ let handler = function (m) {
 handler.help = ['del', 'delete']
 handler.tags = ['info']
 
-handler.command = /^del(ete)?$/i
+handler.command = /^del(ete)|unsend?$/i
 handler.limit = 2
 
 module.exports = handler

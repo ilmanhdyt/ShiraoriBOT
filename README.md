@@ -110,10 +110,10 @@ Jika diaktifkan, semua pesan masuk akan ditandai sebagai telah dibaca
 
 ---------
 
- [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ilman](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt) | [![nama lu](link github kalian.png?size=150)](link github lu)
-----|----|----
-[Nurutomo](https://github.com/Nurutomo) | [Ilman](https://github.com/ilmanhdyt) | [nama lu](link github lu)
- Author | Recode | Copi punya ilman😅
+ [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ilman](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt)
+----|----
+[Nurutomo](https://github.com/Nurutomo) | [Ilman](https://github.com/ilmanhdyt)
+ Author | Recode 
 
 
 ### Donated

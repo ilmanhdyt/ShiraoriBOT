@@ -34,7 +34,7 @@ global.APIKeys = { // APIKey nya disini
 // Sticker WM
 global.packname = 'SHIRAORI️BOT'
 global.author = 'ilman'
-
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.wait = '_*tunggu..*_'
 global.eror = '*_Server Eror_*'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='

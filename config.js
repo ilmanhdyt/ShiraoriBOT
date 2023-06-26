@@ -1,9 +1,9 @@
 let fs = require('fs')
-global.owner  = ['6281351047727', '380942618992'] // letakkan nomor kalian disini
+global.owner  = ['6285871074034', '6285871074034'] // letakkan nomor kalian disini
 global.mods  = JSON.parse(fs.readFileSync('./src/moderator.json')) // orang terpercaya?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
-global.APIs = { // API Prefix
-  // nama: 'https://website'
+global.APIs = {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
+  nama: 'https://platform.openai.com/account/api-keys'
   bx: 'https://bx-hunter.herokuapp.com',
   amel: 'https://melcanz.com',
   hardianto: 'https://hardianto-chan.herokuapp.com',
@@ -17,8 +17,8 @@ global.APIs = { // API Prefix
   zekais: 'http://zekais-api.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
 }
-global.APIKeys = { // APIKey nya disini
-  // 'https://website': 'apikey'
+  'global.APIKeys = {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
+  'https://api.lolhuman.xyz/auth/profile': 'b9b2b445c8f7c766c96811ce'
   'https://bx-hunter.herokuapp.com': 'Ikyy69',
   'https://melcanz.com': 'lugay',
   'https://hardianto-chan.herokuapp.com': 'hardianto',
@@ -32,7 +32,7 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'SHIRAORI️BOT'
+global.packname = 'DITZZZBOTZ'
 global.author = 'ilman'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.wait = '_*tunggu..*_'

@@ -21,7 +21,7 @@
 [![Contact Me](https://img.shields.io/badge/ContactMe-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6281351047727)
 
 
-[![Coba Bot](https://img.shields.io/badge/ContactMe-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/62895803135347) 
+[![Coba Bot](https://img.shields.io/badge/ChatBOT)](https://wa.me/62895803135347) 
 ## UNTUK PENGGUNA WINDOWS/VPS/RDP
 
 * Unduh & Instal Git [`Klik Disini`](https://git-scm.com/downloads)
